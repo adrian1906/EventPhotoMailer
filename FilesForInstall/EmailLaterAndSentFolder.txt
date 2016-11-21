@@ -1,0 +1,8 @@
+The folders EmailLater and Sent are used by EPE to hold image files
+
+EmailLater is used to tempararily hold image files whose filenames contain the email addresses.
+
+The Sent folder is the final destination for files that have been successfully sent.
+
+The reason this file is sitting inside each folder is because it appears that the installer
+needs a file in each folder in order to create the folder during installation.

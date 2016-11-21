@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EPEv4setup", "EPEv3setup.vdproj", "{5F672CD2-A9F9-4CCB-AC8E-BC0F09448887}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F672CD2-A9F9-4CCB-AC8E-BC0F09448887}.Debug|Default.ActiveCfg = Debug
+		{5F672CD2-A9F9-4CCB-AC8E-BC0F09448887}.Debug|Default.Build.0 = Debug
+		{5F672CD2-A9F9-4CCB-AC8E-BC0F09448887}.Release|Default.ActiveCfg = Release
+		{5F672CD2-A9F9-4CCB-AC8E-BC0F09448887}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

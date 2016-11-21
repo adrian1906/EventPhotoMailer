@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EPEv7", "EPEv7.vbproj", "{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugFor64BitHOOD|Any CPU = DebugFor64BitHOOD|Any CPU
+		DebugFor64BitHOOD|x64 = DebugFor64BitHOOD|x64
+		DebugFor64BitHOOD|x86 = DebugFor64BitHOOD|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|x64.ActiveCfg = Debug|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|x64.Build.0 = Debug|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|x86.ActiveCfg = Debug|x86
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Debug|x86.Build.0 = Debug|x86
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|Any CPU.ActiveCfg = DebugFor64BitHOOD|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|Any CPU.Build.0 = DebugFor64BitHOOD|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|x64.ActiveCfg = DebugFor64BitHOOD|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|x64.Build.0 = DebugFor64BitHOOD|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|x86.ActiveCfg = DebugFor64BitHOOD|x86
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.DebugFor64BitHOOD|x86.Build.0 = DebugFor64BitHOOD|x86
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|x64.ActiveCfg = Release|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|x64.Build.0 = Release|x64
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|x86.ActiveCfg = Release|x86
+		{B01197B5-B0EF-4E74-BFB1-C85CF4BB95AA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

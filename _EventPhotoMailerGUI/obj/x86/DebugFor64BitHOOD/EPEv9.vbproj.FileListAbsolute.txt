@@ -1,0 +1,23 @@
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\EventPhotoEmailer.exe.config
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\EventPhotoEmailer.exe.manifest
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\EventPhotoEmailer.application
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\EventPhotoEmailer.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\EventPhotoEmailer.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\FACEBOOK GRAPH TOOLKIT_3.5.dll
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\JSON_3.5.dll
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\MakeThin.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\MakeThin.pdb
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\MakeThin.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\DebugFor64BitHOOD\FACEBOOK GRAPH TOOLKIT_3.5.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.EmailPrompt.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.EmailSetupForm.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.FacebookGUI.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.EPEForm1.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.Resources.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.SplashScreen1.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EPEv9.vbproj.GenerateResource.Cache
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.TrustInfo.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.exe.manifest
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.application
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\DebugFor64BitHOOD\EventPhotoEmailer.xml

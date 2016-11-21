@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EPEConfig>
+  <CompanyName>Hood and Son Photography</CompanyName>
+  <CompanyEmail>Email</CompanyEmail>
+  <SubjectLine>Your Photo: Testing</SubjectLine>
+  <ImageFolder>C:\EventPhotoEmailer\EPE_Hotfolder</ImageFolder>
+  <MessageFile>C:\EventPhotoEmailer\message.txt</MessageFile>
+  <MailServer>smtp.gmail.com</MailServer>
+  <UserName>Your User Name</UserName>
+  <PWDEncrypt>nG3TSGZ8mqXEYFXDr8lvnQ==</PWDEncrypt>
+  <Port>25</Port>
+  <TimeInterval>5</TimeInterval>
+  <EmailMasterListName>C:\EventPhotoEmailer\EmailMasterList.txt</EmailMasterListName>
+  <UseMasterListBool>False</UseMasterListBool>
+  <ConfimEmailBool>False</ConfimEmailBool>
+  <CombineEmailsBool>False</CombineEmailsBool>
+  <UseSSLBool>True</UseSSLBool>
+  <CheckInternetConnectionBool>False</CheckInternetConnectionBool>
+  <PostEmailPromptBool>False</PostEmailPromptBool>
+  <UseAdLabelBool>False</UseAdLabelBool>
+  <AdFile></AdFile>
+</EPEConfig>

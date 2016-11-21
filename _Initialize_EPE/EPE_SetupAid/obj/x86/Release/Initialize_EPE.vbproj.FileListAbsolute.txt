@@ -1,0 +1,57 @@
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.pdb
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.xml
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\ResolveAssemblyReference.cache
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Form1.resources
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Resources.resources
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.read.1.tlog
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.write.1.tlog
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.exe
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.xml
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.pdb
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.pdb
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.xml
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\ResolveAssemblyReference.cache
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Form1.resources
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Resources.resources
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.read.1.tlog
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.write.1.tlog
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.exe
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.xml
+N:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.pdb
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.pdb
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.xml
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Form1.resources
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Resources.resources
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.read.1.tlog
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.write.1.tlog
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.exe
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.xml
+F:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.pdb
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.exe
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.xml
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.pdb
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe.config
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.pdb
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.xml
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\ResolveAssemblyReference.cache
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Form1.resources
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Resources.resources
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.read.1.tlog
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource.write.1.tlog
+G:\ZZ_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe.config
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.exe
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.xml
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.pdb
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.exe
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.pdb
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\bin\Release\Initialize_EPE.xml
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Form1.resources
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\EPE_SetupAid.Resources.resources
+F:\AA_Visual_Basic_Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Release\Initialize_EPE.vbproj.GenerateResource.Cache

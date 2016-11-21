@@ -1,0 +1,21 @@
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe.config
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe.manifest
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.application
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.xml
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\FACEBOOK GRAPH TOOLKIT_3.5.dll
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\JSON_3.5.dll
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\FACEBOOK GRAPH TOOLKIT_3.5.xml
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\ResolveAssemblyReference.cache
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.EmailPrompt.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.FacebookGUI.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form2.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form1.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Resources.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.SplashScreen1.resources
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe.manifest
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.application
+H:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.xml

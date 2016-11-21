@@ -1,0 +1,10 @@
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\bin\Release\MakeThin.exe.config
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\bin\Release\MakeThin.exe
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\bin\Release\MakeThin.pdb
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\bin\Release\MakeThin.xml
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.MakeThinForm.resources
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.Resources.resources
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.vbproj.GenerateResource.Cache
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.exe
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.xml
+F:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Release\MakeThin.pdb

@@ -1,0 +1,18 @@
+Your Photo(s): Event Name
+*
+*
+smtp.yourprovider.com
+YourUsername
+YourPassword
+25
+5
+C:\EventPhotoEmailer\EmailMasterList.txt
+0
+
+0
+0
+0
+0
+1
+0
+

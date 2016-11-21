@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="EventPhotoMailerGUI">
+</Property><Property Name="Solution File" Value="E:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI.sln">
+</Property><Property Name="User Options File" Value="E:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI.suo">
+</Property><Property Name="Date" Value="Thursday, January 27, 2011">
+</Property><Property Name="Time" Value="19:20 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="EventPhotoMailerGUI.sln" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI.sln">
+</Event><Event ErrorLevel="0" Project="" Source="EventPhotoMailerGUI.suo" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI.suo">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3.vbproj" Description="Project file successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EPEv3.vbproj">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3.vbproj.user" Description="Project user file successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EPEv3.vbproj.user">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\ApplicationEvents.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\ApplicationEvents.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\Encryption.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\Encryption.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\keycode.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\keycode.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\MainEPE_Form48.designer.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\MainEPE_Form48.designer.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\MainEPE_Form48.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\MainEPE_Form48.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\AssemblyInfo.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Application.Designer.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Resources.Designer.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Settings.Designer.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\see32.vb" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\see32.vb">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Application.myapp" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Settings.settings" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EventPhotoMailerGUI_TemporaryKey.pfx" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EventPhotoMailerGUI_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\Resources\FolderIcon.jpg" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\Resources\FolderIcon.jpg">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\Resources\EPEicon.png" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\Resources\EPEicon.png">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3_TemporaryKey.pfx" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EPEv3_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EventPhotoEmailerPasswordFile.pfx" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EventPhotoEmailerPasswordFile.pfx">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\app.manifest" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\app.manifest">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\Resources\EPEicon.ico" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\Resources\EPEicon.ico">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\Resources\FolderIcon1.jpg" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\Resources\FolderIcon1.jpg">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEicon.ico" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\EPEicon.ico">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\MainEPE_Form48.resx" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\MainEPE_Form48.resx">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\My Project\Resources.resx" Description="File successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EventPhotoMailerGUI\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EPEv3setup.vdproj" Source="EPEv3setup\EPEv3setup.vdproj" Description="Project file successfully backed up as E:\ZZ_Visual Basic Projects\EventPhotoMailer\Backup\EPEv3setup\EPEv3setup.vdproj">
+</Event><Event ErrorLevel="0" Project="" Source="EventPhotoMailerGUI.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="EventPhotoMailerGUI.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EPEv3" Source="EventPhotoMailerGUI\EPEv3.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

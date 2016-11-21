@@ -1,0 +1,28 @@
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoMailer.exe.manifest
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoMailer.application
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoMailer.exe
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoMailer.pdb
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoMailer.xml
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\ResolveAssemblyReference.cache
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\WindowsApplication1.Form1.resources
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\WindowsApplication1.Resources.resources
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EPEv1.vbproj.GenerateResource.Cache
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoMailer.exe.manifest
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoMailer.application
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoMailer.exe
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoMailer.xml
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoMailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.application
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EPEv1.vbproj.GenerateResource.Cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.application
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.pdb

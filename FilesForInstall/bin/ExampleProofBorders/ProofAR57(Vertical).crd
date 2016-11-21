@@ -1,0 +1,39 @@
+DESCRIPTION: <ProofAR57(Vertical)>
+CARDTYPE: Simple
+BEGIN_SUPERBORDER
+
+BEGIN_HEADER
+    WIDTH:   429
+    HEIGHT:  600
+    INITCOLOR: 0,0,0
+    DPI: 300
+    VERSION: 8.9.0.0
+    FLAGS:  NOTEXT
+END_HEADER
+
+BEGIN_LAYER
+
+    BEGIN_IMAGE
+        FILE:   <*Photo1>
+        POS:    22,21
+        WIDTH: 385
+        HEIGHT: 557
+        FRAME: 2 5
+    END_IMAGE
+
+    BEGIN_TEXT
+        FONT: "Times New Roman" 125
+        TEXTCOLOR: 255,0,0
+        BACKCOLOR: 0,0,0
+        ROTATION: 45
+        FLAGS:  MIDDLE | CENTER | BOLD | FLOATING | EDIT | CHARHEIGHT | ROT87
+        TEXTOPACITY: 25
+        POS:    -74,103
+        WIDTH: 580
+        HEIGHT: 360
+        TEXT: "PROOF"
+    END_TEXT
+
+END_LAYER
+
+END_SUPERBORDER

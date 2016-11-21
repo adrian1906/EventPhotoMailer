@@ -1,0 +1,4 @@
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe.config
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.pdb

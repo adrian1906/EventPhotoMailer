@@ -1,0 +1,26 @@
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\ResolveAssemblyReference.cache
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form2.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form1.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Resources.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.SplashScreen1.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe.manifest
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.application
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Release\EventPhotoEmailer.exe
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\ResolveAssemblyReference.cache
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form2.resources
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Form1.resources
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.Resources.resources
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\WindowsApplication1.SplashScreen1.resources
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe.manifest
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.application
+N:\ZZ_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Release\EventPhotoEmailer.exe

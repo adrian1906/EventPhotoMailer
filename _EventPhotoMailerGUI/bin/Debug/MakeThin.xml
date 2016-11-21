@@ -1,0 +1,342 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MakeThin
+</name>
+</assembly>
+<members>
+<member name="P:MakeThin.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MakeThin.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MakeThin.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:MakeThin.ExifWorks.TagNames">
+	<summary>
+ Contains possible values of EXIF tag names (ID)
+ </summary>
+	<remarks>See GdiPlusImaging.h</remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.Orientations">
+	<summary>
+ Real position of 0th row and column of picture
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.ExposurePrograms">
+	<summary>
+ Exposure programs
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.ExposureMeteringModes">
+	<summary>
+ Exposure metering modes
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.FlashModes">
+	<summary>
+ Flash activity modes
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.LightSources">
+	<summary>
+ Possible light sources (white balance)
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.ExifDataTypes">
+	<summary>
+ EXIF data types
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 12.6.2004 Created
+ </history>
+</member><member name="M:MakeThin.ExifWorks.Rational.ToString(System.String)">
+	<summary>
+ Converts rational to string representation
+ </summary>
+	<param name="Delimiter">Optional, default "/". String to be used as delimiter of components.</param>
+	<returns>String representation of the rational.</returns>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="M:MakeThin.ExifWorks.Rational.ToDouble">
+	<summary>
+ Converts rational to double precision real number
+ </summary>
+	<returns>The rational as double precision real number.</returns>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="T:MakeThin.ExifWorks.Rational">
+	<summary>
+ Represents rational which is type of some Exif properties
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.EquipmentMaker">
+	<summary>
+ Brand of equipment (EXIF EquipMake)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.EquipmentModel">
+	<summary>
+ Model of equipment (EXIF EquipModel)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Software">
+	<summary>
+ Software used for processing (EXIF Software)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Orientation">
+	<summary>
+ Orientation of image (position of row 0, column 0) (EXIF Orientation)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.DateTimeLastModified">
+	<summary>
+ Time when image was last modified (EXIF DateTime).
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.DateTimeOriginal">
+	<summary>
+ Time when image was taken (EXIF DateTimeOriginal).
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.DateTimeDigitized">
+	<summary>
+ Time when image was digitized (EXIF DateTimeDigitized).
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Width">
+	<summary>
+ Image width
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ [altair] 04.09.2005 Changed output to Int32, load from image instead of EXIF
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Height">
+	<summary>
+ Image height
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ [altair] 04.09.2005 Changed output to Int32, load from image instead of EXIF
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ResolutionX">
+	<summary>
+ X resolution in dpi (EXIF XResolution/ResolutionUnit)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ResolutionY">
+	<summary>
+ Y resolution in dpi (EXIF YResolution/ResolutionUnit)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Title">
+	<summary>
+ Image title (EXIF ImageTitle)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.UserComment">
+	<summary>
+ User comment (EXIF UserComment)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 13.06.2004 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Artist">
+	<summary>
+ Artist name (EXIF Artist)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 13.06.2004 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Description">
+	<summary>
+ Image description (EXIF ImageDescription)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Copyright">
+	<summary>
+ Image copyright (EXIF Copyright)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ExposureTime">
+	<summary>
+ Exposure time in seconds (EXIF ExifExposureTime/ExifShutterSpeed)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.Aperture">
+	<summary>
+ Aperture value as F number (EXIF ExifFNumber/ExifApertureValue)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ExposureProgram">
+	<summary>
+ Exposure program used (EXIF ExifExposureProg)
+ </summary>
+	<value></value>
+	<remarks>If not specified, returns Normal (2)</remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ISO">
+	<summary>
+ ISO sensitivity
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.SubjectDistance">
+	<summary>
+ Subject distance in meters (EXIF SubjectDistance)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.ExposureMeteringMode">
+	<summary>
+ Exposure method metering mode used (EXIF MeteringMode)
+ </summary>
+	<value></value>
+	<remarks>If not specified, returns Unknown (0)</remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.FocalLength">
+	<summary>
+ Focal length of lenses in mm (EXIF FocalLength)
+ </summary>
+	<value></value>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.FlashMode">
+	<summary>
+ Flash mode (EXIF Flash)
+ </summary>
+	<value></value>
+	<remarks>If not present, value NotFired (0) is returned</remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="P:MakeThin.ExifWorks.LightSource">
+	<summary>
+ Light source / white balance (EXIF LightSource)
+ </summary>
+	<value></value>
+	<remarks>If not specified, returns Unknown (0).</remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member><member name="M:MakeThin.ExifWorks.Dispose">
+	<summary>
+ Disposes unmanaged resources of this class
+ </summary>
+	<remarks></remarks>
+	<history>
+ [altair] 10.09.2003 Created
+ </history>
+</member>
+</members>
+</doc>

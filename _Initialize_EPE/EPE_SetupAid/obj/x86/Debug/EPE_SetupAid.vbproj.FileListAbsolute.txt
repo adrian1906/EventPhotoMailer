@@ -1,0 +1,11 @@
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Debug\EPE_SetupAid.exe
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Debug\EPE_SetupAid.pdb
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\bin\Debug\EPE_SetupAid.xml
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\ResolveAssemblyReference.cache
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.Form1.resources
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.Resources.resources
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\GenerateResource.read.1.tlog
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\GenerateResource.write.1.tlog
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.exe
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.xml
+N:\ZZ_Visual Basic Projects\EPE_SetupAid\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.pdb

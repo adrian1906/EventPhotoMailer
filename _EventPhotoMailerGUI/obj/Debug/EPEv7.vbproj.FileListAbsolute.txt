@@ -1,0 +1,26 @@
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe.config
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.pdb
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe.manifest
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.application
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.pdb
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\EventPhotoEmailer.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\FACEBOOK GRAPH TOOLKIT_3.5.dll
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\JSON_3.5.dll
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\MakeThin.exe
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\MakeThin.pdb
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\MakeThin.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Debug\FACEBOOK GRAPH TOOLKIT_3.5.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EPEv7.vbprojResolveAssemblyReference.cache
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.EmailPrompt.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.FacebookGUI.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.EmailSetupForm.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.Form1.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.Resources.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\HoodApplication1.SplashScreen1.resources
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EPEv7.vbproj.GenerateResource.Cache
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.TrustInfo.xml
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe.manifest
+F:\AA_Visual_Basic_Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.application

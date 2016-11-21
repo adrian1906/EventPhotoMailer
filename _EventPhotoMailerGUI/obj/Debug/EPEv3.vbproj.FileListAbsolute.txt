@@ -1,0 +1,3 @@
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.exe
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.xml
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\Debug\EventPhotoEmailer.pdb

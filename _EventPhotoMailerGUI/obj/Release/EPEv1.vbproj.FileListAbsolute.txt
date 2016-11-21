@@ -1,0 +1,112 @@
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+O:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+G:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+F:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+H:\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\EmailerBackup123109\Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+C:\Users\AdrianSr\Desktop\Hood and Son Projects\Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.xml
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.pdb
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe.manifest
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.application
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.exe
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.pdb
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\Release\EventPhotoEmailer.xml
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\ResolveAssemblyReference.cache
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Form1.resources
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\WindowsApplication1.Resources.resources
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EPEv1.vbproj.GenerateResource.Cache
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.exe.manifest
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\Release\EventPhotoEmailer.application

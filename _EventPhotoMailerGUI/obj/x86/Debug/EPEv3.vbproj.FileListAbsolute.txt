@@ -1,0 +1,82 @@
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.exe.manifest
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.application
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.exe
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.pdb
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EPEv3.vbproj.GenerateResource.Cache
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+C:\Users\Adrian\Desktop\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.exe
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\bin\x86\Debug\EventPhotoEmailer.pdb
+F:\EPEdebug\EventPhotoEmailer.exe.manifest
+F:\EPEdebug\EventPhotoEmailer.application
+F:\EPEdebug\EventPhotoEmailer.exe
+F:\EPEdebug\EventPhotoEmailer.pdb
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EPEv3.vbproj.GenerateResource.Cache
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+I:\EPEdebug\EventPhotoEmailer.exe.manifest
+I:\EPEdebug\EventPhotoEmailer.application
+I:\EPEdebug\EventPhotoEmailer.exe
+I:\EPEdebug\EventPhotoEmailer.pdb
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EPEv3.vbproj.GenerateResource.Cache
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+I:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+H:\EPEdebug\EventPhotoEmailer.exe.manifest
+H:\EPEdebug\EventPhotoEmailer.application
+H:\EPEdebug\EventPhotoEmailer.exe
+H:\EPEdebug\EventPhotoEmailer.pdb
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EPEv3.vbproj.GenerateResource.Cache
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+H:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+G:\EPEdebug\EventPhotoEmailer.exe.manifest
+G:\EPEdebug\EventPhotoEmailer.application
+G:\EPEdebug\EventPhotoEmailer.exe
+G:\EPEdebug\EventPhotoEmailer.pdb
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+G:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+E:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+E:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\ResolveAssemblyReference.cache
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form1.resources
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Resources.resources
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+O:\EPEdebug\EventPhotoEmailer.exe.manifest
+O:\EPEdebug\EventPhotoEmailer.application
+O:\EPEdebug\EventPhotoEmailer.exe
+O:\EPEdebug\EventPhotoEmailer.pdb
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe.manifest
+O:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.application
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.Form2.resources
+F:\ZZ_Visual Basic Projects\EventPhotoMailer\EventPhotoMailerGUI\obj\x86\Debug\WindowsApplication1.SplashScreen1.resources

@@ -1,0 +1,14 @@
+Your Photo(s): Event Name
+*
+*
+smtp.yourprovider.com
+YourUsername
+YourPassword
+25
+10
+Facebook Login	
+Facebook Password
+0
+0
+0
+
