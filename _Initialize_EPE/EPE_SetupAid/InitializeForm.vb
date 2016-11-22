@@ -1,12 +1,13 @@
 ﻿Imports System.IO
 Imports System.Diagnostics.Process
 Public Class InitializeEPE_Form
-    Dim CurrentDirectory As String = System.Environment.CurrentDirectory 'Gives c:\program files\EventPhotoEmailer
+    Dim CurrentDirectory As String = System.Environment.CurrentDirectory 'Gives c:\EventPhotoEmailer
     Dim ID As String = "C:\EventPhotoEmailer\EPE_Hotfolder\"
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Try
-            Dim RegFilePath As String = CurrentDirectory & "\bin\setupEPE_RasterPrinter_DRPro.reg"
+            'Dim RegFilePath As String = CurrentDirectory & "\bin\setupEPE_RasterPrinter_DRPro.reg"
+            Dim RegFilePath As String = CurrentDirectory & "\bin\EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
             'Process.Start("cmd", "/k" & RegFilePath) ' Code to keep window open
             Dim DarkroomPath As String = "C:\Program Files\ExpressDigital\Darkroom Pro"
             If Not Directory.Exists(DarkroomPath) Then
@@ -98,7 +99,8 @@ Public Class InitializeEPE_Form
 
     Private Sub Uninstall(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UninstallButton.Click
         Try
-            Dim RegFilePath As String = CurrentDirectory & "\bin\RemoveEPE_RasterPrinter_DRPro.reg"
+            'Dim RegFilePath As String = CurrentDirectory & "\bin\RemoveEPE_RasterPrinter_DRPro.reg"
+            Dim RegFilePath As String = CurrentDirectory & "Remove_EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
             'Process.Start("cmd", "/k" & RegFilePath) ' Code to keep window open
             Process.Start(RegFilePath)
             If File.Exists("x:\Packages\EventPhotoEmailer.pgrp") Then

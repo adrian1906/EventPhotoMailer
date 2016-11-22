@@ -33,6 +33,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_10C595E03C4042B2BE1CA9D61ADD6534"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_18AFD8C4392F4374B468F355240E8377"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -70,6 +76,12 @@
         "Entry"
         {
         "MsmKey" = "8:_3FFA9F664F64492683BA8B2C6A6E545C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_43BF03A7D01E45B5833B9759523BFC98"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -444,6 +456,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_10C595E03C4042B2BE1CA9D61ADD6534"
+            {
+            "SourcePath" = "8:..\\FilesForInstall\\Remove_EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
+            "TargetName" = "8:Remove_EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
+            "Tag" = "8:"
+            "Folder" = "8:_3E82DBEC68A142B38D740D2D0A0DC25B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_18AFD8C4392F4374B468F355240E8377"
             {
             "SourcePath" = "8:..\\FilesForInstall\\bin\\DarkroomShortcut_WinZ.exe"
@@ -550,6 +582,26 @@
             "TargetName" = "8:Defaults0.xml"
             "Tag" = "8:"
             "Folder" = "8:_641FA9EA62CD42509F37BD9DB1A8B818"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_43BF03A7D01E45B5833B9759523BFC98"
+            {
+            "SourcePath" = "8:..\\FilesForInstall\\EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
+            "TargetName" = "8:EPE_and_MakeThin_DarkRoomPro_RasterPrinters.reg"
+            "Tag" = "8:"
+            "Folder" = "8:_3E82DBEC68A142B38D740D2D0A0DC25B"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1261,7 +1313,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Event Photo Emailer"
         "ProductCode" = "8:{F1203CE8-0055-4FE8-9D97-6133FE614C84}"
-        "PackageCode" = "8:{98CE8C27-C8AD-4471-88A6-B5EDA402322C}"
+        "PackageCode" = "8:{9827EA0B-B5C7-4761-8175-749D36B36DB6}"
         "UpgradeCode" = "8:{536E9942-8FE9-48A5-BE32-E2E3E7B9407E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

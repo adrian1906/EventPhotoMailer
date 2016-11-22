@@ -69,16 +69,16 @@ Partial Class InitializeEPE_Form
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(66, 169)
+        Me.Button1.Location = New System.Drawing.Point(97, 169)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(196, 23)
+        Me.Button1.Size = New System.Drawing.Size(336, 23)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Install Event Photo Emailer Printers"
+        Me.Button1.Text = "Install Event Photo Emailer and MakeThin Printers"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(188, 250)
+        Me.Button2.Location = New System.Drawing.Point(184, 270)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(165, 23)
         Me.Button2.TabIndex = 5
@@ -90,7 +90,7 @@ Partial Class InitializeEPE_Form
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(138, 223)
+        Me.Label4.Location = New System.Drawing.Point(134, 243)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(256, 24)
         Me.Label4.TabIndex = 4
@@ -134,7 +134,7 @@ Partial Class InitializeEPE_Form
         '
         'UninstallButton
         '
-        Me.UninstallButton.Location = New System.Drawing.Point(268, 169)
+        Me.UninstallButton.Location = New System.Drawing.Point(163, 198)
         Me.UninstallButton.Name = "UninstallButton"
         Me.UninstallButton.Size = New System.Drawing.Size(196, 23)
         Me.UninstallButton.TabIndex = 10
@@ -154,7 +154,7 @@ Partial Class InitializeEPE_Form
         'DarkRoomStatusLabel
         '
         Me.DarkRoomStatusLabel.AutoSize = True
-        Me.DarkRoomStatusLabel.Location = New System.Drawing.Point(149, 195)
+        Me.DarkRoomStatusLabel.Location = New System.Drawing.Point(439, 174)
         Me.DarkRoomStatusLabel.Name = "DarkRoomStatusLabel"
         Me.DarkRoomStatusLabel.Size = New System.Drawing.Size(33, 13)
         Me.DarkRoomStatusLabel.TabIndex = 12
