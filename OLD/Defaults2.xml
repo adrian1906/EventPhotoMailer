@@ -2,7 +2,7 @@
 <EPEConfig>
   <CompanyName>Hood Event Photo</CompanyName>
   <CompanyEmail>info@hoodeventphoto.com</CompanyEmail>
-  <SubjectLine>Your Photo</SubjectLine>
+  <SubjectLine>Your Photo: Testing</SubjectLine>
   <ImageFolder>c:\EventPhotoEmailer\EPE_Hotfolder</ImageFolder>
   <MessageFile>c:\EventPhotoEmailer\message.txt</MessageFile>
   <MailServer>hoodands.ipower.com</MailServer>

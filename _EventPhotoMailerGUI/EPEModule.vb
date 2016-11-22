@@ -40,6 +40,10 @@ Module Module1
         Dim NotifyLL As String
         Dim NotifyLR As String
         Dim AttachFilesYesNo As String
+        Dim LowerLeftRadioButton As String
+        Dim LowerRightRadioButton As String
+        Dim UpperLeftRadioButton As String
+        Dim UpperRightRadioButton As String
     End Structure
 
     Public Function RetrieveSignalStrength() As Double

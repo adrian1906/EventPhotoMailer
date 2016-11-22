@@ -57,14 +57,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="342528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="346112">
       <assemblyIdentity name="EventPhotoEmailer" version="9.4.0.34922" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JJg2ZCnLhQVrhgncaXvPGUqlOvM=</dsig:DigestValue>
+        <dsig:DigestValue>hXfcCWmyqTOF54s+LOryq3dkqWE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

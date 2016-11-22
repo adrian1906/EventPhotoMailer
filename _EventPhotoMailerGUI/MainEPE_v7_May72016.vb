@@ -227,6 +227,8 @@ Public Class EPEForm1
     Public DefaultImageDirectory As String = CurrentDirectory & "\EPE_Hotfolder"
     Public DefaultFile1 As String = CommonDirectory & "\Defaults1.xml"
     Public DefaultFile2 As String = CommonDirectory & "\Defaults2.xml"
+    Public DefaultFile3 As String = CommonDirectory & "\Defaults3.xml"
+    Public DefaultFile4 As String = CommonDirectory & "\Defaults4.xml"
     Public CurrentDefaultFileUsed As String = DefaultFile1
     Public CHECKCONNECTIONYESNO As Boolean = True
     Public SENDEMAILFINISHEDFLAGG As Boolean = True
@@ -370,6 +372,10 @@ Public Class EPEForm1
             EmailSetupForm.CurrentConfigLabel.Text = "Configuration 1 is being used."
         ElseIf DefaultFileToUse = DefaultFile2 Then
             EmailSetupForm.CurrentConfigLabel.Text = "Configuration 2 is being used."
+        ElseIf DefaultFileToUse = DefaultFile3 Then
+            EmailSetupForm.CurrentConfigLabel.Text = "Configuration 3 is being used."
+        ElseIf DefaultFileToUse = DefaultFile4 Then
+            EmailSetupForm.CurrentConfigLabel.Text = "Configuration 4 is being used."
         End If
 
         Dim mydata As DEFAULTDATA = Nothing ' Defined in EPEModule.vb
@@ -409,10 +415,10 @@ Public Class EPEForm1
                 .PromptForEmailDontSend_CheckBox.CheckState = BooleanToCheckState(mydata.PromptForEmailDontSend)
                 .textBox_Password.Text = MyDecryption(mydata.PWDEncrypt) ' This textbox only shows dots
                 .AttachFilesYesNoCheckbox.CheckState = BooleanToCheckState(mydata.AttachFilesYesNo)
-                .LowerLeftRadioButton.Text = BooleanToCheckState(mydata.LowerLeftRadioButton)
-                .LowerRightRadioButton.Checked = BooleanToCheckState(mydata.LowerRightRadioButton)
-                .UpperLeftRadioButton.Checked = BooleanToCheckState(mydata.UpperLeftRadioButton)
-                .UpperRightRadioButton.Checked = BooleanToCheckState(mydata.UpperRightRadioButton)
+                .LowerLeftRadioButton.Checked = Convert.ToBoolean(mydata.NotifyLL)
+                .LowerRightRadioButton.Checked = Convert.ToBoolean(mydata.NotifyLR)
+                .UpperLeftRadioButton.Checked = Convert.ToBoolean(mydata.NotifyUL)
+                .UpperRightRadioButton.Checked = Convert.ToBoolean(mydata.NotifyUR)
             End With
             EmailPrompt.ApplyToAllCheckBox1.CheckState = BooleanToCheckState(mydata.RepeatEmailsInEmailPromptLock)
         Catch ex As Exception
@@ -433,6 +439,16 @@ Public Class EPEForm1
     End Sub
 
     Public Function BooleanToCheckState(ByVal Mystring As String) As CheckState
+        Dim MyCheckstate As CheckState
+        If Mystring = "False" Then
+            MyCheckstate = CheckState.Unchecked
+        Else
+            MyCheckstate = CheckState.Checked
+        End If
+        Return MyCheckstate
+    End Function
+
+    Public Function BooleanToCheck(ByVal Mystring As String) As CheckState
         Dim MyCheckstate As CheckState
         If Mystring = "False" Then
             MyCheckstate = CheckState.Unchecked
@@ -490,6 +506,7 @@ Public Class EPEForm1
         MyInfoArraylist.Add("NotifyLL" & "!" & EmailSetupForm.LowerLeftRadioButton.Checked.ToString)
         MyInfoArraylist.Add("NotifyLR" & "!" & EmailSetupForm.LowerRightRadioButton.Checked.ToString)
         MyInfoArraylist.Add("AttachFilesYesNo" & "!" & CheckStateToBoolean(EmailSetupForm.AttachFilesYesNoCheckbox.CheckState))
+
 
         settings.Indent = True
         settings.OmitXmlDeclaration = False
@@ -2913,5 +2930,13 @@ Public Class EPEForm1
 
     Private Sub Config2ButtonFrontPage_Click(sender As System.Object, e As System.EventArgs) Handles Config2ButtonFrontPage.Click
         EmailSetupForm.ConfigButton2_Click(sender, e)
+    End Sub
+
+    Private Sub Config3ButtonFrontPage_Click(sender As System.Object, e As System.EventArgs) Handles Config3ButtonFrontPage.Click
+        EmailSetupForm.ConfigButton3_Click(sender, e)
+    End Sub
+
+    Private Sub Config4ButtonFrontPage_Click(sender As System.Object, e As System.EventArgs) Handles Config4ButtonFrontPage.Click
+        EmailSetupForm.ConfigButton4_Click(sender, e)
     End Sub
 End Class

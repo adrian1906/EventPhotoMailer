@@ -110,6 +110,8 @@ Partial Class EPEForm1
         Me.Testbutton = New System.Windows.Forms.Button()
         Me.Config1ButtonFrontPage = New System.Windows.Forms.Button()
         Me.Config2ButtonFrontPage = New System.Windows.Forms.Button()
+        Me.Config4ButtonFrontPage = New System.Windows.Forms.Button()
+        Me.Config3ButtonFrontPage = New System.Windows.Forms.Button()
         Me.ContextMenuStrip_ForNotificationIcon.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.FacebookLogoOnForm1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -313,7 +315,7 @@ Partial Class EPEForm1
         '
         Me.StatusLabel.AutoSize = True
         Me.StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StatusLabel.Location = New System.Drawing.Point(599, 100)
+        Me.StatusLabel.Location = New System.Drawing.Point(422, 26)
         Me.StatusLabel.Name = "StatusLabel"
         Me.StatusLabel.Size = New System.Drawing.Size(78, 20)
         Me.StatusLabel.TabIndex = 65
@@ -821,7 +823,7 @@ Partial Class EPEForm1
         'StoppedButton
         '
         Me.StoppedButton.BackColor = System.Drawing.Color.Red
-        Me.StoppedButton.Location = New System.Drawing.Point(683, 99)
+        Me.StoppedButton.Location = New System.Drawing.Point(626, 26)
         Me.StoppedButton.Name = "StoppedButton"
         Me.StoppedButton.Size = New System.Drawing.Size(95, 23)
         Me.StoppedButton.TabIndex = 80
@@ -832,7 +834,7 @@ Partial Class EPEForm1
         'SENDINGBUTTON
         '
         Me.SENDINGBUTTON.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SENDINGBUTTON.Location = New System.Drawing.Point(686, 83)
+        Me.SENDINGBUTTON.Location = New System.Drawing.Point(528, 27)
         Me.SENDINGBUTTON.Name = "SENDINGBUTTON"
         Me.SENDINGBUTTON.Size = New System.Drawing.Size(92, 23)
         Me.SENDINGBUTTON.TabIndex = 79
@@ -843,7 +845,7 @@ Partial Class EPEForm1
         'WiFiSigProgressLabel
         '
         Me.WiFiSigProgressLabel.AutoSize = True
-        Me.WiFiSigProgressLabel.Location = New System.Drawing.Point(686, 125)
+        Me.WiFiSigProgressLabel.Location = New System.Drawing.Point(490, 31)
         Me.WiFiSigProgressLabel.Name = "WiFiSigProgressLabel"
         Me.WiFiSigProgressLabel.Size = New System.Drawing.Size(71, 13)
         Me.WiFiSigProgressLabel.TabIndex = 131
@@ -851,14 +853,14 @@ Partial Class EPEForm1
         '
         'WiFiProgressBar_SignalStrength
         '
-        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(675, 140)
+        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(647, 140)
         Me.WiFiProgressBar_SignalStrength.Name = "WiFiProgressBar_SignalStrength"
         Me.WiFiProgressBar_SignalStrength.Size = New System.Drawing.Size(100, 13)
         Me.WiFiProgressBar_SignalStrength.TabIndex = 130
         '
         'Testbutton
         '
-        Me.Testbutton.Location = New System.Drawing.Point(410, 96)
+        Me.Testbutton.Location = New System.Drawing.Point(366, 29)
         Me.Testbutton.Name = "Testbutton"
         Me.Testbutton.Size = New System.Drawing.Size(156, 23)
         Me.Testbutton.TabIndex = 151
@@ -884,6 +886,24 @@ Partial Class EPEForm1
         Me.Config2ButtonFrontPage.Text = "Configuration 2"
         Me.Config2ButtonFrontPage.UseVisualStyleBackColor = True
         '
+        'Config4ButtonFrontPage
+        '
+        Me.Config4ButtonFrontPage.Location = New System.Drawing.Point(619, 95)
+        Me.Config4ButtonFrontPage.Name = "Config4ButtonFrontPage"
+        Me.Config4ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config4ButtonFrontPage.TabIndex = 155
+        Me.Config4ButtonFrontPage.Text = "Configuration 4"
+        Me.Config4ButtonFrontPage.UseVisualStyleBackColor = True
+        '
+        'Config3ButtonFrontPage
+        '
+        Me.Config3ButtonFrontPage.Location = New System.Drawing.Point(410, 95)
+        Me.Config3ButtonFrontPage.Name = "Config3ButtonFrontPage"
+        Me.Config3ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config3ButtonFrontPage.TabIndex = 154
+        Me.Config3ButtonFrontPage.Text = "Configuration 3"
+        Me.Config3ButtonFrontPage.UseVisualStyleBackColor = True
+        '
         'EPEForm1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -891,6 +911,8 @@ Partial Class EPEForm1
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(792, 659)
+        Me.Controls.Add(Me.Config4ButtonFrontPage)
+        Me.Controls.Add(Me.Config3ButtonFrontPage)
         Me.Controls.Add(Me.Config2ButtonFrontPage)
         Me.Controls.Add(Me.Config1ButtonFrontPage)
         Me.Controls.Add(Me.Testbutton)
@@ -1035,5 +1057,7 @@ Partial Class EPEForm1
     Friend WithEvents Testbutton As System.Windows.Forms.Button
     Friend WithEvents Config1ButtonFrontPage As System.Windows.Forms.Button
     Friend WithEvents Config2ButtonFrontPage As System.Windows.Forms.Button
+    Friend WithEvents Config4ButtonFrontPage As System.Windows.Forms.Button
+    Friend WithEvents Config3ButtonFrontPage As System.Windows.Forms.Button
 
 End Class

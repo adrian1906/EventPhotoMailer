@@ -43,8 +43,13 @@
         EPEForm1.CurrentDefaultFileUsed = EPEForm1.DefaultFile1
         ConfigButton1.BackColor = Color.Green
         ConfigButton2.BackColor = Color.Gray
+        ConfigButton3.BackColor = Color.Gray
+        ConfigButton4.BackColor = Color.Gray
         EPEForm1.Config1ButtonFrontPage.BackColor = Color.Green
         EPEForm1.Config2ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config3ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config4ButtonFrontPage.BackColor = Color.Gray
+
     End Sub
 
     Public Sub ConfigButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfigButton2.Click
@@ -52,10 +57,42 @@
         EPEForm1.CurrentDefaultFileUsed = EPEForm1.DefaultFile2
         ConfigButton1.BackColor = Color.Gray
         ConfigButton2.BackColor = Color.Green
+        ConfigButton3.BackColor = Color.Gray
+        ConfigButton4.BackColor = Color.Gray
         EPEForm1.Config1ButtonFrontPage.BackColor = Color.Gray
         EPEForm1.Config2ButtonFrontPage.BackColor = Color.Green
+        EPEForm1.Config3ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config4ButtonFrontPage.BackColor = Color.Gray
     End Sub
 
+    Public Sub ConfigButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfigButton3.Click
+        EPEForm1.ImportDefaults(EPEForm1.DefaultFile3)
+        EPEForm1.CurrentDefaultFileUsed = EPEForm1.DefaultFile3
+        ConfigButton1.BackColor = Color.Gray
+        ConfigButton2.BackColor = Color.Gray
+        ConfigButton3.BackColor = Color.Green
+        ConfigButton4.BackColor = Color.Gray
+        EPEForm1.Config1ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config2ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config3ButtonFrontPage.BackColor = Color.Green
+        EPEForm1.Config4ButtonFrontPage.BackColor = Color.Gray
+
+    End Sub
+
+
+    Public Sub ConfigButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ConfigButton4.Click
+        EPEForm1.ImportDefaults(EPEForm1.DefaultFile4)
+        EPEForm1.CurrentDefaultFileUsed = EPEForm1.DefaultFile4
+        ConfigButton1.BackColor = Color.Gray
+        ConfigButton2.BackColor = Color.Gray
+        ConfigButton3.BackColor = Color.Gray
+        ConfigButton4.BackColor = Color.Green
+        EPEForm1.Config1ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config2ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config3ButtonFrontPage.BackColor = Color.Gray
+        EPEForm1.Config4ButtonFrontPage.BackColor = Color.Green
+
+    End Sub
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim tmp1 As String = ComboBox1.SelectedItem.ToString
         Dim tmp2() As String = Split(tmp1, "--")
@@ -98,6 +135,7 @@
             'The reason it is put here is to make sure that the latest names are used and that this function is only called once.
         End If
     End Sub
+
 
 
 End Class
