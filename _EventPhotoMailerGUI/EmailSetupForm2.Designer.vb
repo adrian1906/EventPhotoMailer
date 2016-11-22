@@ -62,13 +62,14 @@ Partial Class EmailSetupForm
         Me.CheckBox_ConfirmationEmail = New System.Windows.Forms.CheckBox()
         Me.EmailCombineCheckBox = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ConfigButton4 = New System.Windows.Forms.Button()
+        Me.ConfigButton3 = New System.Windows.Forms.Button()
         Me.CurrentConfigLabel = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.CompEmailTextbox = New System.Windows.Forms.TextBox()
         Me.CompNameTextbox = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ConfigButton4 = New System.Windows.Forms.Button()
-        Me.ConfigButton3 = New System.Windows.Forms.Button()
+        Me.ConfigButton0 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.NotifyBoxLocationGroupBox.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -161,7 +162,7 @@ Partial Class EmailSetupForm
         '
         'ConfigButton1
         '
-        Me.ConfigButton1.Location = New System.Drawing.Point(103, 15)
+        Me.ConfigButton1.Location = New System.Drawing.Point(166, 15)
         Me.ConfigButton1.Name = "ConfigButton1"
         Me.ConfigButton1.Size = New System.Drawing.Size(109, 23)
         Me.ConfigButton1.TabIndex = 142
@@ -170,7 +171,7 @@ Partial Class EmailSetupForm
         '
         'ConfigButton2
         '
-        Me.ConfigButton2.Location = New System.Drawing.Point(227, 15)
+        Me.ConfigButton2.Location = New System.Drawing.Point(290, 15)
         Me.ConfigButton2.Name = "ConfigButton2"
         Me.ConfigButton2.Size = New System.Drawing.Size(109, 23)
         Me.ConfigButton2.TabIndex = 143
@@ -456,6 +457,7 @@ Partial Class EmailSetupForm
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.ConfigButton0)
         Me.GroupBox2.Controls.Add(Me.ConfigButton4)
         Me.GroupBox2.Controls.Add(Me.ConfigButton3)
         Me.GroupBox2.Controls.Add(Me.CurrentConfigLabel)
@@ -468,10 +470,28 @@ Partial Class EmailSetupForm
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Configuration Selection"
         '
+        'ConfigButton4
+        '
+        Me.ConfigButton4.Location = New System.Drawing.Point(290, 81)
+        Me.ConfigButton4.Name = "ConfigButton4"
+        Me.ConfigButton4.Size = New System.Drawing.Size(109, 23)
+        Me.ConfigButton4.TabIndex = 146
+        Me.ConfigButton4.Text = "Configuration 4"
+        Me.ConfigButton4.UseVisualStyleBackColor = True
+        '
+        'ConfigButton3
+        '
+        Me.ConfigButton3.Location = New System.Drawing.Point(166, 81)
+        Me.ConfigButton3.Name = "ConfigButton3"
+        Me.ConfigButton3.Size = New System.Drawing.Size(109, 23)
+        Me.ConfigButton3.TabIndex = 145
+        Me.ConfigButton3.Text = "Configuration 3"
+        Me.ConfigButton3.UseVisualStyleBackColor = True
+        '
         'CurrentConfigLabel
         '
         Me.CurrentConfigLabel.AutoSize = True
-        Me.CurrentConfigLabel.Location = New System.Drawing.Point(153, 91)
+        Me.CurrentConfigLabel.Location = New System.Drawing.Point(221, 54)
         Me.CurrentConfigLabel.Name = "CurrentConfigLabel"
         Me.CurrentConfigLabel.Size = New System.Drawing.Size(122, 13)
         Me.CurrentConfigLabel.TabIndex = 144
@@ -505,23 +525,14 @@ Partial Class EmailSetupForm
         Me.CompNameTextbox.Size = New System.Drawing.Size(394, 20)
         Me.CompNameTextbox.TabIndex = 0
         '
-        'ConfigButton4
+        'ConfigButton0
         '
-        Me.ConfigButton4.Location = New System.Drawing.Point(227, 60)
-        Me.ConfigButton4.Name = "ConfigButton4"
-        Me.ConfigButton4.Size = New System.Drawing.Size(109, 23)
-        Me.ConfigButton4.TabIndex = 146
-        Me.ConfigButton4.Text = "Configuration 4"
-        Me.ConfigButton4.UseVisualStyleBackColor = True
-        '
-        'ConfigButton3
-        '
-        Me.ConfigButton3.Location = New System.Drawing.Point(103, 60)
-        Me.ConfigButton3.Name = "ConfigButton3"
-        Me.ConfigButton3.Size = New System.Drawing.Size(109, 23)
-        Me.ConfigButton3.TabIndex = 145
-        Me.ConfigButton3.Text = "Configuration 3"
-        Me.ConfigButton3.UseVisualStyleBackColor = True
+        Me.ConfigButton0.Location = New System.Drawing.Point(9, 49)
+        Me.ConfigButton0.Name = "ConfigButton0"
+        Me.ConfigButton0.Size = New System.Drawing.Size(148, 23)
+        Me.ConfigButton0.TabIndex = 147
+        Me.ConfigButton0.Text = "Default Configuration"
+        Me.ConfigButton0.UseVisualStyleBackColor = True
         '
         'EmailSetupForm
         '
@@ -603,4 +614,5 @@ Partial Class EmailSetupForm
     Friend WithEvents AttachFilesYesNoCheckbox As System.Windows.Forms.CheckBox
     Friend WithEvents ConfigButton4 As System.Windows.Forms.Button
     Friend WithEvents ConfigButton3 As System.Windows.Forms.Button
+    Friend WithEvents ConfigButton0 As System.Windows.Forms.Button
 End Class

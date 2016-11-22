@@ -112,6 +112,7 @@ Partial Class EPEForm1
         Me.Config2ButtonFrontPage = New System.Windows.Forms.Button()
         Me.Config4ButtonFrontPage = New System.Windows.Forms.Button()
         Me.Config3ButtonFrontPage = New System.Windows.Forms.Button()
+        Me.Config0ButtonFrontPage = New System.Windows.Forms.Button()
         Me.ContextMenuStrip_ForNotificationIcon.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.FacebookLogoOnForm1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,7 +133,7 @@ Partial Class EPEForm1
         Me.GoButton.ForeColor = System.Drawing.Color.Black
         Me.GoButton.Location = New System.Drawing.Point(408, 544)
         Me.GoButton.Name = "GoButton"
-        Me.GoButton.Size = New System.Drawing.Size(370, 38)
+        Me.GoButton.Size = New System.Drawing.Size(381, 38)
         Me.GoButton.TabIndex = 42
         Me.GoButton.Text = "SEND EMAILS"
         Me.GoButton.UseVisualStyleBackColor = False
@@ -308,7 +309,7 @@ Partial Class EPEForm1
         Me.MainStatusBox.Multiline = True
         Me.MainStatusBox.Name = "MainStatusBox"
         Me.MainStatusBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.MainStatusBox.Size = New System.Drawing.Size(372, 334)
+        Me.MainStatusBox.Size = New System.Drawing.Size(381, 334)
         Me.MainStatusBox.TabIndex = 64
         '
         'StatusLabel
@@ -326,7 +327,7 @@ Partial Class EPEForm1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(408, 504)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(370, 20)
+        Me.ProgressBar1.Size = New System.Drawing.Size(381, 20)
         Me.ProgressBar1.TabIndex = 66
         '
         'CustomerInfo
@@ -341,7 +342,7 @@ Partial Class EPEForm1
         '
         'CancelButton1
         '
-        Me.CancelButton1.Location = New System.Drawing.Point(687, 588)
+        Me.CancelButton1.Location = New System.Drawing.Point(697, 588)
         Me.CancelButton1.Name = "CancelButton1"
         Me.CancelButton1.Size = New System.Drawing.Size(92, 25)
         Me.CancelButton1.TabIndex = 72
@@ -394,7 +395,7 @@ Partial Class EPEForm1
         'ConnectionStatusResultLabel
         '
         Me.ConnectionStatusResultLabel.AutoSize = True
-        Me.ConnectionStatusResultLabel.Location = New System.Drawing.Point(528, 140)
+        Me.ConnectionStatusResultLabel.Location = New System.Drawing.Point(589, 140)
         Me.ConnectionStatusResultLabel.Name = "ConnectionStatusResultLabel"
         Me.ConnectionStatusResultLabel.Size = New System.Drawing.Size(94, 13)
         Me.ConnectionStatusResultLabel.TabIndex = 85
@@ -435,7 +436,7 @@ Partial Class EPEForm1
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfigureEmailButton, Me.AboutUsButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(792, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(809, 25)
         Me.ToolStrip1.TabIndex = 115
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -779,7 +780,7 @@ Partial Class EPEForm1
         '
         'ClearWindowButton
         '
-        Me.ClearWindowButton.Location = New System.Drawing.Point(544, 588)
+        Me.ClearWindowButton.Location = New System.Drawing.Point(557, 588)
         Me.ClearWindowButton.Name = "ClearWindowButton"
         Me.ClearWindowButton.Size = New System.Drawing.Size(92, 25)
         Me.ClearWindowButton.TabIndex = 62
@@ -814,7 +815,7 @@ Partial Class EPEForm1
         Me.SendSavedEmailButton.ForeColor = System.Drawing.Color.Black
         Me.SendSavedEmailButton.Location = New System.Drawing.Point(410, 619)
         Me.SendSavedEmailButton.Name = "SendSavedEmailButton"
-        Me.SendSavedEmailButton.Size = New System.Drawing.Size(370, 29)
+        Me.SendSavedEmailButton.Size = New System.Drawing.Size(379, 29)
         Me.SendSavedEmailButton.TabIndex = 150
         Me.SendSavedEmailButton.Text = "SEND Saved Emails"
         Me.SendSavedEmailButton.UseVisualStyleBackColor = False
@@ -853,7 +854,7 @@ Partial Class EPEForm1
         '
         'WiFiProgressBar_SignalStrength
         '
-        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(647, 140)
+        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(689, 140)
         Me.WiFiProgressBar_SignalStrength.Name = "WiFiProgressBar_SignalStrength"
         Me.WiFiProgressBar_SignalStrength.Size = New System.Drawing.Size(100, 13)
         Me.WiFiProgressBar_SignalStrength.TabIndex = 130
@@ -870,39 +871,48 @@ Partial Class EPEForm1
         '
         'Config1ButtonFrontPage
         '
-        Me.Config1ButtonFrontPage.Location = New System.Drawing.Point(410, 54)
+        Me.Config1ButtonFrontPage.Location = New System.Drawing.Point(410, 106)
         Me.Config1ButtonFrontPage.Name = "Config1ButtonFrontPage"
-        Me.Config1ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config1ButtonFrontPage.Size = New System.Drawing.Size(90, 23)
         Me.Config1ButtonFrontPage.TabIndex = 152
         Me.Config1ButtonFrontPage.Text = "Configuration 1"
         Me.Config1ButtonFrontPage.UseVisualStyleBackColor = True
         '
         'Config2ButtonFrontPage
         '
-        Me.Config2ButtonFrontPage.Location = New System.Drawing.Point(619, 54)
+        Me.Config2ButtonFrontPage.Location = New System.Drawing.Point(506, 106)
         Me.Config2ButtonFrontPage.Name = "Config2ButtonFrontPage"
-        Me.Config2ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config2ButtonFrontPage.Size = New System.Drawing.Size(87, 23)
         Me.Config2ButtonFrontPage.TabIndex = 153
         Me.Config2ButtonFrontPage.Text = "Configuration 2"
         Me.Config2ButtonFrontPage.UseVisualStyleBackColor = True
         '
         'Config4ButtonFrontPage
         '
-        Me.Config4ButtonFrontPage.Location = New System.Drawing.Point(619, 95)
+        Me.Config4ButtonFrontPage.Location = New System.Drawing.Point(694, 106)
         Me.Config4ButtonFrontPage.Name = "Config4ButtonFrontPage"
-        Me.Config4ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config4ButtonFrontPage.Size = New System.Drawing.Size(95, 23)
         Me.Config4ButtonFrontPage.TabIndex = 155
         Me.Config4ButtonFrontPage.Text = "Configuration 4"
         Me.Config4ButtonFrontPage.UseVisualStyleBackColor = True
         '
         'Config3ButtonFrontPage
         '
-        Me.Config3ButtonFrontPage.Location = New System.Drawing.Point(410, 95)
+        Me.Config3ButtonFrontPage.Location = New System.Drawing.Point(599, 106)
         Me.Config3ButtonFrontPage.Name = "Config3ButtonFrontPage"
-        Me.Config3ButtonFrontPage.Size = New System.Drawing.Size(156, 23)
+        Me.Config3ButtonFrontPage.Size = New System.Drawing.Size(89, 23)
         Me.Config3ButtonFrontPage.TabIndex = 154
         Me.Config3ButtonFrontPage.Text = "Configuration 3"
         Me.Config3ButtonFrontPage.UseVisualStyleBackColor = True
+        '
+        'Config0ButtonFrontPage
+        '
+        Me.Config0ButtonFrontPage.Location = New System.Drawing.Point(506, 68)
+        Me.Config0ButtonFrontPage.Name = "Config0ButtonFrontPage"
+        Me.Config0ButtonFrontPage.Size = New System.Drawing.Size(182, 23)
+        Me.Config0ButtonFrontPage.TabIndex = 156
+        Me.Config0ButtonFrontPage.Text = "Default Configuration"
+        Me.Config0ButtonFrontPage.UseVisualStyleBackColor = True
         '
         'EPEForm1
         '
@@ -910,7 +920,8 @@ Partial Class EPEForm1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(792, 659)
+        Me.ClientSize = New System.Drawing.Size(809, 659)
+        Me.Controls.Add(Me.Config0ButtonFrontPage)
         Me.Controls.Add(Me.Config4ButtonFrontPage)
         Me.Controls.Add(Me.Config3ButtonFrontPage)
         Me.Controls.Add(Me.Config2ButtonFrontPage)
@@ -1059,5 +1070,6 @@ Partial Class EPEForm1
     Friend WithEvents Config2ButtonFrontPage As System.Windows.Forms.Button
     Friend WithEvents Config4ButtonFrontPage As System.Windows.Forms.Button
     Friend WithEvents Config3ButtonFrontPage As System.Windows.Forms.Button
+    Friend WithEvents Config0ButtonFrontPage As System.Windows.Forms.Button
 
 End Class

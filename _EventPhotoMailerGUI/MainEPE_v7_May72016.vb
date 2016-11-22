@@ -225,6 +225,7 @@ Public Class EPEForm1
     Public CommonDirectory As String = "c:\EventPhotoEmailer"
     'Public CommonDirectory As String = Environment.GetFolderPath(SpecialFolder.CommonProgramFiles) & "\EventPhotoEmailer"
     Public DefaultImageDirectory As String = CurrentDirectory & "\EPE_Hotfolder"
+    Public DefaultFile0 As String = CommonDirectory & "\Defaults0.xml"
     Public DefaultFile1 As String = CommonDirectory & "\Defaults1.xml"
     Public DefaultFile2 As String = CommonDirectory & "\Defaults2.xml"
     Public DefaultFile3 As String = CommonDirectory & "\Defaults3.xml"
@@ -368,7 +369,9 @@ Public Class EPEForm1
 
     Public Sub ImportDefaults(ByVal DefaultFileToUse As String)
         'TODO  - update to put data in textboxes.
-        If DefaultFileToUse = DefaultFile1 Then
+        If DefaultFileToUse = DefaultFile0 Then
+            EmailSetupForm.CurrentConfigLabel.Text = "Configuration 0 is being used."
+        ElseIf DefaultFileToUse = DefaultFile1 Then
             EmailSetupForm.CurrentConfigLabel.Text = "Configuration 1 is being used."
         ElseIf DefaultFileToUse = DefaultFile2 Then
             EmailSetupForm.CurrentConfigLabel.Text = "Configuration 2 is being used."
@@ -2922,7 +2925,9 @@ Public Class EPEForm1
     End Sub
 
 
-
+    Private Sub Config0ButtonFrontPage_Click(sender As System.Object, e As System.EventArgs) Handles Config0ButtonFrontPage.Click
+        EmailSetupForm.ConfigButton0_Click(sender, e)
+    End Sub
 
     Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Config1ButtonFrontPage.Click
         EmailSetupForm.ConfigButton1_Click(sender, e)
@@ -2939,4 +2944,6 @@ Public Class EPEForm1
     Private Sub Config4ButtonFrontPage_Click(sender As System.Object, e As System.EventArgs) Handles Config4ButtonFrontPage.Click
         EmailSetupForm.ConfigButton4_Click(sender, e)
     End Sub
+
+
 End Class

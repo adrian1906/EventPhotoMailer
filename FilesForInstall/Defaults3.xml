@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EPEConfig>
-  <CompanyName>Hood Event Photo</CompanyName>
-  <CompanyEmail>info@hoodeventphoto.com</CompanyEmail>
-  <SubjectLine>Your Photo</SubjectLine>
+  <CompanyName></CompanyName>
+  <CompanyEmail></CompanyEmail>
+  <SubjectLine></SubjectLine>
   <ImageFolder>c:\EventPhotoEmailer\EPE_Hotfolder</ImageFolder>
   <MessageFile>c:\EventPhotoEmailer\message.txt</MessageFile>
-  <MailServer>hoodands.ipower.com</MailServer>
-  <UserName>adrian@hoodandson.com</UserName>
+  <MailServer></MailServer>
+  <UserName></UserName>
   <PWDEncrypt></PWDEncrypt>
   <Port>587</Port>
   <TimeInterval>5</TimeInterval>
@@ -21,4 +21,11 @@
   <EmailAddressViaDarkroom>False</EmailAddressViaDarkroom>
   <PromptForEmailAndSend>True</PromptForEmailAndSend>
   <PromptForEmailDontSend>False</PromptForEmailDontSend>
+  <RepeatEmailsInEmailPrompt>True</RepeatEmailsInEmailPrompt>
+  <RepeatEmailsInEmailPromptLock>True</RepeatEmailsInEmailPromptLock>
+  <NotifyUL>False</NotifyUL>
+  <NotifyUR>False</NotifyUR>
+  <NotifyLL>False</NotifyLL>
+  <NotifyLR>True</NotifyLR>
+  <AttachFilesYesNo>True</AttachFilesYesNo>
 </EPEConfig>

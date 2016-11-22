@@ -6,7 +6,20 @@ MakeThin
 </name>
 </assembly>
 <members>
-<member name="T:MakeThin.ExifWorks.TagNames">
+<member name="P:MakeThin.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MakeThin.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MakeThin.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:MakeThin.ExifWorks.TagNames">
 	<summary>
  Contains possible values of EXIF tag names (ID)
  </summary>
@@ -324,19 +337,6 @@ MakeThin
 	<history>
  [altair] 10.09.2003 Created
  </history>
-</member><member name="P:MakeThin.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:MakeThin.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:MakeThin.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>
