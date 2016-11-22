@@ -1,0 +1,4 @@
+G:\GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.dll
+G:\GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.pdb
+G:\GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.dll
+G:\GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.pdb

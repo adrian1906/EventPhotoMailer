@@ -119,3 +119,9 @@ G:\GitHubHood\EventPhotoMailer\_EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmai
 G:\GitHubHood\EventPhotoMailer\_EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.exe
 G:\GitHubHood\EventPhotoMailer\_EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.xml
 G:\GitHubHood\EventPhotoMailer\_EventPhotoMailerGUI\obj\x86\Debug\EventPhotoEmailer.pdb
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.exe.config
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.exe.manifest
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.application
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.exe
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.pdb
+G:\GitHubHood\EventPhotoMailer\@EPE_LocalDebug\EventPhotoEmailer.xml

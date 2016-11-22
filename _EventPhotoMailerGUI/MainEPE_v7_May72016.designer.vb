@@ -318,6 +318,7 @@ Partial Class EPEForm1
         Me.StatusLabel.Size = New System.Drawing.Size(78, 20)
         Me.StatusLabel.TabIndex = 65
         Me.StatusLabel.Text = "STATUS"
+        Me.StatusLabel.Visible = False
         '
         'ProgressBar1
         '
@@ -822,15 +823,16 @@ Partial Class EPEForm1
         Me.StoppedButton.BackColor = System.Drawing.Color.Red
         Me.StoppedButton.Location = New System.Drawing.Point(683, 99)
         Me.StoppedButton.Name = "StoppedButton"
-        Me.StoppedButton.Size = New System.Drawing.Size(84, 23)
+        Me.StoppedButton.Size = New System.Drawing.Size(95, 23)
         Me.StoppedButton.TabIndex = 80
         Me.StoppedButton.Text = "Stopped"
         Me.StoppedButton.UseVisualStyleBackColor = False
+        Me.StoppedButton.Visible = False
         '
         'SENDINGBUTTON
         '
         Me.SENDINGBUTTON.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SENDINGBUTTON.Location = New System.Drawing.Point(683, 99)
+        Me.SENDINGBUTTON.Location = New System.Drawing.Point(686, 83)
         Me.SENDINGBUTTON.Name = "SENDINGBUTTON"
         Me.SENDINGBUTTON.Size = New System.Drawing.Size(92, 23)
         Me.SENDINGBUTTON.TabIndex = 79

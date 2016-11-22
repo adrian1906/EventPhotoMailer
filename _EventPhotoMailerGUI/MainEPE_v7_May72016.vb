@@ -409,6 +409,10 @@ Public Class EPEForm1
                 .PromptForEmailDontSend_CheckBox.CheckState = BooleanToCheckState(mydata.PromptForEmailDontSend)
                 .textBox_Password.Text = MyDecryption(mydata.PWDEncrypt) ' This textbox only shows dots
                 .AttachFilesYesNoCheckbox.CheckState = BooleanToCheckState(mydata.AttachFilesYesNo)
+                .LowerLeftRadioButton.Text = BooleanToCheckState(mydata.LowerLeftRadioButton)
+                .LowerRightRadioButton.Checked = BooleanToCheckState(mydata.LowerRightRadioButton)
+                .UpperLeftRadioButton.Checked = BooleanToCheckState(mydata.UpperLeftRadioButton)
+                .UpperRightRadioButton.Checked = BooleanToCheckState(mydata.UpperRightRadioButton)
             End With
             EmailPrompt.ApplyToAllCheckBox1.CheckState = BooleanToCheckState(mydata.RepeatEmailsInEmailPromptLock)
         Catch ex As Exception
@@ -486,6 +490,7 @@ Public Class EPEForm1
         MyInfoArraylist.Add("NotifyLL" & "!" & EmailSetupForm.LowerLeftRadioButton.Checked.ToString)
         MyInfoArraylist.Add("NotifyLR" & "!" & EmailSetupForm.LowerRightRadioButton.Checked.ToString)
         MyInfoArraylist.Add("AttachFilesYesNo" & "!" & CheckStateToBoolean(EmailSetupForm.AttachFilesYesNoCheckbox.CheckState))
+
         settings.Indent = True
         settings.OmitXmlDeclaration = False
         settings.NewLineOnAttributes = True

@@ -86,3 +86,13 @@ J:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Debug\M
 J:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Debug\MakeThin.exe
 J:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Debug\MakeThin.xml
 J:\AA_Visual_Basic_Projects\QuickImageModifier\MakeThin\MakeThin\obj\x86\Debug\MakeThin.pdb
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\bin\Debug\MakeThin.exe.config
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\bin\Debug\MakeThin.exe
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\bin\Debug\MakeThin.pdb
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\bin\Debug\MakeThin.xml
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.MakeThinForm.resources
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.Resources.resources
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.vbproj.GenerateResource.Cache
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.exe
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.xml
+G:\GitHubHood\EventPhotoMailer\_MakeThin\MakeThin\MakeThin\obj\x86\Debug\MakeThin.pdb
