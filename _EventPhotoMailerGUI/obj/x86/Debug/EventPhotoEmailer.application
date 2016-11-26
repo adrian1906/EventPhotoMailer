@@ -11,14 +11,14 @@
     <deploymentProvider codebase="http://www.hoodandson.com/EPE/EventPhotoEmailer.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="EventPhotoEmailer.exe.manifest" size="7152">
+    <dependentAssembly dependencyType="install" codebase="EventPhotoEmailer.exe.manifest" size="7154">
       <assemblyIdentity name="EventPhotoEmailer.exe" version="6.1.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RMGcpCj/8FTiAol55gPDmMM8lsM=</dsig:DigestValue>
+        <dsig:DigestValue>tne3ISM3XZBz5r4hoMrNZ5EQ0rQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

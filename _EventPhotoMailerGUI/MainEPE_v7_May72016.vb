@@ -230,7 +230,7 @@ Public Class EPEForm1
     Public DefaultFile2 As String = CommonDirectory & "\Defaults2.xml"
     Public DefaultFile3 As String = CommonDirectory & "\Defaults3.xml"
     Public DefaultFile4 As String = CommonDirectory & "\Defaults4.xml"
-    Public CurrentDefaultFileUsed As String = DefaultFile1
+    Public CurrentDefaultFileUsed As String = DefaultFile0
     Public CHECKCONNECTIONYESNO As Boolean = True
     Public SENDEMAILFINISHEDFLAGG As Boolean = True
     Public SENDEMAILFromEmailReadyFolderFLAGG As Boolean = False
