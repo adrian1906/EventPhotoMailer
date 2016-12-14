@@ -324,7 +324,7 @@ Public Class EPEForm1
         End Try
 
         Fill_ISP_Listbox(CurrentDirectory & "\bin") ' import latest company SMTP server list ("\bin\SMTPServerList.csv")
-        ImportDefaults(DefaultFile1)
+        ImportDefaults(CurrentDefaultFileUsed) ' Set to DefaultFile0 earlier
         ' ******************************************* TOOLTIPS
         ToolTip1.SetToolTip(AutomodeGroupBox, "This feature allows EPE to" & vbCrLf & _
                             "run in the background. The image folder is checked at " & vbCrLf & _
