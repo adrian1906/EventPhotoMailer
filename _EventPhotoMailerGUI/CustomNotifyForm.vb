@@ -24,7 +24,7 @@
             'Me.Location = New Point(MyWidth - Me.Size.Width, MyHeight - Me.Size.Height)
             Me.Location = New Point(XX, YY)
             Me.Visible = True
-            pause(2000)
+            pause(1000)
             While Me.Opacity > 0
                 Me.Opacity -= 0.02
                 pause(25)

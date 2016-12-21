@@ -75,47 +75,61 @@
     ''' <param name="e"></param>
     ''' <remarks></remarks>
     Private Sub AddEmailsToDatabaseAndFinishEmailing(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContinueButton.Click
+        Dim SubjectLineString As String = EPEForm1.textBox_SubjectLine.Text
+
         Try
+            ' For the first pass, EPEForm1.RepeatEmailsInEmailPrompt = False and the SavedEmail and SavedNames variables are set
+            ' A check is made later to see if the EPEForm1.RepeatEmailsInEmailPrompt_checkbox is set and if so, the variable's
+            ' value is changed.
             If EPEForm1.RepeatEmailsInEmailPrompt = True Then
                 RepeatEmail_Button1.PerformClick()
-            End If
-            Dim SubjectLineString As String = EPEForm1.textBox_SubjectLine.Text
-            If TextBox1.Text <> "" Then
-                EPEForm1.SavedEmails.Add(TextBox1.Text & "---" & EmailNameText1.Text)
-                EPEForm1.SavedNames.Add(EmailNameText1.Text & "---" & TextBox1.Text) ' A space is added so when the tring is parsed on '!' it's not empty which could cause trouble
-            End If
-            If TextBox2.Text <> "" Then
-                EPEForm1.SavedEmails.Add(TextBox2.Text & "---" & EmailNameText2.Text)
-                EPEForm1.SavedNames.Add(EmailNameText2.Text & "---" & TextBox2.Text)
-                If EmailNameText2.Text = "" Then
-                    EmailNameText2.Text = " " ' introduce a space just in case no name is attached.
+            Else
+
+                If TextBox1.Text <> "" Then
+                    EPEForm1.SavedEmails.Add(TextBox1.Text & "---" & EmailNameText1.Text)
+                    EPEForm1.SavedNames.Add(EmailNameText1.Text & "---" & TextBox1.Text) ' A space is added so when the tring is parsed on '!' it's not empty which could cause trouble
                 End If
-            End If
-            If TextBox3.Text <> "" Then
-                EPEForm1.SavedEmails.Add(TextBox3.Text & "---" & EmailNameText3.Text)
-                EPEForm1.SavedNames.Add(EmailNameText3.Text & "---" & TextBox3.Text)
-                If EmailNameText3.Text = "" Then
-                    EmailNameText3.Text = " " ' introduce a space just in case no name is attached.
+                If TextBox2.Text <> "" Then
+                    EPEForm1.SavedEmails.Add(TextBox2.Text & "---" & EmailNameText2.Text)
+                    EPEForm1.SavedNames.Add(EmailNameText2.Text & "---" & TextBox2.Text)
+                    If EmailNameText2.Text = "" Then
+                        EmailNameText2.Text = " " ' introduce a space just in case no name is attached.
+                    End If
+                    If TextBox1.Text = "" Then
+                        'MsgBox("Please do not skip rows when entering email addresses.")
+                    End If
+                End If
+                If TextBox3.Text <> "" Then
+                    EPEForm1.SavedEmails.Add(TextBox3.Text & "---" & EmailNameText3.Text)
+                    EPEForm1.SavedNames.Add(EmailNameText3.Text & "---" & TextBox3.Text)
+                    If EmailNameText3.Text = "" Then
+                        EmailNameText3.Text = " " ' introduce a space just in case no name is attached.
+                    End If
+                    If TextBox2.Text = "" Then
+                        ' TODO MsgBox("Please do not skip rows when entering email addresses.") (Will need to revisit this later)
+                    End If
+                End If
+                If TextBox4.Text <> "" Then
+                    EPEForm1.SavedEmails.Add(TextBox4.Text & "---" & EmailNameText4.Text)
+                    EPEForm1.SavedNames.Add(EmailNameText4.Text & "---" & TextBox4.Text)
+                    If EmailNameText4.Text = "" Then
+                        EmailNameText4.Text = " " ' introduce a space
+                    End If
+                    If TextBox3.Text = "" Then
+                        'MsgBox("Please do not skip rows when entering email addresses.")
+                    End If
+                End If
+                If TextBox5.Text <> "" Then
+                    EPEForm1.SavedEmails.Add(TextBox5.Text & "---" & EmailNameText5.Text)
+                    EPEForm1.SavedNames.Add(EmailNameText5.Text & "---" & TextBox5.Text)
+                    If EmailNameText5.Text = "" Then
+                        EmailNameText5.Text = " " ' introduce a space
+                    End If
+                    If TextBox4.Text = "" Then
+                        'MsgBox("Please do not skip rows when entering email addresses.")
+                    End If
                 End If
 
-            End If
-            If TextBox4.Text <> "" Then
-                EPEForm1.SavedEmails.Add(TextBox4.Text & "---" & EmailNameText4.Text)
-                EPEForm1.SavedNames.Add(EmailNameText4.Text & "---" & TextBox4.Text)
-                If EmailNameText4.Text = "" Then
-                    EmailNameText4.Text = " " ' introduce a space
-                End If
-            End If
-            If TextBox5.Text <> "" Then
-                EPEForm1.SavedEmails.Add(TextBox5.Text & "---" & EmailNameText5.Text)
-                EPEForm1.SavedNames.Add(EmailNameText5.Text & "---" & TextBox5.Text)
-                If EmailNameText5.Text = "" Then
-                    EmailNameText5.Text = " " ' introduce a space
-                End If
-            End If
-        Catch ex As Exception
-            Debug.Print("Problem getting names")
-        End Try
 
 
 
@@ -129,7 +143,12 @@
             EPEForm1.RepeatEmailsInEmailPrompt = False
         End If
         AdFileLabel.Text = EmailSetupForm.AdLabel2.Text ' Reset just in case this value is changed after on_load has executed
-        IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
+                IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
+            End If
+        Catch ex As Exception
+            Debug.Print("Problem getting names")
+
+        End Try
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IncludeAdCheckBox1.CheckedChanged

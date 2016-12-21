@@ -1202,63 +1202,66 @@ Public Class EPEForm1
                     SENDINGBUTTON.Visible = False
                 Else
                     'MsgBox("Email: " & emailstring(counter) & " filenamestring: " & filenamestring(counter) & " filenameshort: " & filenameshortstring(counter))
+                    If emailstring(counter) <> "" Then ' Take's care of case for when a row is skipped in the email prompt which
+                        ' leads to an empty email string.  If felt that taking care of it at this point required the least bit
+                        ' of code rewrite.
+                        SENDEMAIL(emailstring(counter), filenamestring(counter), EventFolder, filenameshortstring(counter), CancelFlagg, SENDEMAILFLAGG, CustNameString(counter))
+                        If SENDEMAILFLAGG = True Then ' Email was sent successfully
+                            ' Find the corresponding file in the image folder and then delete it.
+                            For Each fullstring In listing ' This loops parses the files and produces arrays for email() and filename()
+                                Dim checkfilestring() As String
+                                Dim checkemailstring() As String
+                                Dim parseOriginalEmail() As String
+                                Dim tempB() As String = Split(fullstring.Name, "$") 'temp(0):email temp(1):filename
+                                'Handle case for which fullstring.name does not contain a $ symbol..to to reformat 
+                                'the string to the expected format.
+                                If tempB.Length < 2 Then
+                                    ReDim Preserve tempB(1)
+                                    tempB(1) = tempB(0)
+                                    'tempB(0) = emailstring(counter)
+                                End If
 
-                    SENDEMAIL(emailstring(counter), filenamestring(counter), EventFolder, filenameshortstring(counter), CancelFlagg, SENDEMAILFLAGG, CustNameString(counter))
-                    If SENDEMAILFLAGG = True Then ' Email was sent successfully
-                        ' Find the corresponding file in the image folder and then delete it.
-                        For Each fullstring In listing ' This loops parses the files and produces arrays for email() and filename()
-                            Dim checkfilestring() As String
-                            Dim checkemailstring() As String
-                            Dim parseOriginalEmail() As String
-                            Dim tempB() As String = Split(fullstring.Name, "$") 'temp(0):email temp(1):filename
-                            'Handle case for which fullstring.name does not contain a $ symbol..to to reformat 
-                            'the string to the expected format.
-                            If tempB.Length < 2 Then
-                                ReDim Preserve tempB(1)
-                                tempB(1) = tempB(0)
-                                'tempB(0) = emailstring(counter)
-                            End If
+                                checkfilestring = Split(filenameshortstring(counter), ";")
+                                checkemailstring = Split(emailstring(counter), ";")
+                                parseOriginalEmail = Split(tempB(0), "!")
 
-                            checkfilestring = Split(filenameshortstring(counter), ";")
-                            checkemailstring = Split(emailstring(counter), ";")
-                            parseOriginalEmail = Split(tempB(0), "!")
+                                For kk = 0 To checkfilestring.Length - 1
+                                    For kkk = 0 To checkemailstring.Length - 1
+                                        'MsgBox("checkfilestring: " & checkfilestring(kk) _
+                                        '       & vbCrLf & " temp(1): " & temp(1) _
+                                        '       & vbCrLf & " checkemailstring: " & checkemailstring(kkk) _
+                                        '    & vbCrLf & " temp(0): " & parseOriginalEmail(0))
 
-                            For kk = 0 To checkfilestring.Length - 1
-                                For kkk = 0 To checkemailstring.Length - 1
-                                    'MsgBox("checkfilestring: " & checkfilestring(kk) _
-                                    '       & vbCrLf & " temp(1): " & temp(1) _
-                                    '       & vbCrLf & " checkemailstring: " & checkemailstring(kkk) _
-                                    '    & vbCrLf & " temp(0): " & parseOriginalEmail(0))
+                                        If (checkfilestring(kk) = tempB(1)) And (checkemailstring(kkk) = parseOriginalEmail(0)) Or PostEmailPromptYesNo = True Then
+                                            'MsgBox("We have a match!")
+                                            'MsgBox(EventFolder & "\" & fullstring.Name)
+                                            'File.Delete(Textbox_imagefolder.Text & "\" & fullstring.Name)
+                                            'File.Delete(oldfilename)
+                                            If counter = NumOfEmailees Then
+                                                Try
+                                                    'Note: Move does not work if a file already exists in the destination. It does not have the
+                                                    'overwrite capability. Because of this, I am using a copy and delete combination.
+                                                    'File.Move(tempstring & "\" & fullstring.Name, tempstring & "\Sent\" & fullstring.Name)
+                                                    If Not File.Exists(tempstring & "\Sent\") Then
+                                                        Directory.CreateDirectory(tempstring & "\Sent\")
+                                                    End If
+                                                    If File.Exists(tempstring & "\" & fullstring.Name) Then ' This is needed for the case when multiple individuals are emailed the same image. I need to fix the logic.
+                                                        File.Copy(tempstring & "\" & fullstring.Name, tempstring & "\Sent\" & fullstring.Name, True)
+                                                        pause(500)
+                                                        File.Delete(tempstring & "\" & fullstring.Name)
+                                                    End If
+                                                Catch ex As Exception
 
-                                    If (checkfilestring(kk) = tempB(1)) And (checkemailstring(kkk) = parseOriginalEmail(0)) Or PostEmailPromptYesNo = True Then
-                                        'MsgBox("We have a match!")
-                                        'MsgBox(EventFolder & "\" & fullstring.Name)
-                                        'File.Delete(Textbox_imagefolder.Text & "\" & fullstring.Name)
-                                        'File.Delete(oldfilename)
-                                        If counter = NumOfEmailees Then
-                                            Try
-                                                'Note: Move does not work if a file already exists in the destination. It does not have the
-                                                'overwrite capability. Because of this, I am using a copy and delete combination.
-                                                'File.Move(tempstring & "\" & fullstring.Name, tempstring & "\Sent\" & fullstring.Name)
-                                                If Not File.Exists(tempstring & "\Sent\") Then
-                                                    Directory.CreateDirectory(tempstring & "\Sent\")
-                                                End If
-                                                If File.Exists(tempstring & "\" & fullstring.Name) Then ' This is needed for the case when multiple individuals are emailed the same image. I need to fix the logic.
-                                                    File.Copy(tempstring & "\" & fullstring.Name, tempstring & "\Sent\" & fullstring.Name, True)
-                                                    pause(500)
-                                                    File.Delete(tempstring & "\" & fullstring.Name)
-                                                End If
-                                            Catch ex As Exception
-
-                                                MsgBox("Problem deleting file after successful email. The Method is: SendParsedEmails()" & vbCrLf &
-                                                       "The file: " & tempstring & "\" & fullstring.Name & " may need to be deleted manually." & vbCrLf &
-                                                       ex.Message)
-                                            End Try
+                                                    MsgBox("Problem deleting file after successful email. The Method is: SendParsedEmails()" & vbCrLf &
+                                                           "The file: " & tempstring & "\" & fullstring.Name & " may need to be deleted manually." & vbCrLf &
+                                                           ex.Message)
+                                                End Try
+                                            End If
                                         End If
-                                    End If
+                                    Next
                                 Next
                             Next
-                        Next
+                        End If
                     End If
                 End If
                 If NumOfEmailees <> 0 Then
