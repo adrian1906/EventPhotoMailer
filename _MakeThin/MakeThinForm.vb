@@ -350,5 +350,6 @@ Public Class MakeThinForm
             InstructionsBox1.Visible = False
         End If
     End Sub
+
 End Class
 

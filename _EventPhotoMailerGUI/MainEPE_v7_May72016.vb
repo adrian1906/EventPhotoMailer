@@ -325,6 +325,7 @@ Public Class EPEForm1
 
         Fill_ISP_Listbox(CurrentDirectory & "\bin") ' import latest company SMTP server list ("\bin\SMTPServerList.csv")
         ImportDefaults(CurrentDefaultFileUsed) ' Set to DefaultFile0 earlier
+        Config0ButtonFrontPage.BackColor = Color.Green
         ' ******************************************* TOOLTIPS
         ToolTip1.SetToolTip(AutomodeGroupBox, "This feature allows EPE to" & vbCrLf & _
                             "run in the background. The image folder is checked at " & vbCrLf & _
@@ -2755,7 +2756,8 @@ Public Class EPEForm1
         While ContinueOrCancel <> "Cancel" And ContinueOrCancel <> "Continue"
             pause(100)
             If RepeatEmailsInEmailPrompt = True And (ContinueOrCancel <> "Cancel" And ContinueOrCancel <> "Continue") Then
-                EmailPrompt.ContinueButton.PerformClick()
+                EmailPrompt.RepeatEmail_Button1.PerformClick()
+                EmailPrompt.ContinueButton.PerformClick() 'TODO May need to do EnterPreviousEmailAddress.PerformClick(()
                 ContinueOrCancel = "Continue"
             End If
         End While

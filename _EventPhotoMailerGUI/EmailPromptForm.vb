@@ -78,7 +78,7 @@
         Dim SubjectLineString As String = EPEForm1.textBox_SubjectLine.Text
 
         Try
-            ' For the first pass, EPEForm1.RepeatEmailsInEmailPrompt = False and the SavedEmail and SavedNames variables are set
+            ' For the first pass, EPEForm1.RepeatEmailsInEmailPrompt = False (onLoad) and the SavedEmail and SavedNames variables are set
             ' A check is made later to see if the EPEForm1.RepeatEmailsInEmailPrompt_checkbox is set and if so, the variable's
             ' value is changed.
             If EPEForm1.RepeatEmailsInEmailPrompt = True Then

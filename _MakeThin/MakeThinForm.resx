@@ -160,15 +160,16 @@ WF5.Path = "c:\EventPhotoEmailer\MakeThin\FivePercent"
 WF10.Path = "c:\EventPhotoEmailer\MakeThin\TenPercent"
 
 Darkroom will place the image in one of these three folders.
-The image will be processed based on the folder the image resided in.
-After processing, it will be deleted and the finished product
-placed in the 'Save To Folder'
+The image will be processed based on the folder the image resided in. 
+After processing, it will be deleted and the finished product is
+placed in the folder specified in the 'Save To Folder' textbox.
 
 Automatic is preferred since everything occurs in the background. It could be 
 processed and re-imported into Darkroom without anyone noticing.
 
 Manual:
 Browse to the file, select the processing, and hit the start button.
-Again, the finished product placed in the 'Save To Folder'</value>
+Again, the finished product placed in the  'Save To Folder'. The defult is:
+C:\EventPhotoEmailer\MakeThin\00_MTHotFolder</value>
   </data>
 </root>
