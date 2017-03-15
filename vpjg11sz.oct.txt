@@ -1,0 +1,45 @@
+﻿"Attempted to fix issue with program crashes when sending large files. My guess is that the program is trying to access the image before it is actually ready. I inserted a method called WaitForFileAvailibility()
+with the purpose of continuously trying to access the file inside a try/catch loop. If the file is not accessible within a specified time (default 10s), the program will return with a message that the file was not ready within 
+the specified time and it will try again if in auto mode or has to be done manually if in manual mode."
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.application
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.exe
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.exe.manifest
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.pdb
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.vshost.application
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.vshost.exe.manifest
+#	modified:   @EPE_LocalDebug/EventPhotoEmailer.xml
+#	modified:   @EPE_LocalDebug/MakeThin.exe
+#	modified:   @EPE_LocalDebug/MakeThin.pdb
+#	modified:   EventPhotoMailerSuite.suo
+#	modified:   _EventPhotoMailerGUI/EPEModule.vb
+#	modified:   _EventPhotoMailerGUI/MainEPE_v7_May72016.vb
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EPEv10.vbproj.FileListAbsolute.txt
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EPEv10.vbproj.GenerateResource.Cache
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EPEv10.vbprojResolveAssemblyReference.cache
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EventPhotoEmailer.application
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EventPhotoEmailer.exe
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EventPhotoEmailer.exe.manifest
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EventPhotoEmailer.pdb
+#	modified:   _EventPhotoMailerGUI/obj/x86/Debug/EventPhotoEmailer.xml
+#	modified:   _Initialize_EPE/EPE_SetupAid/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   _MakeThin/MakeThin/MakeThin/bin/Debug/MakeThin.exe
+#	modified:   _MakeThin/MakeThin/MakeThin/bin/Debug/MakeThin.pdb
+#	modified:   _MakeThin/MakeThin/MakeThin/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   _MakeThin/MakeThin/MakeThin/obj/x86/Debug/MakeThin.exe
+#	modified:   _MakeThin/MakeThin/MakeThin/obj/x86/Debug/MakeThin.pdb
+#	modified:   _MakeThin/MakeThin/MakeThin/obj/x86/Debug/MakeThin.vbproj.FileListAbsolute.txt
+#	modified:   _MakeThin/MakeThin/MakeThin/obj/x86/Debug/MakeThin.vbproj.GenerateResource.Cache
+#	modified:   _ManagedWifi/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#
+# Untracked files:
+#	5gyea1d2.jjb.txt
+#	w0pk0gn3.idi.txt
+#
+
