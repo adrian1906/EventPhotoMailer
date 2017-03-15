@@ -945,6 +945,7 @@ Public Class EPEForm1
     ''' <summary>
     ''' SendParsedEmails()
     ''' Sends emails with email address(es) encoded into the filename.
+    ''' This is done on its own thread
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
@@ -975,6 +976,8 @@ Public Class EPEForm1
         Dim EmailString2 As String
         Dim NameString As String
         Dim ParseName() As String
+        Dim FileReadyStatus As Boolean
+        Dim WaitTime As Integer = 10000 ' Max wait time for a file to indicate that it is ready
         If SENDEMAILFromEmailReadyFolderFLAGG = False Then
             tempstring = Textbox_imagefolder.Text
         Else
@@ -1015,144 +1018,138 @@ Public Class EPEForm1
         counter = 0
         Dim fullstringcounter As Integer = 0
         For Each fullstring In listing ' This loops parses the files and produces arrays for email() and filename()
-            fullstringcounter += 1
-            temp = Split(fullstring.Name, "$") 'temp(0):email temp(1):filename
-            'MsgBox("Filename = " & fullstring.Name & "   FullstringCounter = " & fullstringcounter & "  temp(0): " & temp(0) & "  temp(1): " & temp(1))
-            If temp.Length < 2 Then 'indicates that there was no $ in the string. Will need to add the $ to proceed
-                ReDim Preserve temp(1)
-                temp(1) = temp(0)
-                temp(0) = ""
-            End If
-            ''If (temp.Length < 2 And PostEmailPromptYesNo = False) Then
-            ''    If Not FacebookOnlyRadio.Checked Then
-            ''        MsgBox("Error: Possible problems:" _
-            ''                                   & vbCrLf & "1.) You are trying to read from an email/filename" _
-            ''                                   & vbCrLf & "directory, and the checkbox was not checked" _
-            ''                                   & vbCrLf & "2.) The selected image folder contains images" _
-            ''                                   & vbCrLf & "not intended to be emailed. Please clear" _
-            ''                                    & vbCrLf & "3.) Your filename starts with $$. Please remove the $." _
-            ''                                   & vbCrLf & Textbox_imagefolder.Text _
-            ''                                   & vbCrLf & "of these images and start the send process again.")
-            ''        Display(MainStatusBox, "Process has been cancelled")
-            ''    End If
-            'Exit Sub
-            ''Else
+            FileReadyStatus = WaitForFileAvailibility(fullstring.FullName, WaitTime)
+            If FileReadyStatus = False Then
+                fullstringcounter += 1
+                temp = Split(fullstring.Name, "$") 'temp(0):email temp(1):filename
+                'MsgBox("Filename = " & fullstring.Name & "   FullstringCounter = " & fullstringcounter & "  temp(0): " & temp(0) & "  temp(1): " & temp(1))
+                If temp.Length < 2 Then 'indicates that there was no $ in the string. Will need to add the $ to proceed
+                    ReDim Preserve temp(1)
+                    temp(1) = temp(0)
+                    temp(0) = ""
+                End If
 
-            'First copy image to the event folder truncating the email address(s)
-            oldfilename = tempstring & "\" & fullstring.Name
-            newfilename = EventFolder & "\" & temp(1)
+                'First copy image to the event folder truncating the email address(s)
+                oldfilename = tempstring & "\" & fullstring.Name
+                newfilename = EventFolder & "\" & temp(1)
 
-            If File.Exists(newfilename) Then
-                Dim tmp() As String = Split(newfilename, ".jpg")
-                newfilename = tmp(0) & "_1.jpg"
-                'File.Delete(newfilename) 'An attempt was made to append the file with a counter but
-                ' book keeping got a little cumbersome. I may return to this but now, it simply 
-                ' deletes the old file
-            End If
-            File.Copy(oldfilename, newfilename, True)
+                If File.Exists(newfilename) Then
+                    Dim tmp() As String = Split(newfilename, ".jpg")
+                    newfilename = tmp(0) & "_1.jpg"
+                    'File.Delete(newfilename) 'An attempt was made to append the file with a counter but
+                    ' book keeping got a little cumbersome. I may return to this but now, it simply 
+                    ' deletes the old file
+                End If
+                File.Copy(oldfilename, newfilename, True)
 
-            'Now, split up the emails (just in case there are more than one)
-            'Here, ! is used as a delimiter because in Express Digital, it was one of only a few 
-            'That was honored by the Raster Image Printer. Commas and Colons were ignored and #,%,&,*,etc, all had
-            'pre-determined functions.
-            'The parsing and collecting code works as follows. Firts, it sorts the data by email and then filename
-            'This makes like emails consecutive.
-            'Then the code systematically goes through the entries in the sorted order, keeping track of the email address
-            'field and noting when a new email address is reached. The filenames are collected for like email addresses
-            'into an array and eventually merged into a form that is easily read by the emailing program. For example, the current format
-            'is file1.jpg;file2.jpg,ect  The files are simply separated by a semicolon.
-            'If (PostEmailPromptYesNo = True And Not FacebookOnlyRadio.Checked) And SENDEMAILFromEmailReadyFolderFLAGG = False Then
-            'ToDo .. Need to fix this DrHood
-            If EmailSetupForm.PromptForEmailDontSend_CheckBox.Checked Or EmailSetupForm.PromptForEmailAndSend_CheckBox.Checked And Not FacebookOnlyRadio.Checked And SENDEMAILFromEmailReadyFolderFLAGG = False Then
-                ''If PullFilesFromDirectoryFlag = False Then
-                ''    GetEmailsFromMasterDirectory() '  Pull the latest email list to update SentEmails object
-                ''    'Note: it takes forever for a long email list to populate on the second attemp
-                ''    'PullFilesFromDirectoryFlag = True
-                ''End If
-                temp(0) = EmailPromptFunction(newfilename) ' Will return a string of emails separated by !. It will also return matching Names separated by "**"
-                If temp(0) = "EmailLater" Then
-                    File.Delete(oldfilename) ' Will only delete if there is no error
-                    SendLaterFlagg = True
-                Else
-                    If temp(0) = "" Then ' case for cancel or blank lines
-                        Dim Msboxreply As Integer = MsgBox("A valid email address is required. Would you like to try again?", MsgBoxStyle.YesNoCancel)
-                        If Msboxreply = 1 Then ' OK
-                            ' ''If PullFilesFromDirectoryFlag = False Then
-                            ''GetEmailsFromMasterDirectory() '  Pull the latest email list to update SentEmails object
-                            ''PullFilesFromDirectoryFlag = True
-                            ' ''End If
+                'Now, split up the emails (just in case there are more than one)
+                'Here, ! is used as a delimiter because in Express Digital, it was one of only a few 
+                'That was honored by the Raster Image Printer. Commas and Colons were ignored and #,%,&,*,etc, all had
+                'pre-determined functions.
+                'The parsing and collecting code works as follows. Firts, it sorts the data by email and then filename
+                'This makes like emails consecutive.
+                'Then the code systematically goes through the entries in the sorted order, keeping track of the email address
+                'field and noting when a new email address is reached. The filenames are collected for like email addresses
+                'into an array and eventually merged into a form that is easily read by the emailing program. For example, the current format
+                'is file1.jpg;file2.jpg,ect  The files are simply separated by a semicolon.
+                'If (PostEmailPromptYesNo = True And Not FacebookOnlyRadio.Checked) And SENDEMAILFromEmailReadyFolderFLAGG = False Then
+                'ToDo .. Need to fix this DrHood
+                If EmailSetupForm.PromptForEmailDontSend_CheckBox.Checked Or EmailSetupForm.PromptForEmailAndSend_CheckBox.Checked And Not FacebookOnlyRadio.Checked And SENDEMAILFromEmailReadyFolderFLAGG = False Then
+                    ''If PullFilesFromDirectoryFlag = False Then
+                    ''    GetEmailsFromMasterDirectory() '  Pull the latest email list to update SentEmails object
+                    ''    'Note: it takes forever for a long email list to populate on the second attemp
+                    ''    'PullFilesFromDirectoryFlag = True
+                    ''End If
+                    temp(0) = EmailPromptFunction(newfilename) ' Will return a string of emails separated by !. It will also return matching Names separated by "**"
+                    If temp(0) = "EmailLater" Then
+                        File.Delete(oldfilename) ' Will only delete if there is no error
+                        SendLaterFlagg = True
+                    Else
+                        If temp(0) = "" Then ' case for cancel or blank lines
+                            Dim Msboxreply As Integer = MsgBox("A valid email address is required. Would you like to try again?", MsgBoxStyle.YesNoCancel)
+                            If Msboxreply = 1 Then ' OK
+                                ' ''If PullFilesFromDirectoryFlag = False Then
+                                ''GetEmailsFromMasterDirectory() '  Pull the latest email list to update SentEmails object
+                                ''PullFilesFromDirectoryFlag = True
+                                ' ''End If
 
-                            temp(0) = EmailPromptFunction(newfilename) 'returns EmailString2 ** NameString
-                            ContinueOrCancel = Nothing ' reset
-                            If temp(0) = "" Then
+                                temp(0) = EmailPromptFunction(newfilename) 'returns EmailString2 ** NameString
+                                ContinueOrCancel = Nothing ' reset
+                                If temp(0) = "" Then
+                                    MsgBox("Emailing has been aborted.") ' canceled again
+                                    ContinueOrCancel = Nothing ' reset
+                                End If
+                            Else
                                 MsgBox("Emailing has been aborted.") ' canceled again
                                 ContinueOrCancel = Nothing ' reset
+                                Exit Sub ' Exits the SendParsedEmails function (No value needs to be returned)
                             End If
-                        Else
-                            MsgBox("Emailing has been aborted.") ' canceled again
-                            ContinueOrCancel = Nothing ' reset
-                            Exit Sub ' Exits the SendParsedEmails function (No value needs to be returned)
                         End If
-                End If
-                End If
-            End If ' Email later
+                    End If
+                End If ' Email later
 
 
-            If temp(0) <> "EmailLater" Then
-                'Separate Saved Names from Saved Email Addresses
-                temp2 = Split(temp(0), "**") ' File returend as emailaddress1!emailddress2**Name1!Name2
-                If temp2.Count > 1 Then ' Feature is used
-                    EmailString2 = temp2(0)
-                    NameString = temp2(1)
-                Else ' Saved Name feature is not used yet
-                    EmailString2 = temp(0)
-                    NameString = temp(1)
-                End If
-                ParseName = Split(NameString, "!") ' need to ensure that names match.
-                'ParseEmail = Split(temp(0), "!") ' Checks for more than one recipient
-                ParseEmail = Split(EmailString2, "!") ' Checks for more than one recipient
+                If temp(0) <> "EmailLater" Then
+                    'Separate Saved Names from Saved Email Addresses
+                    temp2 = Split(temp(0), "**") ' File returend as emailaddress1!emailddress2**Name1!Name2
+                    If temp2.Count > 1 Then ' Feature is used
+                        EmailString2 = temp2(0)
+                        NameString = temp2(1)
+                    Else ' Saved Name feature is not used yet
+                        EmailString2 = temp(0)
+                        NameString = temp(1)
+                    End If
+                    ParseName = Split(NameString, "!") ' need to ensure that names match.
+                    'ParseEmail = Split(temp(0), "!") ' Checks for more than one recipient
+                    ParseEmail = Split(EmailString2, "!") ' Checks for more than one recipient
 
-                'MsgBox("Before Parse: emailarray.Length = " & emailarray.Length & " ParseEmail.length = " & ParseEmail.Length)
-                If ParseEmail.Length > 1 Then
-                    For jj = 0 To ParseEmail.Length - 1
-                        'MsgBox("ParseEmail =" & ParseEmail(jj).ToString)
-                        'MsgBox("emailarray.length = " & emailarray.Length & "UBound(emailarray) = " & UBound(emailarray))
-                        'MsgBox("Before Redim: emailarray.Length = " & emailarray.Length)
-                        If counter + jj > 0 Then
+                    'MsgBox("Before Parse: emailarray.Length = " & emailarray.Length & " ParseEmail.length = " & ParseEmail.Length)
+                    If ParseEmail.Length > 1 Then
+                        For jj = 0 To ParseEmail.Length - 1
+                            'MsgBox("ParseEmail =" & ParseEmail(jj).ToString)
+                            'MsgBox("emailarray.length = " & emailarray.Length & "UBound(emailarray) = " & UBound(emailarray))
+                            'MsgBox("Before Redim: emailarray.Length = " & emailarray.Length)
+                            If counter + jj > 0 Then
+                                ReDim Preserve emailarray(emailarray.Length)
+                                ReDim Preserve filenamearray(filenamearray.Length)
+                                ReDim Preserve filenameshort(filenameshort.Length)
+                                ReDim Preserve CustNameArray(CustNameArray.Length)
+                            End If
+                            emailarray(counter + jj) = ParseEmail(jj).ToString
+                            filenameshort(counter + jj) = temp(1)
+                            CustNameArray(counter + jj) = ParseName(jj).ToString
+                            'filenamearray(counter + jj) = EventFolder & "\" & temp(1)
+                            'MsgBox("emailarray: " & emailarray(counter + jj) & "  filenamearray: " & filenamearray(counter + jj))
+                            'Debug.WriteLine("Counter: " & counter + jj & "  Emailarray: " & emailarray(counter + jj))
+                            'MsgBox("Counter: " & counter & " jj: " & jj & "  Emailarray: " & emailarray(counter + jj))
+                            'MsgBox("jj= " & jj & " counter = " & counter & " emailarray.Length = " & emailarray.Length)
+                            'MsgBox("emailarray: " & emailarray(counter + jj) & "  filenamearray: " & filenamearray(counter + jj) & " filenameshort: " & filenameshort(counter + jj))
+                        Next
+                        counter += jj
+                    Else
+                        If counter >= 1 Then
                             ReDim Preserve emailarray(emailarray.Length)
                             ReDim Preserve filenamearray(filenamearray.Length)
                             ReDim Preserve filenameshort(filenameshort.Length)
                             ReDim Preserve CustNameArray(CustNameArray.Length)
                         End If
-                        emailarray(counter + jj) = ParseEmail(jj).ToString
-                        filenameshort(counter + jj) = temp(1)
-                        CustNameArray(counter + jj) = ParseName(jj).ToString
-                        'filenamearray(counter + jj) = EventFolder & "\" & temp(1)
-                        'MsgBox("emailarray: " & emailarray(counter + jj) & "  filenamearray: " & filenamearray(counter + jj))
-                        'Debug.WriteLine("Counter: " & counter + jj & "  Emailarray: " & emailarray(counter + jj))
-                        'MsgBox("Counter: " & counter & " jj: " & jj & "  Emailarray: " & emailarray(counter + jj))
-                        'MsgBox("jj= " & jj & " counter = " & counter & " emailarray.Length = " & emailarray.Length)
-                        'MsgBox("emailarray: " & emailarray(counter + jj) & "  filenamearray: " & filenamearray(counter + jj) & " filenameshort: " & filenameshort(counter + jj))
-                    Next
-                    counter += jj
-                Else
-                    If counter >= 1 Then
-                        ReDim Preserve emailarray(emailarray.Length)
-                        ReDim Preserve filenamearray(filenamearray.Length)
-                        ReDim Preserve filenameshort(filenameshort.Length)
-                        ReDim Preserve CustNameArray(CustNameArray.Length)
+                        'MsgBox("Filename = " & fullstring.Name & "   FullstringCounter = " & fullstringcounter & "  temp(0): " & temp(0) & "  temp(1): " & temp(1))
+                        'MsgBox("Counter: " & counter & "  Emailarray: " & emailarray(counter) & " temp: " & temp(0) & "  " & temp(1))
+                        emailarray(counter) = temp2(0)
+                        filenameshort(counter) = temp(1)
+                        'filenamearray(counter) = EventFolder & "\" & temp(1) ' filenamearray gives the absolute path
+                        'MsgBox("emailarray: " & emailarray(counter) & "  filenamearray: " & filenamearray(counter) & " filenameshort: " & filenameshort(counter))
+                        counter += 1
+                        'Debug.WriteLine("Counter: " & counter & "  Emailarray: " & emailarray(counter))
+                        'MsgBox("Non Multiple Email: emailarray.Length = " & emailarray.Length)
                     End If
-                    'MsgBox("Filename = " & fullstring.Name & "   FullstringCounter = " & fullstringcounter & "  temp(0): " & temp(0) & "  temp(1): " & temp(1))
-                    'MsgBox("Counter: " & counter & "  Emailarray: " & emailarray(counter) & " temp: " & temp(0) & "  " & temp(1))
-                    emailarray(counter) = temp2(0)
-                    filenameshort(counter) = temp(1)
-                    'filenamearray(counter) = EventFolder & "\" & temp(1) ' filenamearray gives the absolute path
-                    'MsgBox("emailarray: " & emailarray(counter) & "  filenamearray: " & filenamearray(counter) & " filenameshort: " & filenameshort(counter))
-                    counter += 1
-                    'Debug.WriteLine("Counter: " & counter & "  Emailarray: " & emailarray(counter))
-                    'MsgBox("Non Multiple Email: emailarray.Length = " & emailarray.Length)
-                End If
-            End If ' email later
+                End If ' email later
+            Else
+                'File is not ready after 
+                Display(MainStatusBox, "The file is not ready after waiting " & WaitTime / 1000 & " seconds \n" & _
+                        "One reasons could be that the file is very large. \n If emails are sent automatically, it will retry shortly. If not, you will have to resend manually")
+
+            End If
         Next
 
         'If SendLaterFlagg = False And EmailSetupForm.PromptForEmailDontSend_CheckBox.Checked = False Or EmailSetupForm.PromptForEmailAndSend_CheckBox.Checked = False Then
@@ -1303,8 +1300,9 @@ Public Class EPEForm1
     ''' <summary>
     ''' HOODFileWatcherJPG()
     ''' This subroutine was added to add intuition to the code. Before this, watchfolder was being used and I 
-    ''' experienced unexplained behaviour. For one, I kept getting threading errors. This event is triggered by a 
-    ''' timer. At a specified interval, the folder is checked for new JPEG images. If at least one image 
+    ''' experienced unexplained behaviour. For one, I kept getting threading errors. 
+    ''' Now this event is triggered by a timer.
+    ''' At a specified interval, the folder is checked for new JPEG images. If at least one image 
     ''' exists, RunGO() is called.
     ''' </summary>
     ''' <param name="sender"></param>
@@ -1336,6 +1334,7 @@ Public Class EPEForm1
         Dim counter As Integer = 0
         Dim imageUse As String
         Dim MyWebBrowser As New WebBrowser
+        Dim FileReadyStatus As Boolean
         imagenames = Split(IMAGESTRING, ";")
         FACEBOOKERROR = False
         Display(MainStatusBox, "Processing Facebook ...")
@@ -1352,7 +1351,7 @@ Public Class EPEForm1
                 End If
             End Try
             Try
-                WaitForFileAvailibility(imageUse, 10000) 'wait up to 10 seconds to ensure that file is ready
+                FileReadyStatus = WaitForFileAvailibility(imageUse, 10000) 'wait up to 10 seconds to ensure that file is ready
                 'TODO use technique from slideshow program to load image.
                 Dim B As System.Drawing.Bitmap = New System.Drawing.Bitmap(imageUse)
                 ' This next line will automatically run the first time. Then checks to see if the album name has changed are

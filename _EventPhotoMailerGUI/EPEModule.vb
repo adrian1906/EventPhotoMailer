@@ -696,7 +696,7 @@ exit_function:
 
 #End Region
 
-    Public Sub WaitForFileAvailibility(ByVal filePath As String, ByVal timeOut As Integer)
+    Public Function WaitForFileAvailibility(ByVal filePath As String, ByVal timeOut As Integer) As Boolean
         'This subroutines tries to access a file. If an error event occurs while trying to read write,
         'it is assumed not available and tries again until timeOut is reached.
         'An example of its use is when using Watchfolder. An event may occur when a file appears but if its a large file
@@ -724,7 +724,8 @@ exit_function:
                 Throw
             End Try
         Loop
-    End Sub
+        Return looping  ' True if file is not ready
+    End Function
 
     ''' <summary>
     ''' This subroutine checks to see if residual images are in the image forlder. This is to guard against

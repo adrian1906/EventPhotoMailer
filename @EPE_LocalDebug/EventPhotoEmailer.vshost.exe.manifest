@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\EPEicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EventPhotoEmailer" version="10.0.0.38286" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="EventPhotoEmailer" version="10.0.0.31271" language="neutral" processorArchitecture="x86" />
     <commandLine file="EventPhotoEmailer.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -57,14 +57,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="348160">
-      <assemblyIdentity name="EventPhotoEmailer" version="10.0.0.38286" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="348672">
+      <assemblyIdentity name="EventPhotoEmailer" version="10.0.0.31271" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LeF4hBbXr2CeR0fHBhF8YLNKehE=</dsig:DigestValue>
+        <dsig:DigestValue>wJcnn/4ydsQG6QEGCms5S6pZepg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -100,7 +100,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ohDDqNwtFRejLaKdJ2WLZVqgPVc=</dsig:DigestValue>
+        <dsig:DigestValue>Of6UKuwj7NMPHhECtv5FGPFCukk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
