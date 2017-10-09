@@ -6,167 +6,7 @@ EventPhotoEmailer
 </name>
 </assembly>
 <members>
-<member name="P:EventPhotoEmailer.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.facebook_image">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:EventPhotoEmailer.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:EventPhotoEmailer.Module1.getJPGfiles(System.String)">
-	<summary>
- getJPGfiles - Returns an arraylist of image filenames
- </summary>
-	<param name="MAINFOLDER"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.ArrayAddItemHOOD(System.String[]@,System.String)">
-	<summary>
- ArrayAddItemsHOOD - is used to add items to an array. Works like arraylist.add
- but for variable declared as arrays and not arraylists.
- </summary>
-	<param name="AR"></param>
-	<param name="ItemToAdd"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.GetFileContents(System.String,System.String@)">
-	<summary>
- Reads text from a file and returns a string
- </summary>
-	<param name="FullPath"></param>
-	<param name="ErrInfo"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.SaveTextToFile(System.String,System.String,System.String)">
-	<summary>
- SaveTextToFile - Saves a string to file
- </summary>
-	<param name="strData"> String</param>
-	<param name="FullPath"> Full path of file</param>
-	<param name="ErrInfo"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.AppendText(System.String,System.String,System.String)">
-	<summary>
- AppendText is used to add text to a file
- </summary>
-	<param name="Origfile"></param>
-	<param name="message"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsValidEmail(System.String)">
-	<summary>
- IsValidEmail - check to see if the email format is correct.
- original by Brad Murray
- optimized by Rob Hofker, email: rob@eurocamp.nl, 
- 23 august 2000
-  </summary>
-	<param name="sEMail"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning_old(System.String)">
-	<summary>
- IsProcessRunning checks to see if the given process is running.
- The name of the process will have to match exactly.
- </summary>
-	<param name="name"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning(System.String)">
-	<summary>
- IsProcessRunning checks to see if the given process is running.
- The name of the process will have to match exactly.
- </summary>
-	<param name="name"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.RunningDots">
-	<summary>
- RunningDots - Used to show that a process is still running.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.pause(System.Int32)">
-	<summary>
- Produces a pause (in ms). Kept in ms to allow for fraction of a second.
- </summary>
-	<param name="delay"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.MakeAlbum(System.String,Facebook_Graph_Toolkit.GraphApi.Api)">
-	<summary>
- MakeAlbum - used to create an album in Facebook. Needs Facebook_Graph_Toolkit
- </summary>
-	<param name="message"></param>
-	<param name="MyAPI"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.CheckForResidualImages(System.String)">
-	<summary>
- This subroutine checks to see if residual images are in the image forlder. This is to guard against
- images being emailed inadvertantly.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsConnectionAvailable2(System.String)">
-	<summary>
- IsConnectionAvailable pings the given website. Usually google.com
- </summary>
-	<param name="website"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.RetrieveSignalStrenth">
-	<summary>
- RetrieveSignalStrength attempts to get the signal strenth
- So far, it doesn't work
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.GetWIFISignalStrength">
-	<summary>
- method for retrieving the signal strength of all WI-FI adapters
- </summary>
-	<returns></returns>
-</member><member name="M:EventPhotoEmailer.Module1.Display(System.Windows.Forms.TextBox,System.String)">
-	<summary>
- Display() is used to write to the statusbox along with 2 carriage returns. Allows the statusbox to be more 
- easily read
- </summary>
-	<param name="STATUSBOX"></param>
-	<param name="X"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EmailPrompt.AddEmailsToDatabaseAndFinishEmailing(System.Object,System.EventArgs)">
-	<summary>
- The purpose of this subroutine is to add names and email addresses to a text file that is used to 
- store emails and names. This text file is used to autocomplete fields in the EmailPrompt form.
- When finished, 
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EmailSetupForm.FBlogo_click(System.Object,System.EventArgs)">
+<member name="M:EventPhotoEmailer.EmailSetupForm.FBlogo_click(System.Object,System.EventArgs)">
 	<summary>
  FBlogo_Click call FBAuthenticate()
  </summary>
@@ -604,6 +444,124 @@ EventPhotoEmailer
 	<summary>
  Friend class for shared utility methods used by multiple Encryption classes
  </summary>
+</member><member name="M:EventPhotoEmailer.Module1.getJPGfiles(System.String)">
+	<summary>
+ getJPGfiles - Returns an arraylist of image filenames
+ </summary>
+	<param name="MAINFOLDER"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.ArrayAddItemHOOD(System.String[]@,System.String)">
+	<summary>
+ ArrayAddItemsHOOD - is used to add items to an array. Works like arraylist.add
+ but for variable declared as arrays and not arraylists.
+ </summary>
+	<param name="AR"></param>
+	<param name="ItemToAdd"></param>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.GetFileContents(System.String,System.String@)">
+	<summary>
+ Reads text from a file and returns a string
+ </summary>
+	<param name="FullPath"></param>
+	<param name="ErrInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.SaveTextToFile(System.String,System.String,System.String)">
+	<summary>
+ SaveTextToFile - Saves a string to file
+ </summary>
+	<param name="strData"> String</param>
+	<param name="FullPath"> Full path of file</param>
+	<param name="ErrInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.AppendText(System.String,System.String,System.String)">
+	<summary>
+ AppendText is used to add text to a file
+ </summary>
+	<param name="Origfile"></param>
+	<param name="message"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.IsValidEmail(System.String)">
+	<summary>
+ IsValidEmail - check to see if the email format is correct.
+ original by Brad Murray
+ optimized by Rob Hofker, email: rob@eurocamp.nl, 
+ 23 august 2000
+  </summary>
+	<param name="sEMail"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning_old(System.String)">
+	<summary>
+ IsProcessRunning checks to see if the given process is running.
+ The name of the process will have to match exactly.
+ </summary>
+	<param name="name"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning(System.String)">
+	<summary>
+ IsProcessRunning checks to see if the given process is running.
+ The name of the process will have to match exactly.
+ </summary>
+	<param name="name"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.RunningDots">
+	<summary>
+ RunningDots - Used to show that a process is still running.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.pause(System.Int32)">
+	<summary>
+ Produces a pause (in ms). Kept in ms to allow for fraction of a second.
+ </summary>
+	<param name="delay"></param>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.MakeAlbum(System.String,Facebook_Graph_Toolkit.GraphApi.Api)">
+	<summary>
+ MakeAlbum - used to create an album in Facebook. Needs Facebook_Graph_Toolkit
+ </summary>
+	<param name="message"></param>
+	<param name="MyAPI"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.CheckForResidualImages(System.String)">
+	<summary>
+ This subroutine checks to see if residual images are in the image forlder. This is to guard against
+ images being emailed inadvertantly.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.IsConnectionAvailable2(System.String)">
+	<summary>
+ IsConnectionAvailable pings the given website. Usually google.com
+ </summary>
+	<param name="website"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.RetrieveSignalStrenth">
+	<summary>
+ RetrieveSignalStrength attempts to get the signal strenth
+ So far, it doesn't work
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EventPhotoEmailer.Module1.GetWIFISignalStrength">
+	<summary>
+ method for retrieving the signal strength of all WI-FI adapters
+ </summary>
+	<returns></returns>
+</member><member name="M:EventPhotoEmailer.Module1.Display(System.Windows.Forms.TextBox,System.String)">
+	<summary>
+ Display() is used to write to the statusbox along with 2 carriage returns. Allows the statusbox to be more 
+ easily read
+ </summary>
+	<param name="STATUSBOX"></param>
+	<param name="X"></param>
+	<remarks></remarks>
 </member><member name="M:EventPhotoEmailer.EPEForm1.Form1_Load(System.Object,System.EventArgs)">
 	<summary>
  Form1_Load() does the following:
@@ -707,8 +665,9 @@ For both cases, the information is saved in the same format.
 	<summary>
  HOODFileWatcherJPG()
  This subroutine was added to add intuition to the code. Before this, watchfolder was being used and I 
- experienced unexplained behaviour. For one, I kept getting threading errors. This event is triggered by a 
- timer. At a specified interval, the folder is checked for new JPEG images. If at least one image 
+ experienced unexplained behaviour. For one, I kept getting threading errors. 
+ Now this event is triggered by a timer.
+ At a specified interval, the folder is checked for new JPEG images. If at least one image 
  exists, RunGO() is called.
  </summary>
 	<param name="sender"></param>
@@ -1027,6 +986,48 @@ thread, there exist the possibilty of mulitple threads being launched for each f
  dragged the images from the EmailLater folder into the hotfolder, and all of the images were sent properly.
 </history>
 	</summary>
+</member><member name="M:EventPhotoEmailer.EmailPrompt.AddEmailsToDatabaseAndFinishEmailing(System.Object,System.EventArgs)">
+	<summary>
+ The purpose of this subroutine is to add names and email addresses to a text file that is used to 
+ store emails and names. This text file is used to autocomplete fields in the EmailPrompt form.
+ When finished, 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.facebook_image">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:EventPhotoEmailer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

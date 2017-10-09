@@ -225,7 +225,7 @@ Public Class EPEForm1
     Public CommonDirectory As String = "c:\EventPhotoEmailer"
     'Public CommonDirectory As String = Environment.GetFolderPath(SpecialFolder.CommonProgramFiles) & "\EventPhotoEmailer"
     Public DefaultImageDirectory As String = CurrentDirectory & "\EPE_Hotfolder"
-    Public DefaultFile0 As String = CommonDirectory & "\Defaults0.xml"
+    Public DefaultFile0 As String = CommonDirectory & "\Defaults1.xml"
     Public DefaultFile1 As String = CommonDirectory & "\Defaults1.xml"
     Public DefaultFile2 As String = CommonDirectory & "\Defaults2.xml"
     Public DefaultFile3 As String = CommonDirectory & "\Defaults3.xml"
@@ -1179,7 +1179,14 @@ Public Class EPEForm1
                 filenamearray(counter) = EventFolder & "\" & filenameshort(counter)
             Next
             Combine(emailarray, filenamearray, emailstring, filenamestring)
-            Combine(CustNameArray, filenamearray, CustNameString, filenamestring)
+            Dim filenamearray_dummy(filenamearray.Length - 1) As String
+            Dim filenamestring_dummy(filenamestring.Length - 1) As String
+            Combine(CustNameArray, filenamearray_dummy, CustNameString, filenamestring_dummy)
+            ' Bandaid.  CustNameString should be the same size as emailstring
+            If CustNameString.Length < emailstring.Length Then
+                ReDim Preserve CustNameString(emailstring.Length)
+                'CustNameString(CustNameString.Length - 1) = "" (No need to assign "")
+            End If
             Combine(emailarray, filenameshort, emailshortstring, filenameshortstring)
             '                For counter = 0 To filenameshort.Length - 1
             '                    MsgBox("email: " & emailarray(counter) & vbCrLf & _
@@ -1205,6 +1212,7 @@ Public Class EPEForm1
                     If emailstring(counter) <> "" Then ' Take's care of case for when a row is skipped in the email prompt which
                         ' leads to an empty email string.  If felt that taking care of it at this point required the least bit
                         ' of code rewrite.
+                        'TODO: Fix Bug--- If Customer's names are all blank, CustNameString will only have length 1. It needs to match the same number of emails.
                         SENDEMAIL(emailstring(counter), filenamestring(counter), EventFolder, filenameshortstring(counter), CancelFlagg, SENDEMAILFLAGG, CustNameString(counter))
                         If SENDEMAILFLAGG = True Then ' Email was sent successfully
                             ' Find the corresponding file in the image folder and then delete it.
@@ -2751,18 +2759,18 @@ Public Class EPEForm1
     Public Function EmailPromptFunction(ByVal ImageAddress As String) As String
         Dim emailstrings As String = Nothing
         Dim emailnamesstrings As String = Nothing
-        ClearBoxes()
-        EmailPrompt.Show()
-        EmailPrompt.Activate() ' brings box to the front
+        Dim MyEmailPrompt As New EmailPrompt
+        MyEmailPrompt.Show()
+        MyEmailPrompt.Activate() ' brings box to the front
         'EmailPrompt.UpdateAutoComplete()
         'EmailPrompt.Thumbnail_PictureBox.Image = System.Drawing.Image.FromFile(ImageAddress)
-        AutosizeImage(ImageAddress, EmailPrompt.Thumbnail_PictureBox, EmailPrompt.PhotoLabel_Label)
+        AutosizeImage(ImageAddress, MyEmailPrompt.Thumbnail_PictureBox, MyEmailPrompt.PhotoLabel_Label)
         ContinueOrCancel = ""
         While ContinueOrCancel <> "Cancel" And ContinueOrCancel <> "Continue"
             pause(100)
             If RepeatEmailsInEmailPrompt = True And (ContinueOrCancel <> "Cancel" And ContinueOrCancel <> "Continue") Then
-                EmailPrompt.RepeatEmail_Button1.PerformClick()
-                EmailPrompt.ContinueButton.PerformClick() 'TODO May need to do EnterPreviousEmailAddress.PerformClick(()
+                MyEmailPrompt.RepeatEmail_Button1.PerformClick()
+                MyEmailPrompt.ContinueButton.PerformClick() 'TODO May need to do EnterPreviousEmailAddress.PerformClick(()
                 ContinueOrCancel = "Continue"
             End If
         End While
@@ -2770,32 +2778,32 @@ Public Class EPEForm1
             emailstrings = ""
         End If
         If ContinueOrCancel = "Continue" Then
-            emailstrings = EmailPrompt.TextBox1.Text & "!" & _
-            EmailPrompt.TextBox2.Text & "!" & _
-            EmailPrompt.TextBox3.Text & "!" & _
-            EmailPrompt.TextBox4.Text & "!" & _
-            EmailPrompt.TextBox5.Text
+            emailstrings = MyEmailPrompt.TextBox1.Text & "!" & _
+            MyEmailPrompt.TextBox2.Text & "!" & _
+            MyEmailPrompt.TextBox3.Text & "!" & _
+            MyEmailPrompt.TextBox4.Text & "!" & _
+            MyEmailPrompt.TextBox5.Text
 
-            emailnamesstrings = EmailPrompt.EmailNameText1.Text & "!" & _
-            EmailPrompt.EmailNameText2.Text & "!" & _
-            EmailPrompt.EmailNameText3.Text & "!" & _
-            EmailPrompt.EmailNameText4.Text & "!" & _
-            EmailPrompt.EmailNameText5.Text
+            emailnamesstrings = RemoveSingleSpaces(MyEmailPrompt.EmailNameText1.Text) & "!" & _
+            RemoveSingleSpaces(MyEmailPrompt.EmailNameText2.Text) & "!" & _
+            RemoveSingleSpaces(MyEmailPrompt.EmailNameText3.Text) & "!" & _
+            RemoveSingleSpaces(MyEmailPrompt.EmailNameText4.Text) & "!" & _
+            RemoveSingleSpaces(MyEmailPrompt.EmailNameText5.Text)
 
         End If
         ' EmailSave variables are Global which allows them to be recalled 
-        Email1Save = EmailPrompt.TextBox1.Text
-        Email2Save = EmailPrompt.TextBox2.Text
-        Email3Save = EmailPrompt.TextBox3.Text
-        Email4Save = EmailPrompt.TextBox4.Text
-        Email5Save = EmailPrompt.TextBox5.Text
-        Name1Save = EmailPrompt.EmailNameText1.Text
-        Name2Save = EmailPrompt.EmailNameText2.Text
-        Name3Save = EmailPrompt.EmailNameText3.Text
-        Name4Save = EmailPrompt.EmailNameText4.Text
-        Name5Save = EmailPrompt.EmailNameText5.Text
-        EmailPrompt.Hide()
-        ClearBoxes()
+        Email1Save = MyEmailPrompt.TextBox1.Text
+        Email2Save = MyEmailPrompt.TextBox2.Text
+        Email3Save = MyEmailPrompt.TextBox3.Text
+        Email4Save = MyEmailPrompt.TextBox4.Text
+        Email5Save = MyEmailPrompt.TextBox5.Text
+        Name1Save = RemoveSingleSpaces(MyEmailPrompt.EmailNameText1.Text)
+        Name2Save = RemoveSingleSpaces(MyEmailPrompt.EmailNameText2.Text)
+        Name3Save = RemoveSingleSpaces(MyEmailPrompt.EmailNameText3.Text)
+        Name4Save = RemoveSingleSpaces(MyEmailPrompt.EmailNameText4.Text)
+        Name5Save = RemoveSingleSpaces(MyEmailPrompt.EmailNameText5.Text)
+        MyEmailPrompt.Hide()
+        MyEmailPrompt.ClearBoxes()
         'EmailPrompt.TextBox1.Text = "" ' clears the box
         'EmailPrompt.TextBox2.Text = "" ' clears the box
         'EmailPrompt.TextBox3.Text = "" ' clears the box
@@ -2827,18 +2835,12 @@ Public Class EPEForm1
         ContinueOrCancel = "" ' Reset just in case the cancel button was pressed.
     End Function
 
-    Sub ClearBoxes()
-        EmailPrompt.TextBox1.Text = "" ' clears the box
-        EmailPrompt.TextBox2.Text = "" ' clears the box
-        EmailPrompt.TextBox3.Text = "" ' clears the box
-        EmailPrompt.TextBox4.Text = "" ' clears the box
-        EmailPrompt.TextBox5.Text = "" ' clears the box
-        EmailPrompt.EmailNameText1.Text = ""
-        EmailPrompt.EmailNameText2.Text = ""
-        EmailPrompt.EmailNameText3.Text = ""
-        EmailPrompt.EmailNameText4.Text = ""
-        EmailPrompt.EmailNameText5.Text = ""
-    End Sub
+    Function RemoveSingleSpaces(MyText As String) As String
+        RemoveSingleSpaces = MyText
+        'If MyText = " " Or MyText = "  " Then
+        '    RemoveSingleSpaces = ""
+        'End If
+    End Function
 
     Public Function CheckIfFileExistandIfSoAppendNumber(ByVal newfilename As String) As String
         If File.Exists(newfilename) Then

@@ -100,3 +100,13 @@ G:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initia
 G:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.exe
 G:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.xml
 G:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.pdb
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\bin\Debug\Initialize_EPE.exe.config
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\bin\Debug\Initialize_EPE.exe
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\bin\Debug\Initialize_EPE.pdb
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\bin\Debug\Initialize_EPE.xml
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.InitializeEPE_Form.resources
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\EPE_SetupAid.Resources.resources
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.vbproj.GenerateResource.Cache
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.exe
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.xml
+I:\GitHubHood\EventPhotoMailer\_Initialize_EPE\EPE_SetupAid\obj\x86\Debug\Initialize_EPE.pdb

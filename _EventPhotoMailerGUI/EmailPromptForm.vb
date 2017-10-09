@@ -12,6 +12,7 @@
         'MyBase.OnLoad(e)
         'MyBase.Show()
         'TextBox1.Focus()
+        ClearBoxes()
         EmailNameText1.Focus()
         RepeatEmailsInEmailPrompt_Checkbox.Checked = False
         SaveForLaterCheckBox.Checked = EmailSetupForm.PromptForEmailDontSend_CheckBox.Checked
@@ -26,6 +27,19 @@
         AdFileLabel.Text = EmailSetupForm.AdLabel2.Text
         TextBox1.Focus()
         ' This next few lines of code will automate the process of adding email addresses when you know that all the emails are going to the same addresses.
+    End Sub
+
+    Sub ClearBoxes()
+        TextBox1.Text = "" ' clears the box
+        TextBox2.Text = "" ' clears the box
+        TextBox3.Text = "" ' clears the box
+        TextBox4.Text = "" ' clears the box
+        TextBox5.Text = "" ' clears the box
+        EmailNameText1.Text = " "
+        EmailNameText2.Text = " "
+        EmailNameText3.Text = " "
+        EmailNameText4.Text = " "
+        EmailNameText5.Text = " "
     End Sub
 
     Public Sub UpdateAutoComplete()
@@ -172,7 +186,7 @@
         End Try
     End Sub
 
-    Private Sub ReSetOnShow(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.VisibleChanged
+    Private Sub ReSetOnShow(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.VisibleChanged, ApplyToAllCheckBox1.CheckedChanged
         AdFileLabel.Text = EmailSetupForm.AdLabel2.Text ' Reset just in case this value is changed after on_load has executed
         IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
         If ApplyToAllCheckBox1.Checked Then
@@ -187,13 +201,13 @@
         Me.Hide()
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged_1(sender As System.Object, e As System.EventArgs) Handles ApplyToAllCheckBox1.CheckedChanged
-        If ApplyToAllCheckBox1.Checked Then
-            RepeatEmailsInEmailPrompt_Checkbox.Checked = True
-        Else
-            RepeatEmailsInEmailPrompt_Checkbox.Checked = False
-        End If
-    End Sub
+    'Private Sub CheckBox1_CheckedChanged_1(sender As System.Object, e As System.EventArgs) Handles ApplyToAllCheckBox1.CheckedChanged
+    '    If ApplyToAllCheckBox1.Checked Then
+    '        RepeatEmailsInEmailPrompt_Checkbox.Checked = True
+    '    Else
+    '        RepeatEmailsInEmailPrompt_Checkbox.Checked = False
+    '    End If
+    'End Sub
 
     Private Sub SetEmailAndName(sender As System.Object, e As System.EventArgs) Handles TextBox1.Validating, TextBox2.Validating, TextBox3.Validating, TextBox4.Validating, TextBox5.Validating
         Dim tmp() As String
@@ -252,4 +266,5 @@
     Private Sub Button_SaveAsDefault2_Click(sender As System.Object, e As System.EventArgs) Handles Button_SaveAsDefault2.Click
         EPEForm1.SaveAsXMLPerformClick()
     End Sub
+
 End Class

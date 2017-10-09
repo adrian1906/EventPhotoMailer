@@ -220,10 +220,10 @@
     <Compile Include="ListOfCustomersAndID.vb" />
     <Compile Include="EncryptionHOOD2.vb" />
     <Compile Include="keycode.vb" />
-    <Compile Include="MainEPE_v7_May72016.designer.vb">
-      <DependentUpon>MainEPE_v7_May72016.vb</DependentUpon>
+    <Compile Include="MainEPE_v8_May202017.designer.vb">
+      <DependentUpon>MainEPE_v8_May202017.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainEPE_v7_May72016.vb">
+    <Compile Include="MainEPE_v8_May202017.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -262,8 +262,8 @@
     <EmbeddedResource Include="FacebookGUI.resx">
       <DependentUpon>FacebookGUI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainEPE_v7_May72016.resx">
-      <DependentUpon>MainEPE_v7_May72016.vb</DependentUpon>
+    <EmbeddedResource Include="MainEPE_v8_May202017.resx">
+      <DependentUpon>MainEPE_v8_May202017.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -273,3 +273,11 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
+# Hood Contribution
+*.exe
+#*.manifest
+#*.application
+#*.cache
+#*.pdb
+#*.suo
