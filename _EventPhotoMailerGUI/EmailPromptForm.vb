@@ -1,32 +1,45 @@
-﻿Public Class EmailPrompt
-    'Dim SavedEmails As New AutoCompleteStringCollection
-    'Dim Form1 As Form1
-    'Public Property Form1 As Form1
-    'Protected Overrides Sub OnLoad(ByVal e As EventArgs)
-    ' ''Private Sub EmailPrompt_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-    ' ''    MyBase.Show()
-    ' ''    TextBox1.Focus()
-    ' ''End Sub
+﻿Imports System.IO
+Public Class EmailPrompt
 
     Sub EmailPromptOnLoad(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'MyBase.OnLoad(e)
-        'MyBase.Show()
-        'TextBox1.Focus()
-        ClearBoxes()
-        EmailNameText1.Focus()
-        RepeatEmailsInEmailPrompt_Checkbox.Checked = False
+        ClearBoxes() ' Clears the name and email textboxes
+        RepeatEmailsInEmailPrompt_Checkbox.Checked = EPEForm1.RepeatEmailsInEmailPrompt ' sets the checkbox to the value saved
         SaveForLaterCheckBox.Checked = EmailSetupForm.PromptForEmailDontSend_CheckBox.Checked
-        UpdateAutoComplete()
+        UpdateAutoComplete() ' Updates saved email list for AutoFill
         IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState
         If SaveForLaterCheckBox.Checked Then
             ContinueButton.Text = "Send Later"
         Else
             ContinueButton.Text = "Send Email"
         End If
-        'AdFileLabel.Text = EPEForm1.MyEmailSetupForm.AdLabel2.Text
         AdFileLabel.Text = EmailSetupForm.AdLabel2.Text
-        TextBox1.Focus()
+        Fill_EmailToTextComboBox(EPEForm1.ProgDir2.Text & "\bin") ' import list of cell phone carriers
         ' This next few lines of code will automate the process of adding email addresses when you know that all the emails are going to the same addresses.
+        'TextBox1.Focus()
+    End Sub
+
+    ''' <summary>
+    ''' Fill EmailToText Combobox reads data from the "\bin\SMTPServerList.csv" file.
+    ''' This file is a database of known ISP companies and thier IP addresses
+    ''' </summary>
+    ''' <param name="Commonpath"></param>
+    ''' <remarks></remarks>
+    Public Sub Fill_EmailToTextComboBox(ByVal Commonpath As String)
+        Dim tmp1() As String
+        Dim tmp2 As String
+        Dim SS As StreamReader = New StreamReader(Commonpath & "\EmailToText.txt")
+        Try
+            While Not SS.EndOfStream
+                tmp2 = SS.ReadLine
+                tmp1 = Split(tmp2, ",")
+                'tmp2 = "<" & tmp1(0) & "> " & tmp1(1)
+                tmp2 = tmp1(0) & " -- " & tmp1(1)
+                CellPhoneCarrierCombobox.Items.Add(tmp2)
+            End While
+        Catch ex As Exception
+            Debug.Print("Problem loading the Email to Text server list")
+        End Try
+        SS.Close()
     End Sub
 
     Sub ClearBoxes()
@@ -55,11 +68,6 @@
         EmailNameText5.AutoCompleteCustomSource = EPEForm1.SavedNames
     End Sub
 
-    'Private Sub Butto1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContinueButton.Click
-    '    EPEForm1.ContinueOrCancel = "Continue"
-    '    TextBox1.Focus()
-    'End Sub
-
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CancelButton2.Click
         EPEForm1.ContinueOrCancel = "Cancel"
     End Sub
@@ -75,7 +83,6 @@
         EmailNameText3.Text = EPEForm1.Name3Save
         EmailNameText4.Text = EPEForm1.Name4Save
         EmailNameText5.Text = EPEForm1.Name5Save
-
     End Sub
 
 
@@ -95,70 +102,69 @@
             ' For the first pass, EPEForm1.RepeatEmailsInEmailPrompt = False (onLoad) and the SavedEmail and SavedNames variables are set
             ' A check is made later to see if the EPEForm1.RepeatEmailsInEmailPrompt_checkbox is set and if so, the variable's
             ' value is changed.
-            If EPEForm1.RepeatEmailsInEmailPrompt = True Then
-                RepeatEmail_Button1.PerformClick()
-            Else
-
-                If TextBox1.Text <> "" Then
-                    EPEForm1.SavedEmails.Add(TextBox1.Text & "---" & EmailNameText1.Text)
-                    EPEForm1.SavedNames.Add(EmailNameText1.Text & "---" & TextBox1.Text) ' A space is added so when the tring is parsed on '!' it's not empty which could cause trouble
-                End If
-                If TextBox2.Text <> "" Then
-                    EPEForm1.SavedEmails.Add(TextBox2.Text & "---" & EmailNameText2.Text)
-                    EPEForm1.SavedNames.Add(EmailNameText2.Text & "---" & TextBox2.Text)
-                    If EmailNameText2.Text = "" Then
-                        EmailNameText2.Text = " " ' introduce a space just in case no name is attached.
-                    End If
-                    If TextBox1.Text = "" Then
-                        'MsgBox("Please do not skip rows when entering email addresses.")
-                    End If
-                End If
-                If TextBox3.Text <> "" Then
-                    EPEForm1.SavedEmails.Add(TextBox3.Text & "---" & EmailNameText3.Text)
-                    EPEForm1.SavedNames.Add(EmailNameText3.Text & "---" & TextBox3.Text)
-                    If EmailNameText3.Text = "" Then
-                        EmailNameText3.Text = " " ' introduce a space just in case no name is attached.
-                    End If
-                    If TextBox2.Text = "" Then
-                        ' TODO MsgBox("Please do not skip rows when entering email addresses.") (Will need to revisit this later)
-                    End If
-                End If
-                If TextBox4.Text <> "" Then
-                    EPEForm1.SavedEmails.Add(TextBox4.Text & "---" & EmailNameText4.Text)
-                    EPEForm1.SavedNames.Add(EmailNameText4.Text & "---" & TextBox4.Text)
-                    If EmailNameText4.Text = "" Then
-                        EmailNameText4.Text = " " ' introduce a space
-                    End If
-                    If TextBox3.Text = "" Then
-                        'MsgBox("Please do not skip rows when entering email addresses.")
-                    End If
-                End If
-                If TextBox5.Text <> "" Then
-                    EPEForm1.SavedEmails.Add(TextBox5.Text & "---" & EmailNameText5.Text)
-                    EPEForm1.SavedNames.Add(EmailNameText5.Text & "---" & TextBox5.Text)
-                    If EmailNameText5.Text = "" Then
-                        EmailNameText5.Text = " " ' introduce a space
-                    End If
-                    If TextBox4.Text = "" Then
-                        'MsgBox("Please do not skip rows when entering email addresses.")
-                    End If
-                End If
-
-
-
-
-
-        'UpdateAutoComplete() ' It looks like the TextBox##.AutoCompleteCustomSource changes automatically when SaavedEmails is updated
-        EPEForm1.ContinueOrCancel = "Continue"
-        TextBox1.Focus()
-        If RepeatEmailsInEmailPrompt_Checkbox.Checked Then
-            EPEForm1.RepeatEmailsInEmailPrompt = True
-        Else
-            EPEForm1.RepeatEmailsInEmailPrompt = False
-        End If
-        AdFileLabel.Text = EmailSetupForm.AdLabel2.Text ' Reset just in case this value is changed after on_load has executed
-                IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
+            'If EPEForm1.RepeatEmailsInEmailPrompt = True And EPEForm1.SENDEMAILFINISHEDFLAGG = False Then
+            '    RepeatEmail_Button1.PerformClick()
+            'Else
+            If TextBox1.Text <> "" Then
+                EPEForm1.SavedEmails.Add(TextBox1.Text & "---" & EmailNameText1.Text)
+                EPEForm1.SavedNames.Add(EmailNameText1.Text & "---" & TextBox1.Text) ' A space is added so when the tring is parsed on '!' it's not empty which could cause trouble
             End If
+            If TextBox2.Text <> "" Then
+                EPEForm1.SavedEmails.Add(TextBox2.Text & "---" & EmailNameText2.Text)
+                EPEForm1.SavedNames.Add(EmailNameText2.Text & "---" & TextBox2.Text)
+                If EmailNameText2.Text = "" Then
+                    EmailNameText2.Text = " " ' introduce a space just in case no name is attached.
+                End If
+                If TextBox1.Text = "" Then
+                    'MsgBox("Please do not skip rows when entering email addresses.")
+                End If
+            End If
+            If TextBox3.Text <> "" Then
+                EPEForm1.SavedEmails.Add(TextBox3.Text & "---" & EmailNameText3.Text)
+                EPEForm1.SavedNames.Add(EmailNameText3.Text & "---" & TextBox3.Text)
+                If EmailNameText3.Text = "" Then
+                    EmailNameText3.Text = " " ' introduce a space just in case no name is attached.
+                End If
+                If TextBox2.Text = "" Then
+                    ' TODO MsgBox("Please do not skip rows when entering email addresses.") (Will need to revisit this later)
+                End If
+            End If
+            If TextBox4.Text <> "" Then
+                EPEForm1.SavedEmails.Add(TextBox4.Text & "---" & EmailNameText4.Text)
+                EPEForm1.SavedNames.Add(EmailNameText4.Text & "---" & TextBox4.Text)
+                If EmailNameText4.Text = "" Then
+                    EmailNameText4.Text = " " ' introduce a space
+                End If
+                If TextBox3.Text = "" Then
+                    'MsgBox("Please do not skip rows when entering email addresses.")
+                End If
+            End If
+            If TextBox5.Text <> "" Then
+                EPEForm1.SavedEmails.Add(TextBox5.Text & "---" & EmailNameText5.Text)
+                EPEForm1.SavedNames.Add(EmailNameText5.Text & "---" & TextBox5.Text)
+                If EmailNameText5.Text = "" Then
+                    EmailNameText5.Text = " " ' introduce a space
+                End If
+                If TextBox4.Text = "" Then
+                    'MsgBox("Please do not skip rows when entering email addresses.")
+                End If
+            End If
+
+
+
+
+
+            'UpdateAutoComplete() ' It looks like the TextBox##.AutoCompleteCustomSource changes automatically when SaavedEmails is updated
+            EPEForm1.ContinueOrCancel = "Continue"
+            'TextBox1.Focus()
+            'If RepeatEmailsInEmailPrompt_Checkbox.Checked Then
+            '    EPEForm1.RepeatEmailsInEmailPrompt = True
+            'Else
+            '    EPEForm1.RepeatEmailsInEmailPrompt = False
+            'End If
+            AdFileLabel.Text = EmailSetupForm.AdLabel2.Text ' Reset just in case this value is changed after on_load has executed
+            IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
+            'End If
         Catch ex As Exception
             Debug.Print("Problem getting names")
 
@@ -186,14 +192,14 @@
         End Try
     End Sub
 
-    Private Sub ReSetOnShow(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.VisibleChanged, ApplyToAllCheckBox1.CheckedChanged
+    Private Sub ReSetOnShow(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.VisibleChanged
         AdFileLabel.Text = EmailSetupForm.AdLabel2.Text ' Reset just in case this value is changed after on_load has executed
         IncludeAdCheckBox1.CheckState = EmailSetupForm.IncludeAdCheckBox.CheckState ' Reset
-        If ApplyToAllCheckBox1.Checked Then
-            RepeatEmailsInEmailPrompt_Checkbox.Checked = True
-        Else
-            RepeatEmailsInEmailPrompt_Checkbox.Checked = False
-        End If
+        'If ApplyToAllCheckBox1.Checked Then
+        '    RepeatEmailsInEmailPrompt_Checkbox.Checked = True
+        'Else
+        '    RepeatEmailsInEmailPrompt_Checkbox.Checked = False
+        'End If
     End Sub
 
     Private Sub FormClose(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.FormClosing
@@ -267,4 +273,37 @@
         EPEForm1.SaveAsXMLPerformClick()
     End Sub
 
+
+    Private Sub CellPhoneCarrierCombobox_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles CellPhoneCarrierCombobox.SelectedIndexChanged
+        Dim temp() As String
+        Try
+            temp = Split(CellPhoneCarrierCombobox.Text, "--")
+            Dim MA As String = Trim(temp(1))
+            If TextBox1.Text = "" Then
+                TextBox1.Text = MA
+            ElseIf TextBox2.Text = "" Then
+                TextBox2.Text = MA
+            ElseIf TextBox3.Text = "" Then
+                TextBox3.Text = MA
+            ElseIf TextBox4.Text = "" Then
+                TextBox4.Text = MA
+            ElseIf TextBox5.Text = "" Then
+                TextBox5.Text = MA
+            Else
+                MsgBox("Error adding text to email address. You will need to enter in manually")
+            End If
+        Catch ex As Exception
+            MsgBox("Error adding text to email address. You will need to enter in manually" & vbCrLf & ex.Message)
+        End Try
+
+    End Sub
+
+
+    Private Sub RepeatEmailsInEmailPrompt_Checkbox_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RepeatEmailsInEmailPrompt_Checkbox.CheckedChanged
+        If RepeatEmailsInEmailPrompt_Checkbox.Checked Then
+            EPEForm1.RepeatEmailsInEmailPrompt = True
+        Else
+            EPEForm1.RepeatEmailsInEmailPrompt = False
+        End If
+    End Sub
 End Class

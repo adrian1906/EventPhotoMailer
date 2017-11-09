@@ -51,8 +51,8 @@ Partial Class EmailPrompt
         Me.Label9 = New System.Windows.Forms.Label()
         Me.RepeatEmailsInEmailPrompt_Checkbox = New System.Windows.Forms.CheckBox()
         Me.OpenImageFolderButton = New System.Windows.Forms.Button()
-        Me.ApplyToAllCheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button_SaveAsDefault2 = New System.Windows.Forms.Button()
+        Me.CellPhoneCarrierCombobox = New System.Windows.Forms.ComboBox()
         CType(Me.Thumbnail_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -217,7 +217,7 @@ Partial Class EmailPrompt
         'SaveForLaterCheckBox
         '
         Me.SaveForLaterCheckBox.AutoSize = True
-        Me.SaveForLaterCheckBox.Location = New System.Drawing.Point(3, 314)
+        Me.SaveForLaterCheckBox.Location = New System.Drawing.Point(6, 297)
         Me.SaveForLaterCheckBox.Name = "SaveForLaterCheckBox"
         Me.SaveForLaterCheckBox.Size = New System.Drawing.Size(162, 17)
         Me.SaveForLaterCheckBox.TabIndex = 16
@@ -227,7 +227,7 @@ Partial Class EmailPrompt
         'IncludeAdCheckBox1
         '
         Me.IncludeAdCheckBox1.AutoSize = True
-        Me.IncludeAdCheckBox1.Location = New System.Drawing.Point(242, 314)
+        Me.IncludeAdCheckBox1.Location = New System.Drawing.Point(6, 319)
         Me.IncludeAdCheckBox1.Name = "IncludeAdCheckBox1"
         Me.IncludeAdCheckBox1.Size = New System.Drawing.Size(150, 17)
         Me.IncludeAdCheckBox1.TabIndex = 17
@@ -305,7 +305,7 @@ Partial Class EmailPrompt
         'AdFileLabel
         '
         Me.AdFileLabel.AutoSize = True
-        Me.AdFileLabel.Location = New System.Drawing.Point(401, 315)
+        Me.AdFileLabel.Location = New System.Drawing.Point(168, 320)
         Me.AdFileLabel.Name = "AdFileLabel"
         Me.AdFileLabel.Size = New System.Drawing.Size(68, 13)
         Me.AdFileLabel.TabIndex = 24
@@ -341,16 +341,6 @@ Partial Class EmailPrompt
         Me.OpenImageFolderButton.Text = "Open Image Folder"
         Me.OpenImageFolderButton.UseVisualStyleBackColor = True
         '
-        'ApplyToAllCheckBox1
-        '
-        Me.ApplyToAllCheckBox1.AutoSize = True
-        Me.ApplyToAllCheckBox1.Location = New System.Drawing.Point(895, 49)
-        Me.ApplyToAllCheckBox1.Name = "ApplyToAllCheckBox1"
-        Me.ApplyToAllCheckBox1.Size = New System.Drawing.Size(67, 17)
-        Me.ApplyToAllCheckBox1.TabIndex = 85
-        Me.ApplyToAllCheckBox1.Text = "Lock On"
-        Me.ApplyToAllCheckBox1.UseVisualStyleBackColor = True
-        '
         'Button_SaveAsDefault2
         '
         Me.Button_SaveAsDefault2.Location = New System.Drawing.Point(755, 164)
@@ -360,13 +350,22 @@ Partial Class EmailPrompt
         Me.Button_SaveAsDefault2.Text = "Save Settings"
         Me.Button_SaveAsDefault2.UseVisualStyleBackColor = True
         '
+        'CellPhoneCarrierCombobox
+        '
+        Me.CellPhoneCarrierCombobox.FormattingEnabled = True
+        Me.CellPhoneCarrierCombobox.Location = New System.Drawing.Point(498, 293)
+        Me.CellPhoneCarrierCombobox.Name = "CellPhoneCarrierCombobox"
+        Me.CellPhoneCarrierCombobox.Size = New System.Drawing.Size(439, 21)
+        Me.CellPhoneCarrierCombobox.TabIndex = 87
+        Me.CellPhoneCarrierCombobox.Text = "Cell Phone Carriers"
+        '
         'EmailPrompt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(978, 376)
+        Me.Controls.Add(Me.CellPhoneCarrierCombobox)
         Me.Controls.Add(Me.Button_SaveAsDefault2)
-        Me.Controls.Add(Me.ApplyToAllCheckBox1)
         Me.Controls.Add(Me.OpenImageFolderButton)
         Me.Controls.Add(Me.RepeatEmailsInEmailPrompt_Checkbox)
         Me.Controls.Add(Me.Label9)
@@ -434,6 +433,6 @@ Partial Class EmailPrompt
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents RepeatEmailsInEmailPrompt_Checkbox As System.Windows.Forms.CheckBox
     Friend WithEvents OpenImageFolderButton As System.Windows.Forms.Button
-    Friend WithEvents ApplyToAllCheckBox1 As System.Windows.Forms.CheckBox
     Friend WithEvents Button_SaveAsDefault2 As System.Windows.Forms.Button
+    Friend WithEvents CellPhoneCarrierCombobox As System.Windows.Forms.ComboBox
 End Class

@@ -135,10 +135,6 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FACEBOOK GRAPH TOOLKIT_3.5, Version=2.6.56.252, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FacebookToolkitHood222012\FACEBOOK GRAPH TOOLKIT_3.5.dll</HintPath>
-    </Reference>
     <Reference Include="JSON_3.5, Version=2.1.138.2148, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\FacebookToolkitHood222012\JSON_3.5.dll</HintPath>
@@ -167,10 +163,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Import Include="Facebook_Graph_Toolkit" />
-    <Import Include="Facebook_Graph_Toolkit.FacebookObjects" />
-    <Import Include="Facebook_Graph_Toolkit.GraphApi" />
-    <Import Include="Facebook_Graph_Toolkit.Helpers" />
     <Import Include="JSON" />
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -220,10 +212,10 @@
     <Compile Include="ListOfCustomersAndID.vb" />
     <Compile Include="EncryptionHOOD2.vb" />
     <Compile Include="keycode.vb" />
-    <Compile Include="MainEPE_v8_May202017.designer.vb">
-      <DependentUpon>MainEPE_v8_May202017.vb</DependentUpon>
+    <Compile Include="MainEPE_v8_Nov62017.designer.vb">
+      <DependentUpon>MainEPE_v8_Nov62017.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainEPE_v8_May202017.vb">
+    <Compile Include="MainEPE_v8_Nov62017.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -262,8 +254,8 @@
     <EmbeddedResource Include="FacebookGUI.resx">
       <DependentUpon>FacebookGUI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainEPE_v8_May202017.resx">
-      <DependentUpon>MainEPE_v8_May202017.vb</DependentUpon>
+    <EmbeddedResource Include="MainEPE_v8_Nov62017.resx">
+      <DependentUpon>MainEPE_v8_Nov62017.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -1,6 +1,5 @@
 ﻿Imports System.IO
 Imports System.Collections
-Imports Facebook_Graph_Toolkit
 Imports System.Web
 Imports System.Text
 Imports System.Net
@@ -34,7 +33,6 @@ Module Module1
         Dim PromptForEmailAndSend As String
         Dim Adfile As String
         Dim RepeatEmailsInEmailPrompt As String
-        Dim RepeatEmailsInEmailPromptLock As String
         Dim NotifyUL As String ' Notify Box Location
         Dim NotifyUR As String
         Dim NotifyLL As String
@@ -44,6 +42,7 @@ Module Module1
         Dim LowerRightRadioButton As String
         Dim UpperLeftRadioButton As String
         Dim UpperRightRadioButton As String
+        Dim TextMessage As String
     End Structure
 
     Public Function RetrieveSignalStrength() As Double
@@ -410,294 +409,8 @@ exit_function:
         Loop Until (e - s) >= delay
     End Sub
 
-#Region "Facebook Stuff"
-    ''' <summary>
-    ''' MakeAlbum - used to create an album in Facebook. Needs Facebook_Graph_Toolkit
-    ''' </summary>
-    ''' <param name="message"></param>
-    ''' <param name="MyAPI"></param>
-    ''' <returns></returns>
-    ''' <remarks></remarks>
-    Public Function MakeAlbum(ByVal message As String, ByVal MyAPI As Facebook_Graph_Toolkit.GraphApi.Api) As String
-        message = "MyAlbum"
-
-        'Dim MS As New MemoryStream()
-        'photo.Save(MS, System.Drawing.Imaging.ImageFormat.Jpeg)
-        'Dim Imagebytes As Byte() = MS.ToArray()
-        'MS.Dispose()
-
-        'Set up basic variables for constructing the multipart/form-data data
-        Dim newline As String = vbCr & vbLf
-        Dim boundary As String = DateTime.Now.Ticks.ToString("x")
-        Dim data As String = ""
-
-        'Construct data
-        data += "--" & boundary & newline
-        data += "Content-Disposition: form-data; name=""message""" & newline & newline
-        data += message & newline
-
-        ''data += "--" & boundary & newline
-        ''data += "Content-Disposition: form-data; filename=""test.jpg""" & newline
-        ''data += "Content-Type: image/jpeg" & newline & newline
-
-        Dim ending As String = newline & "--" & boundary & "--" & newline
-
-        'Convert data to byte[] array
-        Dim finaldatastream As New MemoryStream()
-        Dim databytes As Byte() = Encoding.UTF8.GetBytes(data)
-        Dim endingbytes As Byte() = Encoding.UTF8.GetBytes(ending)
-        finaldatastream.Write(databytes, 0, databytes.Length)
-        'finaldatastream.Write(Imagebytes, 0, Imagebytes.Length)
-        finaldatastream.Write(endingbytes, 0, endingbytes.Length)
-        Dim finaldatabytes As Byte() = finaldatastream.ToArray()
-        finaldatastream.Dispose()
-
-        'Make the request
-        Dim request As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/me/photos?access_token=" & MyAPI.AccessToken)
-        'request.ContentType = "Disposition: form-data; name=""message""" & newline
-        request.ContentType = "message/http" & newline
-        'request.ContentType = "multipart/form-data; boundary=" & boundary
-        request.ContentLength = finaldatabytes.Length
-        request.Method = "POST"
-        Using RStream As Stream = request.GetRequestStream()
-            RStream.Write(finaldatabytes, 0, finaldatabytes.Length)
-        End Using
-        Dim WR As WebResponse = request.GetResponse()
-        Dim _Response As String = ""
-        Using sr As New StreamReader(WR.GetResponseStream())
-            _Response = sr.ReadToEnd()
-            sr.Close()
-        End Using
-        Dim JO As New JsonObject(_Response)
-        Return DirectCast(JO("id"), String)
-    End Function
-
-
-
-
-    'Dim MyWebBrowser As New WebBrowser
-    Public Function MakeAlbum2(ByVal AlbumName As String, ByVal MYAPI As Facebook_Graph_Toolkit.GraphApi.Api) As String
-        'Dim MS As New MemoryStream()
-        'photo.Save(MS, System.Drawing.Imaging.ImageFormat.Jpeg)
-        'Dim Imagebytes As Byte() = MS.ToArray()
-        'MS.Dispose()
-
-        'Set up basic variables for constructing the multipart/form-data data
-        Dim newline As String = vbCr & vbLf
-        Dim boundary As String = DateTime.Now.Ticks.ToString("x")
-        Dim data As String = ""
-
-
-        'Construct data
-        'data += "--" & boundary & newline
-        'data += "Content-Disposition: form-data; name=""message""" & newline & newline
-        'data += AlbumName & newline
-
-        ''data += "--" & boundary & newline
-        ''data += "Content-Disposition: form-data; filename=""test.jpg""" & newline
-        ''data += "Content-Type: image/jpeg" & newline & newline
-
-        Dim ending As String = newline & "--" & boundary & "--" & newline
-
-        'Convert data to byte[] array
-        ''Dim finaldatastream As New MemoryStream()
-        ''Dim databytes As Byte() = Encoding.UTF8.GetBytes(data)
-        ''Dim endingbytes As Byte() = Encoding.UTF8.GetBytes(ending)
-        ''finaldatastream.Write(databytes, 0, databytes.Length)
-        ''finaldatastream.Write(Imagebytes, 0, Imagebytes.Length)
-        ''finaldatastream.Write(endingbytes, 0, endingbytes.Length)
-        ''Dim finaldatabytes As Byte() = finaldatastream.ToArray()
-        ''finaldatastream.Dispose()
-
-        ' I assume the way this works is:
-        ' 1.) It converts the image to bytes =>Imagebytes
-        ' 2.) Gets a unique identifyer code using the date
-        ' 3.) create a data stream (data)
-        ' 3.) create a header for message (lines,description,info/lines)
-        ' 4.) create a header for image (lines,description,description,lines)
-        ' 5.) combine bytes
-        'Set up basic variables for constructing the multipart/form-data data
-
-        ''///Added By Adrian Hood upload to existing album
-
-        'Construct data for message only (just to create album)
-        If IsNothing(AlbumName) Then
-            AlbumName = "Event Photo Email Upload"
-        End If
-        Dim dataAlbum As String = ""
-        'string AlbumName = "EPE Testing Album";
-        dataAlbum += "--" & boundary & newline
-        dataAlbum += "Content-Disposition: form-data; name=""message""" & newline & newline
-        dataAlbum += AlbumName & newline & newline
-        'string ending = newline + "--" + boundary + "--" + newline;
-        'Convert data to byte[] array
-        Dim finaldatastreamAlbum As New MemoryStream()
-        Dim databytes2 As Byte() = Encoding.UTF8.GetBytes(data)
-        Dim endingbytes2 As Byte() = Encoding.UTF8.GetBytes(ending)
-        finaldatastreamAlbum.Write(databytes2, 0, databytes2.Length)
-        finaldatastreamAlbum.Write(endingbytes2, 0, endingbytes2.Length)
-        Dim finaldatabytesAlbum As Byte() = finaldatastreamAlbum.ToArray()
-        finaldatastreamAlbum.Dispose()
-        Dim GLOBAL_UserID = "12345"
-        Dim RA As String = "https://graph.facebook.com/" & GLOBAL_UserID & "/album?access_token=" & MYAPI.AccessToken
-        'Dim RA As String = "https://graph.facebook.com/" & MYAPI.UserID & "/album?access_token=" & MYAPI.AccessToken
-
-        ' Create a request for the URL
-        Dim request As WebRequest = WebRequest.Create(RA)
-        ' Set settings
-        request.ContentLength = finaldatabytesAlbum.Length
-        request.Method = "POST"
-        ' Get the response.
-
-        '''''Dim response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
-        '''''' Open the stream using a StreamReader for easy access.
-        '''''Dim dataStream As Stream = response.GetResponseStream()
-        '''''Dim reader As New StreamReader(dataStream)
-        '''''' Read the content.
-        '''''Dim responseFromServer As String = reader.ReadToEnd()
-        '''''reader.Close()
-        '''''dataStream.Close()
-        '''''response.Close()
-        Dim datastream As New MemoryStream
-        datastream.Write(finaldatabytesAlbum, 0, finaldatabytesAlbum.Length)
-        Dim WRAlbum As WebResponse = request.GetResponse()
-        Dim _ResponseAlbum As String = ""
-        Dim sr As New StreamReader(WRAlbum.GetResponseStream())
-        Dim responseFromServer2 As String = sr.ReadToEnd()
-        sr.Close()
-
-
-
-        '''''''///Added By Adrian Hood upload to existing album
-
-        '''''Make the request
-        '''''Dim request As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/" & AlbumID & "/photos?access_token=" & AccessToken)
-        '''''Dim request As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/me/photos?access_token=" & AccessToken)
-        ''''request.ContentType = "multipart/form-data; boundary=" & boundary
-        ''''request.ContentLength = finaldatabytes.Length
-        ''''request.Method = "POST"
-        ''''Using RStream As Stream = request.GetRequestStream()
-        ''''    RStream.Write(finaldatabytes, 0, finaldatabytes.Length)
-        ''''End Using
-        ''''Dim WR As WebResponse = request.GetResponse()
-        ''''Dim _Response As String = ""
-        ''''Using sr As New StreamReader(WR.GetResponseStream())
-        ''''    _Response = sr.ReadToEnd()
-        ''''    sr.Close()
-        ''''End Using
-        '''''Dim JO As New JsonObject(_Response)
-        '''''Return DirectCast(JO("id"), String)
-        Return dataAlbum
-    End Function
-
-
-
-
-    'Public Function PublishPhoto(ByVal photo As Bitmap, ByVal message As String, ByVal AlbumName As String, ByVal AccessToken As String) As String
-    '    Dim MS As New MemoryStream()
-    '    photo.Save(MS, System.Drawing.Imaging.ImageFormat.Jpeg)
-    '    Dim Imagebytes As Byte() = MS.ToArray()
-    '    MS.Dispose()
-
-    '    'Set up basic variables for constructing the multipart/form-data data
-    '    Dim newline As String = vbCr & vbLf
-    '    Dim boundary As String = DateTime.Now.Ticks.ToString("x")
-    '    Dim data As String = ""
-
-
-    '    'Construct data
-    '    data += "--" & boundary & newline
-    '    data += "Content-Disposition: form-data; name=""message""" & newline & newline
-    '    data += message & newline
-
-    '    data += "--" & boundary & newline
-    '    data += "Content-Disposition: form-data; filename=""test.jpg""" & newline
-    '    data += "Content-Type: image/jpeg" & newline & newline
-    '    Dim ending As String = newline & "--" & boundary & "--" & newline
-
-    '    'Convert data to byte[] array
-    '    Dim finaldatastream As New MemoryStream()
-    '    Dim databytes As Byte() = Encoding.UTF8.GetBytes(data)
-    '    Dim endingbytes As Byte() = Encoding.UTF8.GetBytes(ending)
-    '    finaldatastream.Write(databytes, 0, databytes.Length)
-    '    finaldatastream.Write(Imagebytes, 0, Imagebytes.Length)
-    '    finaldatastream.Write(endingbytes, 0, endingbytes.Length)
-    '    Dim finaldatabytes As Byte() = finaldatastream.ToArray()
-    '    finaldatastream.Dispose()
-
-    '    ' I assume the way this works is:
-    '    ' 1.) It converts the image to bytes =>Imagebytes
-    '    ' 2.) Gets a unique identifyer code using the date
-    '    ' 3.) create a data stream (data)
-    '    ' 3.) create a header for message (lines,description,info/lines)
-    '    ' 4.) create a header for image (lines,description,description,lines)
-    '    ' 5.) combine bytes
-    '    'Set up basic variables for constructing the multipart/form-data data
-
-    '    '''///Added By Adrian Hood upload to existing album
-
-    '    'Construct data for message only (just to create album)
-    '    If IsNothing(AlbumName) Then
-    '        AlbumName = "Event Photo Email Upload"
-    '    End If
-    '    Dim dataAlbum As String = ""
-    '    'string AlbumName = "EPE Testing Album";
-    '    dataAlbum += "--" & boundary & newline
-    '    dataAlbum += "Content-Disposition: form-data; name=""message""" & newline & newline
-    '    dataAlbum += AlbumName & newline & newline
-    '    'string ending = newline + "--" + boundary + "--" + newline;
-    '    'Convert data to byte[] array
-    '    Dim finaldatastreamAlbum As New MemoryStream()
-    '    Dim databytes2 As Byte() = Encoding.UTF8.GetBytes(data)
-    '    Dim endingbytes2 As Byte() = Encoding.UTF8.GetBytes(ending)
-    '    finaldatastreamAlbum.Write(databytes2, 0, databytes2.Length)
-    '    finaldatastreamAlbum.Write(endingbytes2, 0, endingbytes2.Length)
-    '    Dim finaldatabytesAlbum As Byte() = finaldatastreamAlbum.ToArray()
-    '    finaldatastreamAlbum.Dispose()
-    '    Dim requestAlbum As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/me/album?access_token=" & AccessToken)
-    '    requestAlbum.ContentLength = finaldatabytesAlbum.Length
-    '    requestAlbum.Method = "POST"
-    '    Using RStream As Stream = requestAlbum.GetRequestStream()
-    '        RStream.Write(finaldatabytesAlbum, 0, finaldatabytesAlbum.Length)
-    '    End Using
-    '    Dim WRAlbum As WebResponse = requestAlbum.GetResponse()
-    '    Dim _ResponseAlbum As String = ""
-    '    Using sr As New StreamReader(WRAlbum.GetResponseStream())
-    '        _ResponseAlbum = sr.ReadToEnd()
-    '        sr.Close()
-    '    End Using
-
-
-    '    '''''''///Added By Adrian Hood upload to existing album
-
-    '    '''''Make the request
-    '    '''''Dim request As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/" & AlbumID & "/photos?access_token=" & AccessToken)
-    '    '''''Dim request As WebRequest = HttpWebRequest.Create("https://graph.facebook.com/me/photos?access_token=" & AccessToken)
-    '    ''''request.ContentType = "multipart/form-data; boundary=" & boundary
-    '    ''''request.ContentLength = finaldatabytes.Length
-    '    ''''request.Method = "POST"
-    '    ''''Using RStream As Stream = request.GetRequestStream()
-    '    ''''    RStream.Write(finaldatabytes, 0, finaldatabytes.Length)
-    '    ''''End Using
-    '    ''''Dim WR As WebResponse = request.GetResponse()
-    '    ''''Dim _Response As String = ""
-    '    ''''Using sr As New StreamReader(WR.GetResponseStream())
-    '    ''''    _Response = sr.ReadToEnd()
-    '    ''''    sr.Close()
-    '    ''''End Using
-    '    '''''Dim JO As New JsonObject(_Response)
-    '    '''''Return DirectCast(JO("id"), String)
-    '    Return dataAlbum
-    'End Function
-
-
-
-
-
-#End Region
-
     Public Function WaitForFileAvailibility(ByVal filePath As String, ByVal timeOut As Integer) As Boolean
-        'This subroutines tries to access a file. If an error event occurs while trying to read write,
+        'This subroutines tries to aaccess  file. If an error event occurs while trying to read write,
         'it is assumed not available and tries again until timeOut is reached.
         'An example of its use is when using Watchfolder. An event may occur when a file appears but if its a large file
         'It may still be 'loading' and not finished. This subroutine waits until it is finished.
@@ -724,7 +437,12 @@ exit_function:
                 Throw
             End Try
         Loop
-        Return looping  ' True if file is not ready
+        If looping = False Then
+            Return True
+        Else
+            Return False
+        End If
+        'Return looping  ' True if file is not ready
     End Function
 
     ''' <summary>
@@ -988,6 +706,7 @@ exit_function:
             MyData.SubjectLine = readXML(DefaultFilename, "SubjectLine")
             MyData.ImageFolder = readXML(DefaultFilename, "ImageFolder")
             MyData.MessageFile = readXML(DefaultFilename, "MessageFile")
+            MyData.TextMessage = readXML(DefaultFilename, "TextMessage")
             MyData.MailServer = readXML(DefaultFilename, "MailServer")
             MyData.UserName = readXML(DefaultFilename, "UserName")
             MyData.PWDEncrypt = readXML(DefaultFilename, "PWDEncrypt")
@@ -1006,11 +725,11 @@ exit_function:
             MyData.PromptForEmailAndSend = readXML(DefaultFilename, "PromptForEmailAndSend")
             MyData.PromptForEmailDontSend = readXML(DefaultFilename, "PromptForEmailDontSend")
             MyData.RepeatEmailsInEmailPrompt = readXML(DefaultFilename, "RepeatEmailsInEmailPrompt")
-            MyData.RepeatEmailsInEmailPromptLock = readXML(DefaultFilename, "RepeatEmailsInEmailPromptLock")
             MyData.NotifyUL = readXML(DefaultFilename, "NotifyUL")
             MyData.NotifyUR = readXML(DefaultFilename, "NotifyUR")
             MyData.NotifyLL = readXML(DefaultFilename, "NotifyLL")
             MyData.NotifyLR = readXML(DefaultFilename, "NotifyLR")
+
         Catch ex As Exception
 
         End Try

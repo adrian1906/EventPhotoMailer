@@ -28,15 +28,15 @@
         End Try
     End Sub
 
-    ''' <summary>
-    ''' FBlogo_Click call FBAuthenticate()
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    ''' <remarks></remarks>
-    Private Sub FBlogo_click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        EPEForm1.FBauth_click(sender, e)
-    End Sub
+    ' ''' <summary>
+    ' ''' FBlogo_Click call FBAuthenticate()
+    ' ''' </summary>
+    ' ''' <param name="sender"></param>
+    ' ''' <param name="e"></param>
+    ' ''' <remarks></remarks>
+    'Private Sub FBlogo_click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    EPEForm1.FBauth_click(sender, e)
+    'End Sub
 
     Public Sub ConfigButton0_Click(sender As System.Object, e As System.EventArgs) Handles ConfigButton0.Click
         EPEForm1.ImportDefaults(EPEForm1.DefaultFile0)

@@ -2465,6 +2465,7 @@ Public Class EPEForm1
     End Sub
 
 
+
     Private Sub ChkConnectionButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChkConnectionButton.Click
         checkinternetconnection() ' This will only change the status label
     End Sub

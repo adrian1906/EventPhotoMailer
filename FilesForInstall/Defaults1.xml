@@ -5,6 +5,7 @@
   <SubjectLine></SubjectLine>
   <ImageFolder>c:\EventPhotoEmailer\EPE_Hotfolder</ImageFolder>
   <MessageFile>c:\EventPhotoEmailer\message.txt</MessageFile>
+  <TextMessage>c:\EventPhotoEmailer\message.txt</TextMessage>
   <MailServer></MailServer>
   <UserName></UserName>
   <PWDEncrypt></PWDEncrypt>
