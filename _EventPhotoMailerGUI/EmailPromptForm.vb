@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 Public Class EmailPrompt
-
+    Dim EmailSetupForm As New EmailSetupForm
     Sub EmailPromptOnLoad(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ClearBoxes() ' Clears the name and email textboxes
         RepeatEmailsInEmailPrompt_Checkbox.Checked = EPEForm1.RepeatEmailsInEmailPrompt ' sets the checkbox to the value saved

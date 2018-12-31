@@ -6,707 +6,722 @@ EventPhotoEmailer
 </name>
 </assembly>
 <members>
+<member name="T:EventPhotoEmailer.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
 <member name="P:EventPhotoEmailer.My.Resources.Resources.ResourceManager">
-	<summary>
+<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.Culture">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.Culture">
+<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon1">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.EPEicon1">
+<summary>
   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.facebook_image">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.facebook_image">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon1">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.My.Resources.Resources.FolderIcon1">
+<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
-</member><member name="T:EventPhotoEmailer.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.CRC32">
-	<summary>
- Cyclic Redundancy Check provider, 32-bit
+</member>
+<member name="M:EventPhotoEmailer.EmailPrompt.Fill_EmailToTextComboBox(System.String)">
+ <summary>
+ Fill EmailToText Combobox reads data from the "\bin\SMTPServerList.csv" file.
+ This file is a database of known ISP companies and thier IP addresses
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA1">
-	<summary>
- Secure Hashing Algorithm provider, SHA-1 variant, 160-bit
+ <param name="Commonpath"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EmailPrompt.AddEmailsToDatabaseAndFinishEmailing(System.Object,System.EventArgs)">
+ <summary>
+ The purpose of this subroutine is to add names and email addresses to a text file that is used to 
+ store emails and names. This text file is used to autocomplete fields in the EmailPrompt form.
+ When finished, 
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA256">
-	<summary>
- Secure Hashing Algorithm provider, SHA-2 variant, 256-bit
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.getJPGfiles(System.String)">
+ <summary>
+ getJPGfiles - Returns an arraylist of image filenames
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA384">
-	<summary>
- Secure Hashing Algorithm provider, SHA-2 variant, 384-bit
+ <param name="MAINFOLDER"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.ArrayAddItemHOOD(System.String[]@,System.String)">
+ <summary>
+ ArrayAddItemsHOOD - is used to add items to an array. Works like arraylist.add
+ but for variable declared as arrays and not arraylists.
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA512">
-	<summary>
- Secure Hashing Algorithm provider, SHA-2 variant, 512-bit
+ <param name="AR"></param>
+ <param name="ItemToAdd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.GetFileContents(System.String,System.String@)">
+ <summary>
+ Reads text from a file and returns a string
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Hash.Provider.MD5">
-	<summary>
- Message Digest algorithm 5, 128-bit
+ <param name="FullPath"></param>
+ <param name="ErrInfo"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.SaveTextToFile(System.String,System.String,System.String)">
+ <summary>
+ SaveTextToFile - Saves a string to file
  </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Hash.Provider">
-	<summary>
- Type of hash; some are security oriented, others are fast and simple
+ <param name="strData"> String</param>
+ <param name="FullPath"> Full path of file</param>
+ <param name="ErrInfo"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.AppendText(System.String,System.String,System.String)">
+ <summary>
+ AppendText is used to add text to a file
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Hash.#ctor(EventPhotoEmailer.Encryption.Hash.Provider)">
-	<summary>
- Instantiate a new hash of the specified type
+ <param name="Origfile"></param>
+ <param name="message"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.IsValidEmail(System.String)">
+ <summary>
+ IsValidEmail - check to see if the email format is correct.
+ original by Brad Murray
+ optimized by Rob Hofker, email: rob@eurocamp.nl, 
+ 23 august 2000
+  </summary>
+ <param name="sEMail"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.IsProcessRunning_old(System.String)">
+ <summary>
+ IsProcessRunning checks to see if the given process is running.
+ The name of the process will have to match exactly.
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Hash.Value">
-	<summary>
- Returns the previously calculated hash
+ <param name="name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.IsProcessRunning(System.String)">
+ <summary>
+ IsProcessRunning checks to see if the given process is running.
+ The name of the process will have to match exactly.
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(System.IO.Stream@)">
-	<summary>
- Calculates hash on a stream of arbitrary length
+ <param name="name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.RunningDots">
+ <summary>
+ RunningDots - Used to show that a process is still running.
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(EventPhotoEmailer.Encryption.Data)">
-	<summary>
- Calculates hash for fixed length <see cref="T:EventPhotoEmailer.Encryption.Data"/>
-	</summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
-	<summary>
- Calculates hash for a string with a prefixed salt value. 
- A "salt" is random data prefixed to every hashed value to prevent 
- common dictionary attacks.
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.pause(System.Int32)">
+ <summary>
+ Produces a pause (in ms). Kept in ms to allow for fraction of a second.
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Hash.CalculatePrivate(System.Byte[])">
-	<summary>
- Calculates hash for an array of bytes
+ <param name="delay"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.CheckForResidualImages(System.String)">
+ <summary>
+ This subroutine checks to see if residual images are in the image forlder. This is to guard against
+ images being emailed inadvertantly.
  </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Hash">
-	<summary>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.IsConnectionAvailable2(System.String)">
+ <summary>
+ IsConnectionAvailable pings the given website. Usually google.com
+ </summary>
+ <param name="website"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.RetrieveSignalStrenth">
+ <summary>
+ RetrieveSignalStrength attempts to get the signal strenth
+ So far, it doesn't work
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.Module1.GetWIFISignalStrength">
+ <summary>
+ method for retrieving the signal strength of all WI-FI adapters
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:EventPhotoEmailer.Module1.Display(System.Windows.Forms.TextBox,System.String)">
+ <summary>
+ Display() is used to write to the statusbox along with 2 carriage returns. Allows the statusbox to be more 
+ easily read
+ </summary>
+ <param name="STATUSBOX"></param>
+ <param name="X"></param>
+ <remarks></remarks>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Hash">
+ <summary>
  Hash functions are fundamental to modern cryptography. These functions map binary 
  strings of an arbitrary length to small binary strings of a fixed length, known as 
  hash values. A cryptographic hash function has the property that it is computationally
  infeasible to find two distinct inputs that hash to the same value. Hash functions 
  are commonly used with digital signatures and for data integrity.
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.DES">
-	<summary>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Hash.Provider">
+ <summary>
+ Type of hash; some are security oriented, others are fast and simple
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.CRC32">
+ <summary>
+ Cyclic Redundancy Check provider, 32-bit
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA1">
+ <summary>
+ Secure Hashing Algorithm provider, SHA-1 variant, 160-bit
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA256">
+ <summary>
+ Secure Hashing Algorithm provider, SHA-2 variant, 256-bit
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA384">
+ <summary>
+ Secure Hashing Algorithm provider, SHA-2 variant, 384-bit
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.SHA512">
+ <summary>
+ Secure Hashing Algorithm provider, SHA-2 variant, 512-bit
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Hash.Provider.MD5">
+ <summary>
+ Message Digest algorithm 5, 128-bit
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Hash.#ctor(EventPhotoEmailer.Encryption.Hash.Provider)">
+ <summary>
+ Instantiate a new hash of the specified type
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Hash.Value">
+ <summary>
+ Returns the previously calculated hash
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(System.IO.Stream@)">
+ <summary>
+ Calculates hash on a stream of arbitrary length
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(EventPhotoEmailer.Encryption.Data)">
+ <summary>
+ Calculates hash for fixed length <see cref="T:EventPhotoEmailer.Encryption.Data"/>
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Hash.Calculate(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
+ <summary>
+ Calculates hash for a string with a prefixed salt value. 
+ A "salt" is random data prefixed to every hashed value to prevent 
+ common dictionary attacks.
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Hash.CalculatePrivate(System.Byte[])">
+ <summary>
+ Calculates hash for an array of bytes
+ </summary>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Symmetric">
+ <summary>
+ Symmetric encryption uses a single key to encrypt and decrypt. 
+ Both parties (encryptor and decryptor) must share the same secret key.
+ </summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.DES">
+ <summary>
  The Data Encryption Standard provider supports a 64 bit key only
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.RC2">
-	<summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.RC2">
+ <summary>
  The Rivest Cipher 2 provider supports keys ranging from 40 to 128 bits, default is 128 bits
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.Rijndael">
-	<summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.Rijndael">
+ <summary>
  The Rijndael (also known as AES) provider supports keys of 128, 192, or 256 bits with a default of 256 bits
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.TripleDES">
-	<summary>
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Symmetric.Provider.TripleDES">
+ <summary>
  The TripleDES provider (also known as 3DES) supports keys of 128 or 192 bits with a default of 192 bits
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.#ctor(EventPhotoEmailer.Encryption.Symmetric.Provider,System.Boolean)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.#ctor(EventPhotoEmailer.Encryption.Symmetric.Provider,System.Boolean)">
+ <summary>
  Instantiates a new symmetric encryption object using the specified provider.
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Symmetric.KeySizeBytes">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Symmetric.KeySizeBytes">
+ <summary>
  Key size in bytes. We use the default key size for any given provider; if you 
  want to force a specific key size, set this property
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Symmetric.KeySizeBits">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Symmetric.KeySizeBits">
+ <summary>
  Key size in bits. We use the default key size for any given provider; if you 
  want to force a specific key size, set this property
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Symmetric.Key">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Symmetric.Key">
+ <summary>
  The key used to encrypt/decrypt data
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Symmetric.IntializationVector">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Symmetric.IntializationVector">
+ <summary>
  Using the default Cipher Block Chaining (CBC) mode, all data blocks are processed using
  the value derived from the previous block; the first data block has no previous data block
  to use, so it needs an InitializationVector to feed the first block
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.RandomInitializationVector">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.RandomInitializationVector">
+ <summary>
  generates a random Initialization Vector, if one was not provided
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.RandomKey">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.RandomKey">
+ <summary>
  generates a random Key, if one was not provided
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.ValidateKeyAndIv(System.Boolean)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.ValidateKeyAndIv(System.Boolean)">
+ <summary>
  Ensures that _crypto object has valid Key and IV
  prior to any attempt to encrypt/decrypt anything
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Encrypts the specified Data using provided key
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Encrypts the specified Data using preset key and preset initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Encrypts the stream to memory using provided key and provided initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Encrypts the stream to memory using specified key
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Encrypt(System.IO.Stream)">
+ <summary>
  Encrypts the specified stream to memory using preset key and preset initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Decrypts the specified data using provided key and preset initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(System.IO.Stream,EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Decrypts the specified stream using provided key and preset initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(System.IO.Stream)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(System.IO.Stream)">
+ <summary>
  Decrypts the specified stream using preset key and preset initialization vector
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(EventPhotoEmailer.Encryption.Data)">
-	<summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Symmetric.Decrypt(EventPhotoEmailer.Encryption.Data)">
+ <summary>
  Decrypts the specified data using preset key and preset initialization vector
  </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Symmetric">
-	<summary>
- Symmetric encryption uses a single key to encrypt and decrypt. 
- Both parties (encryptor and decryptor) must share the same secret key.
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.LoadFromConfig">
-	<summary>
- Load public key from App.config or Web.config file
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToConfigSection">
-	<summary>
- Returns *.config file XML section representing this public key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ExportToConfigFile(System.String)">
-	<summary>
- Writes the *.config file representation of this public key to a file
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.LoadFromXml(System.String)">
-	<summary>
- Loads the public key from its XML string
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToParameters">
-	<summary>
- Converts this public key to an RSAParameters object
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToXml">
-	<summary>
- Converts this public key to its XML string representation
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ExportToXmlFile(System.String)">
-	<summary>
- Writes the Xml representation of this public key to a file
- </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Asymmetric.PublicKey">
-	<summary>
- Represents a public encryption key. Intended to be shared, it 
- contains only the Modulus and Exponent.
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.LoadFromConfig">
-	<summary>
- Load private key from App.config or Web.config file
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToParameters">
-	<summary>
- Converts this private key to an RSAParameters object
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToConfigSection">
-	<summary>
- Returns *.config file XML section representing this private key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ExportToConfigFile(System.String)">
-	<summary>
- Writes the *.config file representation of this private key to a file
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.LoadFromXml(System.String)">
-	<summary>
- Loads the private key from its XML string
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToXml">
-	<summary>
- Converts this private key to its XML string representation
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ExportToXmlFile(System.String)">
-	<summary>
- Writes the Xml representation of this private key to a file
- </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey">
-	<summary>
- Represents a private encryption key. Not intended to be shared, as it 
- contains all the elements that make up the key.
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.#ctor">
-	<summary>
- Instantiates a new asymmetric encryption session using the default key size; 
- this is usally 1024 bits
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.#ctor(System.Int32)">
-	<summary>
- Instantiates a new asymmetric encryption session using a specific key size
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeyContainerName">
-	<summary>
- Sets the name of the key container used to store this key on disk; this is an 
- unavoidable side effect of the underlying Microsoft CryptoAPI. 
- </summary>
-	<remarks>
- http://support.microsoft.com/default.aspx?scid=http://support.microsoft.com:80/support/kb/articles/q322/3/71.asp&amp;NoWebContent=1
- </remarks>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeBits">
-	<summary>
- Returns the current key size, in bits
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeMaxBits">
-	<summary>
- Returns the maximum supported key size, in bits
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeMinBits">
-	<summary>
- Returns the minimum supported key size, in bits
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeStepBits">
-	<summary>
- Returns valid key step sizes, in bits
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.DefaultPublicKey">
-	<summary>
- Returns the default public key as stored in the *.config file
- </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Asymmetric.DefaultPrivateKey">
-	<summary>
- Returns the default private key as stored in the *.config file
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.GenerateNewKeyset(EventPhotoEmailer.Encryption.Asymmetric.PublicKey@,EventPhotoEmailer.Encryption.Asymmetric.PrivateKey@)">
-	<summary>
- Generates a new public/private key pair as objects
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.GenerateNewKeyset(System.String@,System.String@)">
-	<summary>
- Generates a new public/private key pair as XML strings
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data)">
-	<summary>
- Encrypts data using the default public key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Asymmetric.PublicKey)">
-	<summary>
- Encrypts data using the provided public key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data,System.String)">
-	<summary>
- Encrypts data using the provided public key as XML
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data)">
-	<summary>
- Decrypts data using the default private key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Asymmetric.PrivateKey)">
-	<summary>
- Decrypts data using the provided private key
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data,System.String)">
-	<summary>
- Decrypts data using the provided private key as XML
- </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Asymmetric.GetRSAProvider">
-	<summary>
- gets the default RSA provider using the specified key size; 
- note that Microsoft's CryptoAPI has an underlying file system dependency that is unavoidable
- </summary>
-	<remarks>
- http://support.microsoft.com/default.aspx?scid=http://support.microsoft.com:80/support/kb/articles/q322/3/71.asp&amp;NoWebContent=1
- </remarks>
-</member><member name="T:EventPhotoEmailer.Encryption.Asymmetric">
-	<summary>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Asymmetric">
+ <summary>
  Asymmetric encryption uses a pair of keys to encrypt and decrypt.
  There is a "public" key which is used to encrypt. Decrypting, on the other hand, 
  requires both the "public" key and an additional "private" key. The advantage is 
  that people can send you encrypted messages without being able to decrypt them.
  </summary>
-	<remarks>
+ <remarks>
  The only provider supported is the <see cref="T:System.Security.Cryptography.RSACryptoServiceProvider"/>
-	</remarks>
-</member><member name="F:EventPhotoEmailer.Encryption.Data.DefaultEncoding">
-	<summary>
- Determines the default text encoding across ALL Data instances
+ </remarks>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Asymmetric.PublicKey">
+ <summary>
+ Represents a public encryption key. Intended to be shared, it 
+ contains only the Modulus and Exponent.
  </summary>
-</member><member name="F:EventPhotoEmailer.Encryption.Data.Encoding">
-	<summary>
- Determines the default text encoding for this Data instance
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.LoadFromConfig">
+ <summary>
+ Load public key from App.config or Web.config file
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.#ctor">
-	<summary>
- Creates new, empty encryption data
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToConfigSection">
+ <summary>
+ Returns *.config file XML section representing this public key
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.Byte[])">
-	<summary>
- Creates new encryption data with the specified byte array
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ExportToConfigFile(System.String)">
+ <summary>
+ Writes the *.config file representation of this public key to a file
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.String)">
-	<summary>
- Creates new encryption data with the specified string; 
- will be converted to byte array using default encoding
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.LoadFromXml(System.String)">
+ <summary>
+ Loads the public key from its XML string
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.String,System.Text.Encoding)">
-	<summary>
- Creates new encryption data using the specified string and the 
- specified encoding to convert the string to a byte array.
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToParameters">
+ <summary>
+ Converts this public key to an RSAParameters object
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.IsEmpty">
-	<summary>
- returns true if no data is present
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ToXml">
+ <summary>
+ Converts this public key to its XML string representation
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.StepBytes">
-	<summary>
- allowed step interval, in bytes, for this data; if 0, no limit
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PublicKey.ExportToXmlFile(System.String)">
+ <summary>
+ Writes the Xml representation of this public key to a file
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.StepBits">
-	<summary>
- allowed step interval, in bits, for this data; if 0, no limit
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey">
+ <summary>
+ Represents a private encryption key. Not intended to be shared, as it 
+ contains all the elements that make up the key.
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.MinBytes">
-	<summary>
- minimum number of bytes allowed for this data; if 0, no limit
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.LoadFromConfig">
+ <summary>
+ Load private key from App.config or Web.config file
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.MinBits">
-	<summary>
- minimum number of bits allowed for this data; if 0, no limit
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToParameters">
+ <summary>
+ Converts this private key to an RSAParameters object
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.MaxBytes">
-	<summary>
- maximum number of bytes allowed for this data; if 0, no limit
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToConfigSection">
+ <summary>
+ Returns *.config file XML section representing this private key
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.MaxBits">
-	<summary>
- maximum number of bits allowed for this data; if 0, no limit
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ExportToConfigFile(System.String)">
+ <summary>
+ Writes the *.config file representation of this private key to a file
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.Bytes">
-	<summary>
- Returns the byte representation of the data; 
- This will be padded to MinBytes and trimmed to MaxBytes as necessary!
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.LoadFromXml(System.String)">
+ <summary>
+ Loads the private key from its XML string
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.Text">
-	<summary>
- Sets or returns text representation of bytes using the default text encoding
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ToXml">
+ <summary>
+ Converts this private key to its XML string representation
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.Hex">
-	<summary>
- Sets or returns Hex string representation of this data
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.PrivateKey.ExportToXmlFile(System.String)">
+ <summary>
+ Writes the Xml representation of this private key to a file
  </summary>
-</member><member name="P:EventPhotoEmailer.Encryption.Data.Base64">
-	<summary>
- Sets or returns Base64 string representation of this data
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.#ctor">
+ <summary>
+ Instantiates a new asymmetric encryption session using the default key size; 
+ this is usally 1024 bits
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.ToString">
-	<summary>
- Returns text representation of bytes using the default text encoding
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.#ctor(System.Int32)">
+ <summary>
+ Instantiates a new asymmetric encryption session using a specific key size
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.ToBase64">
-	<summary>
- returns Base64 string representation of this data
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeyContainerName">
+ <summary>
+ Sets the name of the key container used to store this key on disk; this is an 
+ unavoidable side effect of the underlying Microsoft CryptoAPI. 
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Data.ToHex">
-	<summary>
- returns Hex string representation of this data
+ <remarks>
+ http://support.microsoft.com/default.aspx?scid=http://support.microsoft.com:80/support/kb/articles/q322/3/71.asp&amp;NoWebContent=1
+ </remarks>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeBits">
+ <summary>
+ Returns the current key size, in bits
  </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Data">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeMaxBits">
+ <summary>
+ Returns the maximum supported key size, in bits
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeMinBits">
+ <summary>
+ Returns the minimum supported key size, in bits
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.KeySizeStepBits">
+ <summary>
+ Returns valid key step sizes, in bits
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.DefaultPublicKey">
+ <summary>
+ Returns the default public key as stored in the *.config file
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Asymmetric.DefaultPrivateKey">
+ <summary>
+ Returns the default private key as stored in the *.config file
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.GenerateNewKeyset(EventPhotoEmailer.Encryption.Asymmetric.PublicKey@,EventPhotoEmailer.Encryption.Asymmetric.PrivateKey@)">
+ <summary>
+ Generates a new public/private key pair as objects
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.GenerateNewKeyset(System.String@,System.String@)">
+ <summary>
+ Generates a new public/private key pair as XML strings
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data)">
+ <summary>
+ Encrypts data using the default public key
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Asymmetric.PublicKey)">
+ <summary>
+ Encrypts data using the provided public key
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Encrypt(EventPhotoEmailer.Encryption.Data,System.String)">
+ <summary>
+ Encrypts data using the provided public key as XML
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data)">
+ <summary>
+ Decrypts data using the default private key
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data,EventPhotoEmailer.Encryption.Asymmetric.PrivateKey)">
+ <summary>
+ Decrypts data using the provided private key
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.Decrypt(EventPhotoEmailer.Encryption.Data,System.String)">
+ <summary>
+ Decrypts data using the provided private key as XML
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Asymmetric.GetRSAProvider">
+ <summary>
+ gets the default RSA provider using the specified key size; 
+ note that Microsoft's CryptoAPI has an underlying file system dependency that is unavoidable
+ </summary>
+ <remarks>
+ http://support.microsoft.com/default.aspx?scid=http://support.microsoft.com:80/support/kb/articles/q322/3/71.asp&amp;NoWebContent=1
+ </remarks>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Data">
+ <summary>
  represents Hex, Byte, Base64, or String data to encrypt/decrypt;
  use the .Text property to set/get a string representation 
  use the .Hex property to set/get a string-based Hexadecimal representation 
  use the .Base64 to set/get a string-based Base64 representation 
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.ToHex(System.Byte[])">
-	<summary>
- converts an array of bytes to a string Hex representation
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Data.DefaultEncoding">
+ <summary>
+ Determines the default text encoding across ALL Data instances
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.FromHex(System.String)">
-	<summary>
- converts from a string Hex representation to an array of bytes
+</member>
+<member name="F:EventPhotoEmailer.Encryption.Data.Encoding">
+ <summary>
+ Determines the default text encoding for this Data instance
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.FromBase64(System.String)">
-	<summary>
- converts from a string Base64 representation to an array of bytes
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.#ctor">
+ <summary>
+ Creates new, empty encryption data
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.ToBase64(System.Byte[])">
-	<summary>
- converts from an array of bytes to a string Base64 representation
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.Byte[])">
+ <summary>
+ Creates new encryption data with the specified byte array
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.GetXmlElement(System.String,System.String)">
-	<summary>
- retrieve an element from an XML string
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.String)">
+ <summary>
+ Creates new encryption data with the specified string; 
+ will be converted to byte array using default encoding
  </summary>
-</member><member name="M:EventPhotoEmailer.Encryption.Utils.GetConfigString(System.String,System.Boolean)">
-	<summary>
- Returns the specified string value from the application .config file
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.#ctor(System.String,System.Text.Encoding)">
+ <summary>
+ Creates new encryption data using the specified string and the 
+ specified encoding to convert the string to a byte array.
  </summary>
-</member><member name="T:EventPhotoEmailer.Encryption.Utils">
-	<summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.IsEmpty">
+ <summary>
+ returns true if no data is present
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.StepBytes">
+ <summary>
+ allowed step interval, in bytes, for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.StepBits">
+ <summary>
+ allowed step interval, in bits, for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.MinBytes">
+ <summary>
+ minimum number of bytes allowed for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.MinBits">
+ <summary>
+ minimum number of bits allowed for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.MaxBytes">
+ <summary>
+ maximum number of bytes allowed for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.MaxBits">
+ <summary>
+ maximum number of bits allowed for this data; if 0, no limit
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.Bytes">
+ <summary>
+ Returns the byte representation of the data; 
+ This will be padded to MinBytes and trimmed to MaxBytes as necessary!
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.Text">
+ <summary>
+ Sets or returns text representation of bytes using the default text encoding
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.Hex">
+ <summary>
+ Sets or returns Hex string representation of this data
+ </summary>
+</member>
+<member name="P:EventPhotoEmailer.Encryption.Data.Base64">
+ <summary>
+ Sets or returns Base64 string representation of this data
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.ToString">
+ <summary>
+ Returns text representation of bytes using the default text encoding
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.ToBase64">
+ <summary>
+ returns Base64 string representation of this data
+ </summary>
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Data.ToHex">
+ <summary>
+ returns Hex string representation of this data
+ </summary>
+</member>
+<member name="T:EventPhotoEmailer.Encryption.Utils">
+ <summary>
  Friend class for shared utility methods used by multiple Encryption classes
  </summary>
-</member><member name="M:EventPhotoEmailer.EPEForm1.Form1_Load(System.Object,System.EventArgs)">
-	<summary>
- Form1_Load() does the following:
- sets CheckForIllegalCrossTread = False
- Runs the splash screenf
- Initializes Email engine
- Check for an initial internet connection
- Reads setup data from saved file
- Sets up toolstrip comments
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.ToHex(System.Byte[])">
+ <summary>
+ converts an array of bytes to a string Hex representation
  </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks>
-	</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.ImportDefaults(System.String)">
-	<summary>
- ImportDefaults imports the defalut information from text files
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.FromHex(System.String)">
+ <summary>
+ converts from a string Hex representation to an array of bytes
  </summary>
-	<param name="DefaultFileToUse"></param>
-	<remarks>
- 'defaults.txt order:
- '1 Subject Line 2 Image Folder 3 Message file 4 Mail Server Username 5 Port box 6 Time Interval 7 Facebook Login
- '8 Confirmation state 9 combine email 10 mail encryption </remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.RunGo">
-	<summary>
- RunGo() checks if LetsGo() is running in the background and if not, calls LetsGo()
- Before attempting to send 
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.FromBase64(System.String)">
+ <summary>
+ converts from a string Base64 representation to an array of bytes
  </summary>
-	<remarks> RunGo() is called by the watch folder as well as when the send email button is pressed.
- It calls LetsGo() on a thread. If LetsGo() is busy, <c>NewImagesAreReady = TRUE</c>. This is based on the possibility
- that the RunGo() event was raised as images were being added while emailing.
- The <c>BW_LetsGo.RunWorkerCompleted</c> subroutine will check the flag to decide if to rerun the emailer. Note: the
- <c>SENDEMAILFINISHEDFLAGG</c> is set during the SENDEMAIL subroutine</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.EmailNewImages(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
-	<summary>
- EmailNewImages() is handled by <c>LetsGo.RunWorkerCompleted</c> to see if a rerun is needed
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.ToBase64(System.Byte[])">
+ <summary>
+ converts from an array of bytes to a string Base64 representation
  </summary>
-	<remarks>It is possible that new images may appear during processing. If so, a new trigger will result. If LetsGO()
- is busy, this flag is set to let the program know to rerun RunGo(). This will occur until the folder is empty</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.enabletextboxes(System.Boolean)">
-	<summary>
- Disabletextboxes() is used to avoid changes to these fields while processing
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.GetXmlElement(System.String,System.String)">
+ <summary>
+ retrieve an element from an XML string
  </summary>
-	<param name="Decision">A boolean to assign to textbox.enabled</param>
-	<remarks>While processing, values from these fields are referenced. If changed
- while processing, an error can result. These are disabled to avoid these errors.</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.SendEmail_AND_HandleControlsOnThread(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
-	<summary>
- SendEmail_AND_HandleControlsOnThread() is the main program.
+</member>
+<member name="M:EventPhotoEmailer.Encryption.Utils.GetConfigString(System.String,System.Boolean)">
+ <summary>
+ Returns the specified string value from the application .config file
  </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks>When RunGo() is called (via SEND button or WatchFolder trigger), LetsGo is ran.
- Since form controls are called, the possibility of thread errors result. It is recommended
- that all control calls be placed into the .ProgressChanged event. Instead of breaking the code
- into parts that called controls and the parts that didn't, it was decided to have the entire
- code handled by the .ProgressChanged event. The <c>LetGo()</c>
- subroutine simply calls <c>BW_LetsGo.ReportProgress(1)</c> where 1 acts as a dummy value.   
- When the send button is pressed, there are two loops to take
- 1.) If a directory is being used, the <c>ReadFromDirectory()</c> is used. 
- 2.) If the files are parsed, then <c>SendParsedEmails()</c>.
- The global event folder is set in this subroutine with n name corresponding to the current date.
- Currently, only .jpg files are handled</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.LetsGO(System.Object,System.ComponentModel.DoWorkEventArgs)">
-	<summary>
- LetsGo() calls <seealso>LetsGo.ProgressCompleted</seealso>
-	</summary>
-	<remarks>Code that should go here has been moved to .ProgressCompleted since it is better
- in handling possible threading errors.</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.SendEmailFromDirectory(System.Object,System.EventArgs)">
-	<summary>
- SendEmailFromDirectory()
- Sends emails based on information in the directory file
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.GetEmailsFromMasterDirectory">
-	<summary>
- The expected format of the text file is:
-EventName,filename,emailaddress,Person's Name
-This file will get the information from the text files and populate two
-autocomplete variable: SavedEmails and SavedNames
-The user will have the option of which one to use.
-If they start typing in the name box, it will auto populate
-Then upon leaving, the email will appear.
-The opposite is true for typing in the email box.
-For both cases, the information is saved in the same format.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.SendParsedEmails(System.Object,System.EventArgs)">
-	<summary>
- SendParsedEmails()
- Sends emails with email address(es) encoded into the filename.
- This is done on its own thread
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.HOODFileWatcherJPG(System.Object,System.EventArgs)">
-	<summary>
- HOODFileWatcherJPG()
- This subroutine was added to add intuition to the code. Before this, watchfolder was being used and I 
- experienced unexplained behaviour. For one, I kept getting threading errors. 
- Now this event is triggered by a timer.
- At a specified interval, the folder is checked for new JPEG images. If at least one image 
- exists, RunGO() is called.
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks>So far, it olnly looks for .jpg files.</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.Combine(System.String[]@,System.String[]@,System.String[]@,System.String[]@)">
-	<summary>
- Combine() is used to combine the images of like emails into a usable string that the 
- emailing program can use. On Oct 29, 2010, the EmailCombineCheckBox was added to allow this 
- feature to be ignored. This is useful if the files are large in size and may produce an undeliverable email.
- It uses a delimiter defined by EmailDelimiter.
- </summary>
-	<param name="emailarray">An array of emails strings</param>
-	<param name="filenamearray">An array of filenames that match the order of the emailarray</param>
-	<param name="emailstring">Outputs (passed as ByRef). This is the </param>
-	<param name="filenamestring"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.SENDEMAIL(System.String,System.String,System.String,System.String,System.String@,System.Boolean@,System.String)">
-	<summary>
- SENDEMAIL() is the main program to send emails and / or post to Facebook. A tally of successes and failures is displayed.
- If uploading to Facebook is requested, that is done first. At this stage, no check made 
- to see if the filenames contain email addresses.
- In the next step, if emailing is requested, a check is made to see if the filenames are valid.
-  Note, it is possible
- that an image can be uploaded to Facebook but not emailed if no email address was attached.
- No images are moved to the Event folder in this subroutine. This occurs after returning to
- the calling function.
-  It is called both by Parseemail() and Sendemailfromdirectory()
- Emails are sent using calls to MailHood() ... which uses the System.Net.Mail method
- </summary>
-	<param name="email">A single email address</param>
-	<param name="filenamestring">A list of attachments separated by commas. Uses full path names</param>
-	<param name="EventFolder"></param>
-	<param name="filenameshort">List of pathless filenames. Used for status updates</param>
-	<param name="GOFLAGG">Global variable. Indicator that mail processing is busy</param>
-	<param name="SENDEMAILFLAGG"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.StartStopAutoMode(System.Object,System.EventArgs)">
-	<summary>
- StartStopAutoMode() activates a timer (HoodWatchFolderOnTimer) used watch a folder for new files. 
- When this occurs it runs the LetsGo() subroutine. 
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.CheckFileExistence_And_Spaces(System.String,System.String,System.String@)">
-	<summary>
- CheckFileExistence_And_Spaces() checks if a file exists. It also checks if it has any spaces. If it does
- contain spaces then the file is ignored. A message is sent to the status window as well as the status
- file indicating that this file was not sent. The output variable, CheckFileFlagg, is set and used by the 
- calling subroutine to decide if to email the file or not. If not, this file will remain in the hotfolder
- </summary>
-	<param name="PATH"></param>
-	<param name="FILENAMETOCHECK"></param>
-	<param name="CheckFileFlagg">True if the filename is valid.</param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.ShowErrorSendingFileHOOD(System.String,System.String,System.String,System.String,System.String)">
-	<summary>
- ShowErrorSendingFilesHood displays error in status bar as well as statfile and errfile
- </summary>
-	<param name="ErrorString"></param>
-	<param name="Filename"></param>
-	<param name="emailaddress"></param>
-	<param name="STATFILE"></param>
-	<param name="ERRFILE"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.Emailfilename_CheckedChanged(System.Object,System.EventArgs)">
-	<summary>
- Emailfilename_CheckedChanged() handles the logic for the checkbox that determines if a filename
- directory is used.
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.CheckForNonEmailedJPGFiles">
-	<summary>
- CheckForNonEmailedJPGFiles() checks to see if files exist that start with $. If so, it is an indication that no email was attached.
- For the case of facebook only, this subroutine is not called since it would not have an email address attached.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.checkinternetconnection">
-	<summary>
- checkinternetconnection()
- Checks if there is a connection to the internet. 
- </summary>
-	<returns>NETFOUND - 
- 1: Connected to the internet
- 2: Not Connected to the internet
- 3: No Network Found
- 4: Something caused and exception
- 5: Not checking internet connection
- Has a global flag called CHECKCONNECTIONYESNO which is used during debugging
- </returns>
-	<remarks>Checks for an internet connection. This is called before sending and
- also periodically using a timer (CheckConnectionTimer.Tick) to give feedback as to the current internet status. 
- Ideally, this should be placed on a thead that updates a signal strength indicator.
- this code is staying local and not moved to the module because of dependence on status boxes
- and global variables.</remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.Timer1_Tick(System.Object,System.EventArgs)">
-	<summary>
- Timer1_Tick() is used to check the internet connection on a given interval. 
- *** This is currenlty not being used.***
- Instead, it is checked at the time the send button is pressed, or, if in auto mode, when a new event rises.
- </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.MakeAlbum3(System.String,System.Windows.Forms.WebBrowser)">
-	<summary>
- MakeAlbum3 uses the facebook create.php site to make an album
- </summary>
-	<param name="AlbumName"></param>
-	<param name="MyWebBrowser"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.Fill_ISP_Listbox(System.String)">
-	<summary>
- Fill_ISP_listbox reads data from the "\bin\SMTPServerList.csv" file.
- This file is a database of known ISP companies and thier IP addresses
- </summary>
-	<param name="Commonpath"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EPEForm1.EmailPromptFunction(System.String)">
-	<summary>
- EmailPrompt allows emails to be entered when images arrive in the hotfolder. This eliminates
- the need for Darkroom to attach the email address to the filename. A small thumbnail will
- show to make sure the correct image is chosen.
- </summary>
-	<param name="ImageAddress"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="T:EventPhotoEmailer.EPEForm1">
-	<summary>
+</member>
+<member name="T:EventPhotoEmailer.EPEForm1">
+<summary>
  This is the source code for Event Photo Emailer. The main goal of this program is to email photos and post images onto Facebook. 
  <history>
  11-20-2009 Added the check for filenames that start with $ This is an indicator that Darkroom did 
@@ -781,7 +796,7 @@ thread, there exist the possibilty of mulitple threads being launched for each f
  March 8, 2011 - Added code to first access POP3. (I recieved a call from someone who said that their provider requires both pop3 
  authentication and smtp authenication. The current command is simply Code = seePop3Connect(0, textBox_MailServer.Text, 
  textBox_Username.Text, textBox_Password.Text) 
- if Code=&gt;0, then it is ok.
+ if Code=>0, then it is ok.
 
  March 8, 2011 - Added code to send email to Facebook. If the box is checked, the email address is replaced by the Facebook email.
 
@@ -843,141 +858,267 @@ thread, there exist the possibilty of mulitple threads being launched for each f
  introduced another field to contain a link to a shorter message when using the text message option.
  10/19/2017 Fixed issue with RepeatEmailsInEmailPrompt not locking correctly.
 </history>
-	</summary>
-</member><member name="M:EventPhotoEmailer.EmailPrompt.Fill_EmailToTextComboBox(System.String)">
-	<summary>
- Fill EmailToText Combobox reads data from the "\bin\SMTPServerList.csv" file.
+</summary>
+ 
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.Form1_Load(System.Object,System.EventArgs)">
+ <summary>
+ Form1_Load() does the following:
+ sets CheckForIllegalCrossTread = False
+ Runs the splash screenf
+ Initializes Email engine
+ Check for an initial internet connection
+ Reads setup data from saved file
+ Sets up toolstrip comments
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks> </remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.ImportDefaults(System.String)">
+ <summary>
+ ImportDefaults imports the defalut information from text files
+ </summary>
+ <param name="DefaultFileToUse"></param>
+ <remarks>
+ 'defaults.txt order:
+ '1 Subject Line 2 Image Folder 3 Message file 4 Mail Server Username 5 Port box 6 Time Interval 7 Facebook Login
+ '8 Confirmation state 9 combine email 10 mail encryption </remarks>
+ 
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.RunGo">
+ <summary>
+ RunGo() checks if LetsGo() is running in the background and if not, calls LetsGo()
+ Before attempting to send 
+ </summary>
+ <remarks> RunGo() is called by the watch folder as well as when the send email button is pressed.
+ It calls LetsGo() on a thread. If LetsGo() is busy, <c>NewImagesAreReady = TRUE</c>. This is based on the possibility
+ that the RunGo() event was raised as images were being added while emailing.
+ The <c>BW_LetsGo.RunWorkerCompleted</c> subroutine will check the flag to decide if to rerun the emailer. Note: the
+ <c>SENDEMAILFINISHEDFLAGG</c> is set during the SENDEMAIL subroutine</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.EmailNewImages(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+ <summary>
+ EmailNewImages() is handled by <c>LetsGo.RunWorkerCompleted</c> to see if a rerun is needed
+ </summary>
+ <remarks>It is possible that new images may appear during processing. If so, a new trigger will result. If LetsGO()
+ is busy, this flag is set to let the program know to rerun RunGo(). This will occur until the folder is empty</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.enabletextboxes(System.Boolean)">
+ <summary>
+ Disabletextboxes() is used to avoid changes to these fields while processing
+ </summary>
+ <param name="Decision">A boolean to assign to textbox.enabled</param>
+ <remarks>While processing, values from these fields are referenced. If changed
+ while processing, an error can result. These are disabled to avoid these errors.</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.SendEmail_AND_HandleControlsOnThread(System.Object,System.ComponentModel.ProgressChangedEventArgs)">
+ <summary>
+ SendEmail_AND_HandleControlsOnThread() is the main program.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>When RunGo() is called (via SEND button or WatchFolder trigger), LetsGo is ran.
+ Since form controls are called, the possibility of thread errors result. It is recommended
+ that all control calls be placed into the .ProgressChanged event. Instead of breaking the code
+ into parts that called controls and the parts that didn't, it was decided to have the entire
+ code handled by the .ProgressChanged event. The <c>LetGo()</c>
+ subroutine simply calls <c>BW_LetsGo.ReportProgress(1)</c> where 1 acts as a dummy value.   
+ When the send button is pressed, there are two loops to take
+ 1.) If a directory is being used, the <c>ReadFromDirectory()</c> is used. 
+ 2.) If the files are parsed, then <c>SendParsedEmails()</c>.
+ The global event folder is set in this subroutine with n name corresponding to the current date.
+ Currently, only .jpg files are handled</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.LetsGO(System.Object,System.ComponentModel.DoWorkEventArgs)">
+ <summary>
+ LetsGo() calls <seealso>LetsGo.ProgressCompleted</seealso>
+ </summary>
+ <remarks>Code that should go here has been moved to .ProgressCompleted since it is better
+ in handling possible threading errors.</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.SendEmailFromDirectory(System.Object,System.EventArgs)">
+ <summary>
+ SendEmailFromDirectory()
+ Sends emails based on information in the directory file
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.GetEmailsFromMasterDirectory">
+ <summary>
+ The expected format of the text file is:
+EventName,filename,emailaddress,Person's Name
+This file will get the information from the text files and populate two
+autocomplete variable: SavedEmails and SavedNames
+The user will have the option of which one to use.
+If they start typing in the name box, it will auto populate
+Then upon leaving, the email will appear.
+The opposite is true for typing in the email box.
+For both cases, the information is saved in the same format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.SendParsedEmails(System.Object,System.EventArgs)">
+ <summary>
+ SendParsedEmails()
+ Sends emails with email address(es) encoded into the filename.
+ This is done on its own thread
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.HOODFileWatcherJPG(System.Object,System.EventArgs)">
+ <summary>
+ HOODFileWatcherJPG()
+ This subroutine was added to add intuition to the code. Before this, watchfolder was being used and I 
+ experienced unexplained behaviour. For one, I kept getting threading errors. 
+ Now this event is triggered by a timer.
+ At a specified interval, the folder is checked for new JPEG images. If at least one image 
+ exists, RunGO() is called.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>So far, it olnly looks for .jpg files.</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.Combine(System.String[]@,System.String[]@,System.String[]@,System.String[]@)">
+ <summary>
+ Combine() is used to combine the images of like emails into a usable string that the 
+ emailing program can use. On Oct 29, 2010, the EmailCombineCheckBox was added to allow this 
+ feature to be ignored. This is useful if the files are large in size and may produce an undeliverable email.
+ It uses a delimiter defined by EmailDelimiter.
+ </summary>
+ <param name="emailarray">An array of emails strings</param>
+ <param name="filenamearray">An array of filenames that match the order of the emailarray</param>
+ <param name="emailstring">Outputs (passed as ByRef). This is the </param>
+ <param name="filenamestring"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.SENDEMAIL(System.String,System.String,System.String,System.String,System.String@,System.Boolean@,System.String)">
+ <summary>
+ SENDEMAIL() is the main program to send emails and / or post to Facebook. A tally of successes and failures is displayed.
+ If uploading to Facebook is requested, that is done first. At this stage, no check made 
+ to see if the filenames contain email addresses.
+ In the next step, if emailing is requested, a check is made to see if the filenames are valid.
+  Note, it is possible
+ that an image can be uploaded to Facebook but not emailed if no email address was attached.
+ No images are moved to the Event folder in this subroutine. This occurs after returning to
+ the calling function.
+  It is called both by Parseemail() and Sendemailfromdirectory()
+ Emails are sent using calls to MailHood() ... which uses the System.Net.Mail method
+ </summary>
+ <param name="email">A single email address</param>
+ <param name="filenamestring">A list of attachments separated by commas. Uses full path names</param>
+ <param name="EventFolder"></param>
+ <param name="filenameshort">List of pathless filenames. Used for status updates</param>
+ <param name="GOFLAGG">Global variable. Indicator that mail processing is busy</param>
+ <param name="SENDEMAILFLAGG"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.StartStopAutoMode(System.Object,System.EventArgs)">
+ <summary>
+ StartStopAutoMode() activates a timer (HoodWatchFolderOnTimer) used watch a folder for new files. 
+ When this occurs it runs the LetsGo() subroutine. 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.CheckFileExistence_And_Spaces(System.String,System.String,System.String@)">
+ <summary>
+ CheckFileExistence_And_Spaces() checks if a file exists. It also checks if it has any spaces. If it does
+ contain spaces then the file is ignored. A message is sent to the status window as well as the status
+ file indicating that this file was not sent. The output variable, CheckFileFlagg, is set and used by the 
+ calling subroutine to decide if to email the file or not. If not, this file will remain in the hotfolder
+ </summary>
+ <param name="PATH"></param>
+ <param name="FILENAMETOCHECK"></param>
+ <param name="CheckFileFlagg">True if the filename is valid.</param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.ShowErrorSendingFileHOOD(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ShowErrorSendingFilesHood displays error in status bar as well as statfile and errfile
+ </summary>
+ <param name="ErrorString"></param>
+ <param name="Filename"></param>
+ <param name="emailaddress"></param>
+ <param name="STATFILE"></param>
+ <param name="ERRFILE"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.Emailfilename_CheckedChanged(System.Object,System.EventArgs)">
+ <summary>
+ Emailfilename_CheckedChanged() handles the logic for the checkbox that determines if a filename
+ directory is used.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.CheckForNonEmailedJPGFiles">
+ <summary>
+ CheckForNonEmailedJPGFiles() checks to see if files exist that start with $. If so, it is an indication that no email was attached.
+ For the case of facebook only, this subroutine is not called since it would not have an email address attached.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.checkinternetconnection">
+ <summary>
+ checkinternetconnection()
+ Checks if there is a connection to the internet. 
+ </summary>
+ <returns>NETFOUND - 
+ 1: Connected to the internet
+ 2: Not Connected to the internet
+ 3: No Network Found
+ 4: Something caused and exception
+ 5: Not checking internet connection
+ Has a global flag called CHECKCONNECTIONYESNO which is used during debugging
+ </returns>
+ <remarks>Checks for an internet connection. This is called before sending and
+ also periodically using a timer (CheckConnectionTimer.Tick) to give feedback as to the current internet status. 
+ Ideally, this should be placed on a thead that updates a signal strength indicator.
+ this code is staying local and not moved to the module because of dependence on status boxes
+ and global variables.</remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.Timer1_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Timer1_Tick() is used to check the internet connection on a given interval. 
+ *** This is currenlty not being used.***
+ Instead, it is checked at the time the send button is pressed, or, if in auto mode, when a new event rises.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.MakeAlbum3(System.String,System.Windows.Forms.WebBrowser)">
+ <summary>
+ MakeAlbum3 uses the facebook create.php site to make an album
+ </summary>
+ <param name="AlbumName"></param>
+ <param name="MyWebBrowser"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.Fill_ISP_Listbox(System.String)">
+ <summary>
+ Fill_ISP_listbox reads data from the "\bin\SMTPServerList.csv" file.
  This file is a database of known ISP companies and thier IP addresses
  </summary>
-	<param name="Commonpath"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.EmailPrompt.AddEmailsToDatabaseAndFinishEmailing(System.Object,System.EventArgs)">
-	<summary>
- The purpose of this subroutine is to add names and email addresses to a text file that is used to 
- store emails and names. This text file is used to autocomplete fields in the EmailPrompt form.
- When finished, 
+ <param name="Commonpath"></param>
+ <remarks></remarks>
+</member>
+<member name="M:EventPhotoEmailer.EPEForm1.EmailPromptFunction(System.String)">
+<summary>
+ EmailPrompt allows emails to be entered when images arrive in the hotfolder. This eliminates
+ the need for Darkroom to attach the email address to the filename. A small thumbnail will
+ show to make sure the correct image is chosen.
  </summary>
-	<param name="sender"></param>
-	<param name="e"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.getJPGfiles(System.String)">
-	<summary>
- getJPGfiles - Returns an arraylist of image filenames
- </summary>
-	<param name="MAINFOLDER"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.ArrayAddItemHOOD(System.String[]@,System.String)">
-	<summary>
- ArrayAddItemsHOOD - is used to add items to an array. Works like arraylist.add
- but for variable declared as arrays and not arraylists.
- </summary>
-	<param name="AR"></param>
-	<param name="ItemToAdd"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.GetFileContents(System.String,System.String@)">
-	<summary>
- Reads text from a file and returns a string
- </summary>
-	<param name="FullPath"></param>
-	<param name="ErrInfo"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.SaveTextToFile(System.String,System.String,System.String)">
-	<summary>
- SaveTextToFile - Saves a string to file
- </summary>
-	<param name="strData"> String</param>
-	<param name="FullPath"> Full path of file</param>
-	<param name="ErrInfo"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.AppendText(System.String,System.String,System.String)">
-	<summary>
- AppendText is used to add text to a file
- </summary>
-	<param name="Origfile"></param>
-	<param name="message"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsValidEmail(System.String)">
-	<summary>
- IsValidEmail - check to see if the email format is correct.
- original by Brad Murray
- optimized by Rob Hofker, email: rob@eurocamp.nl, 
- 23 august 2000
-  </summary>
-	<param name="sEMail"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning_old(System.String)">
-	<summary>
- IsProcessRunning checks to see if the given process is running.
- The name of the process will have to match exactly.
- </summary>
-	<param name="name"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsProcessRunning(System.String)">
-	<summary>
- IsProcessRunning checks to see if the given process is running.
- The name of the process will have to match exactly.
- </summary>
-	<param name="name"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.RunningDots">
-	<summary>
- RunningDots - Used to show that a process is still running.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.pause(System.Int32)">
-	<summary>
- Produces a pause (in ms). Kept in ms to allow for fraction of a second.
- </summary>
-	<param name="delay"></param>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.MakeAlbum(System.String,Facebook_Graph_Toolkit.GraphApi.Api)">
-	<summary>
- MakeAlbum - used to create an album in Facebook. Needs Facebook_Graph_Toolkit
- </summary>
-	<param name="message"></param>
-	<param name="MyAPI"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.CheckForResidualImages(System.String)">
-	<summary>
- This subroutine checks to see if residual images are in the image forlder. This is to guard against
- images being emailed inadvertantly.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.IsConnectionAvailable2(System.String)">
-	<summary>
- IsConnectionAvailable pings the given website. Usually google.com
- </summary>
-	<param name="website"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.RetrieveSignalStrenth">
-	<summary>
- RetrieveSignalStrength attempts to get the signal strenth
- So far, it doesn't work
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:EventPhotoEmailer.Module1.GetWIFISignalStrength">
-	<summary>
- method for retrieving the signal strength of all WI-FI adapters
- </summary>
-	<returns></returns>
-</member><member name="M:EventPhotoEmailer.Module1.Display(System.Windows.Forms.TextBox,System.String)">
-	<summary>
- Display() is used to write to the statusbox along with 2 carriage returns. Allows the statusbox to be more 
- easily read
- </summary>
-	<param name="STATUSBOX"></param>
-	<param name="X"></param>
-	<remarks></remarks>
+ <param name="ImageAddress"></param>
+ <returns></returns>
+ <remarks></remarks>
+ 
 </member>
 </members>
 </doc>

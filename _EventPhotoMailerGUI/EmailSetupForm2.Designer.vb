@@ -62,6 +62,7 @@ Partial Class EmailSetupForm
         Me.CheckBox_ConfirmationEmail = New System.Windows.Forms.CheckBox()
         Me.EmailCombineCheckBox = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ConfigButton0 = New System.Windows.Forms.Button()
         Me.ConfigButton4 = New System.Windows.Forms.Button()
         Me.ConfigButton3 = New System.Windows.Forms.Button()
         Me.CurrentConfigLabel = New System.Windows.Forms.Label()
@@ -69,17 +70,18 @@ Partial Class EmailSetupForm
         Me.CompEmailTextbox = New System.Windows.Forms.TextBox()
         Me.CompNameTextbox = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ConfigButton0 = New System.Windows.Forms.Button()
+        Me.SettingsGroupBox = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.NotifyBoxLocationGroupBox.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.SettingsGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button_SaveAsDefault2
         '
-        Me.Button_SaveAsDefault2.Location = New System.Drawing.Point(295, 457)
+        Me.Button_SaveAsDefault2.Location = New System.Drawing.Point(538, 457)
         Me.Button_SaveAsDefault2.Name = "Button_SaveAsDefault2"
         Me.Button_SaveAsDefault2.Size = New System.Drawing.Size(99, 23)
         Me.Button_SaveAsDefault2.TabIndex = 4
@@ -88,7 +90,7 @@ Partial Class EmailSetupForm
         '
         'Form2closeNoSavebutton
         '
-        Me.Form2closeNoSavebutton.Location = New System.Drawing.Point(431, 457)
+        Me.Form2closeNoSavebutton.Location = New System.Drawing.Point(697, 457)
         Me.Form2closeNoSavebutton.Name = "Form2closeNoSavebutton"
         Me.Form2closeNoSavebutton.Size = New System.Drawing.Size(121, 23)
         Me.Form2closeNoSavebutton.TabIndex = 5
@@ -97,7 +99,7 @@ Partial Class EmailSetupForm
         '
         'EmailMasterListFilename
         '
-        Me.EmailMasterListFilename.Location = New System.Drawing.Point(431, 346)
+        Me.EmailMasterListFilename.Location = New System.Drawing.Point(449, 365)
         Me.EmailMasterListFilename.Name = "EmailMasterListFilename"
         Me.EmailMasterListFilename.ReadOnly = True
         Me.EmailMasterListFilename.Size = New System.Drawing.Size(322, 20)
@@ -106,7 +108,7 @@ Partial Class EmailSetupForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(759, 344)
+        Me.Button2.Location = New System.Drawing.Point(777, 363)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -119,7 +121,7 @@ Partial Class EmailSetupForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(759, 298)
+        Me.Button3.Location = New System.Drawing.Point(777, 317)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 1
@@ -133,7 +135,7 @@ Partial Class EmailSetupForm
         'IncludeAdCheckBox
         '
         Me.IncludeAdCheckBox.AutoSize = True
-        Me.IncludeAdCheckBox.Location = New System.Drawing.Point(431, 278)
+        Me.IncludeAdCheckBox.Location = New System.Drawing.Point(449, 297)
         Me.IncludeAdCheckBox.Name = "IncludeAdCheckBox"
         Me.IncludeAdCheckBox.Size = New System.Drawing.Size(156, 17)
         Me.IncludeAdCheckBox.TabIndex = 138
@@ -143,7 +145,7 @@ Partial Class EmailSetupForm
         'AdLabel2
         '
         Me.AdLabel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.AdLabel2.Location = New System.Drawing.Point(431, 298)
+        Me.AdLabel2.Location = New System.Drawing.Point(449, 317)
         Me.AdLabel2.Name = "AdLabel2"
         Me.AdLabel2.Size = New System.Drawing.Size(322, 20)
         Me.AdLabel2.TabIndex = 0
@@ -153,7 +155,7 @@ Partial Class EmailSetupForm
         Me.UseMasterListCheckbox.AutoSize = True
         Me.UseMasterListCheckbox.Checked = True
         Me.UseMasterListCheckbox.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.UseMasterListCheckbox.Location = New System.Drawing.Point(431, 324)
+        Me.UseMasterListCheckbox.Location = New System.Drawing.Point(449, 343)
         Me.UseMasterListCheckbox.Name = "UseMasterListCheckbox"
         Me.UseMasterListCheckbox.Size = New System.Drawing.Size(149, 17)
         Me.UseMasterListCheckbox.TabIndex = 140
@@ -184,7 +186,7 @@ Partial Class EmailSetupForm
         Me.CompNameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CompNameLabel.Location = New System.Drawing.Point(10, 20)
         Me.CompNameLabel.Name = "CompNameLabel"
-        Me.CompNameLabel.Size = New System.Drawing.Size(122, 16)
+        Me.CompNameLabel.Size = New System.Drawing.Size(118, 16)
         Me.CompNameLabel.TabIndex = 153
         Me.CompNameLabel.Text = "Company Name"
         '
@@ -194,7 +196,7 @@ Partial Class EmailSetupForm
         Me.CompEmaillabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CompEmaillabel.Location = New System.Drawing.Point(10, 67)
         Me.CompEmaillabel.Name = "CompEmaillabel"
-        Me.CompEmaillabel.Size = New System.Drawing.Size(120, 16)
+        Me.CompEmaillabel.Size = New System.Drawing.Size(116, 16)
         Me.CompEmaillabel.TabIndex = 152
         Me.CompEmaillabel.Text = "Company Email"
         '
@@ -211,7 +213,7 @@ Partial Class EmailSetupForm
         Me.label4_outgoing.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label4_outgoing.Location = New System.Drawing.Point(15, 21)
         Me.label4_outgoing.Name = "label4_outgoing"
-        Me.label4_outgoing.Size = New System.Drawing.Size(168, 16)
+        Me.label4_outgoing.Size = New System.Drawing.Size(163, 16)
         Me.label4_outgoing.TabIndex = 114
         Me.label4_outgoing.Text = "Outgoing Email Server"
         '
@@ -228,7 +230,7 @@ Partial Class EmailSetupForm
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 102)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 16)
+        Me.Label1.Size = New System.Drawing.Size(79, 16)
         Me.Label1.TabIndex = 116
         Me.Label1.Text = "Username"
         '
@@ -246,7 +248,7 @@ Partial Class EmailSetupForm
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(15, 153)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(77, 16)
+        Me.Label2.Size = New System.Drawing.Size(76, 16)
         Me.Label2.TabIndex = 118
         Me.Label2.Text = "Password"
         '
@@ -264,7 +266,7 @@ Partial Class EmailSetupForm
         Me.Label7_port.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7_port.Location = New System.Drawing.Point(351, 56)
         Me.Label7_port.Name = "Label7_port"
-        Me.Label7_port.Size = New System.Drawing.Size(37, 16)
+        Me.Label7_port.Size = New System.Drawing.Size(36, 16)
         Me.Label7_port.TabIndex = 120
         Me.Label7_port.Text = "Port"
         '
@@ -328,9 +330,9 @@ Partial Class EmailSetupForm
         Me.GroupBox1.Controls.Add(Me.textBox_MailServer)
         Me.GroupBox1.Controls.Add(Me.textBox_Username)
         Me.GroupBox1.Controls.Add(Me.label4_outgoing)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 32)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(412, 438)
+        Me.GroupBox1.Size = New System.Drawing.Size(412, 479)
         Me.GroupBox1.TabIndex = 156
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Email Configuration"
@@ -463,12 +465,21 @@ Partial Class EmailSetupForm
         Me.GroupBox2.Controls.Add(Me.CurrentConfigLabel)
         Me.GroupBox2.Controls.Add(Me.ConfigButton2)
         Me.GroupBox2.Controls.Add(Me.ConfigButton1)
-        Me.GroupBox2.Location = New System.Drawing.Point(430, 151)
+        Me.GroupBox2.Location = New System.Drawing.Point(448, 170)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(420, 117)
         Me.GroupBox2.TabIndex = 157
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Configuration Selection"
+        '
+        'ConfigButton0
+        '
+        Me.ConfigButton0.Location = New System.Drawing.Point(9, 49)
+        Me.ConfigButton0.Name = "ConfigButton0"
+        Me.ConfigButton0.Size = New System.Drawing.Size(148, 23)
+        Me.ConfigButton0.TabIndex = 147
+        Me.ConfigButton0.Text = "Default Configuration"
+        Me.ConfigButton0.UseVisualStyleBackColor = True
         '
         'ConfigButton4
         '
@@ -504,7 +515,7 @@ Partial Class EmailSetupForm
         Me.GroupBox3.Controls.Add(Me.CompNameTextbox)
         Me.GroupBox3.Controls.Add(Me.CompNameLabel)
         Me.GroupBox3.Controls.Add(Me.CompEmaillabel)
-        Me.GroupBox3.Location = New System.Drawing.Point(430, 27)
+        Me.GroupBox3.Location = New System.Drawing.Point(449, 32)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(419, 118)
         Me.GroupBox3.TabIndex = 158
@@ -525,31 +536,32 @@ Partial Class EmailSetupForm
         Me.CompNameTextbox.Size = New System.Drawing.Size(394, 20)
         Me.CompNameTextbox.TabIndex = 0
         '
-        'ConfigButton0
+        'SettingsGroupBox
         '
-        Me.ConfigButton0.Location = New System.Drawing.Point(9, 49)
-        Me.ConfigButton0.Name = "ConfigButton0"
-        Me.ConfigButton0.Size = New System.Drawing.Size(148, 23)
-        Me.ConfigButton0.TabIndex = 147
-        Me.ConfigButton0.Text = "Default Configuration"
-        Me.ConfigButton0.UseVisualStyleBackColor = True
+        Me.SettingsGroupBox.Controls.Add(Me.GroupBox3)
+        Me.SettingsGroupBox.Controls.Add(Me.GroupBox2)
+        Me.SettingsGroupBox.Controls.Add(Me.GroupBox1)
+        Me.SettingsGroupBox.Controls.Add(Me.UseMasterListCheckbox)
+        Me.SettingsGroupBox.Controls.Add(Me.Form2closeNoSavebutton)
+        Me.SettingsGroupBox.Controls.Add(Me.Button_SaveAsDefault2)
+        Me.SettingsGroupBox.Controls.Add(Me.AdLabel2)
+        Me.SettingsGroupBox.Controls.Add(Me.EmailMasterListFilename)
+        Me.SettingsGroupBox.Controls.Add(Me.Button2)
+        Me.SettingsGroupBox.Controls.Add(Me.Button3)
+        Me.SettingsGroupBox.Controls.Add(Me.IncludeAdCheckBox)
+        Me.SettingsGroupBox.Location = New System.Drawing.Point(2, 1)
+        Me.SettingsGroupBox.Name = "SettingsGroupBox"
+        Me.SettingsGroupBox.Size = New System.Drawing.Size(876, 516)
+        Me.SettingsGroupBox.TabIndex = 159
+        Me.SettingsGroupBox.TabStop = False
+        Me.SettingsGroupBox.Text = "Settings"
         '
         'EmailSetupForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(853, 492)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.UseMasterListCheckbox)
-        Me.Controls.Add(Me.Form2closeNoSavebutton)
-        Me.Controls.Add(Me.Button_SaveAsDefault2)
-        Me.Controls.Add(Me.AdLabel2)
-        Me.Controls.Add(Me.EmailMasterListFilename)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.IncludeAdCheckBox)
+        Me.ClientSize = New System.Drawing.Size(969, 589)
+        Me.Controls.Add(Me.SettingsGroupBox)
         Me.Name = "EmailSetupForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Email Configuration Editor"
@@ -564,8 +576,9 @@ Partial Class EmailSetupForm
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.SettingsGroupBox.ResumeLayout(False)
+        Me.SettingsGroupBox.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button_SaveAsDefault2 As System.Windows.Forms.Button
@@ -615,4 +628,5 @@ Partial Class EmailSetupForm
     Friend WithEvents ConfigButton4 As System.Windows.Forms.Button
     Friend WithEvents ConfigButton3 As System.Windows.Forms.Button
     Friend WithEvents ConfigButton0 As System.Windows.Forms.Button
+    Friend WithEvents SettingsGroupBox As System.Windows.Forms.GroupBox
 End Class

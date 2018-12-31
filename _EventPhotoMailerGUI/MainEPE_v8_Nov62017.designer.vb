@@ -83,6 +83,7 @@ Partial Class EPEForm1
         Me.TimeIntervalLabel = New System.Windows.Forms.Label()
         Me.MyXMLDataSet = New System.Data.DataSet()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RichTextBox_EmailListDescription = New System.Windows.Forms.RichTextBox()
         Me.MainGroupBox = New System.Windows.Forms.GroupBox()
         Me.Button_browse_textmessage = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -105,7 +106,7 @@ Partial Class EPEForm1
         Me.Config4ButtonFrontPage = New System.Windows.Forms.Button()
         Me.Config3ButtonFrontPage = New System.Windows.Forms.Button()
         Me.Config0ButtonFrontPage = New System.Windows.Forms.Button()
-        Me.RichTextBox_EmailListDescription = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.ContextMenuStrip_ForNotificationIcon.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.MyXMLDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,6 +114,7 @@ Partial Class EPEForm1
         Me.MainGroupBox.SuspendLayout()
         Me.AutomodeGroupBox.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GoButton
@@ -122,7 +124,7 @@ Partial Class EPEForm1
         Me.GoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.GoButton.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GoButton.ForeColor = System.Drawing.Color.Black
-        Me.GoButton.Location = New System.Drawing.Point(408, 544)
+        Me.GoButton.Location = New System.Drawing.Point(410, 533)
         Me.GoButton.Name = "GoButton"
         Me.GoButton.Size = New System.Drawing.Size(381, 38)
         Me.GoButton.TabIndex = 42
@@ -195,7 +197,7 @@ Partial Class EPEForm1
         '
         Me.Title.AutoSize = True
         Me.Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Title.Location = New System.Drawing.Point(4, 27)
+        Me.Title.Location = New System.Drawing.Point(6, 16)
         Me.Title.Name = "Title"
         Me.Title.Size = New System.Drawing.Size(207, 25)
         Me.Title.TabIndex = 24
@@ -275,7 +277,7 @@ Partial Class EPEForm1
         '
         'Button_SaveAsDefault
         '
-        Me.Button_SaveAsDefault.Location = New System.Drawing.Point(408, 588)
+        Me.Button_SaveAsDefault.Location = New System.Drawing.Point(410, 577)
         Me.Button_SaveAsDefault.Name = "Button_SaveAsDefault"
         Me.Button_SaveAsDefault.Size = New System.Drawing.Size(92, 25)
         Me.Button_SaveAsDefault.TabIndex = 62
@@ -285,7 +287,7 @@ Partial Class EPEForm1
         'MainStatusBox
         '
         Me.MainStatusBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MainStatusBox.Location = New System.Drawing.Point(408, 164)
+        Me.MainStatusBox.Location = New System.Drawing.Point(410, 153)
         Me.MainStatusBox.Multiline = True
         Me.MainStatusBox.Name = "MainStatusBox"
         Me.MainStatusBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -296,7 +298,7 @@ Partial Class EPEForm1
         '
         Me.StatusLabel.AutoSize = True
         Me.StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StatusLabel.Location = New System.Drawing.Point(422, 26)
+        Me.StatusLabel.Location = New System.Drawing.Point(424, 15)
         Me.StatusLabel.Name = "StatusLabel"
         Me.StatusLabel.Size = New System.Drawing.Size(78, 20)
         Me.StatusLabel.TabIndex = 65
@@ -305,7 +307,7 @@ Partial Class EPEForm1
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(408, 504)
+        Me.ProgressBar1.Location = New System.Drawing.Point(410, 493)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(381, 20)
         Me.ProgressBar1.TabIndex = 66
@@ -322,7 +324,7 @@ Partial Class EPEForm1
         '
         'CancelButton1
         '
-        Me.CancelButton1.Location = New System.Drawing.Point(697, 588)
+        Me.CancelButton1.Location = New System.Drawing.Point(699, 577)
         Me.CancelButton1.Name = "CancelButton1"
         Me.CancelButton1.Size = New System.Drawing.Size(92, 25)
         Me.CancelButton1.TabIndex = 72
@@ -375,7 +377,7 @@ Partial Class EPEForm1
         'ConnectionStatusResultLabel
         '
         Me.ConnectionStatusResultLabel.AutoSize = True
-        Me.ConnectionStatusResultLabel.Location = New System.Drawing.Point(589, 140)
+        Me.ConnectionStatusResultLabel.Location = New System.Drawing.Point(591, 129)
         Me.ConnectionStatusResultLabel.Name = "ConnectionStatusResultLabel"
         Me.ConnectionStatusResultLabel.Size = New System.Drawing.Size(94, 13)
         Me.ConnectionStatusResultLabel.TabIndex = 85
@@ -418,7 +420,7 @@ Partial Class EPEForm1
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfigureEmailButton, Me.AboutUsButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(809, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(837, 25)
         Me.ToolStrip1.TabIndex = 115
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -458,7 +460,7 @@ Partial Class EPEForm1
         'CustomerInfoLabel
         '
         Me.CustomerInfoLabel.AutoSize = True
-        Me.CustomerInfoLabel.Location = New System.Drawing.Point(217, 36)
+        Me.CustomerInfoLabel.Location = New System.Drawing.Point(219, 25)
         Me.CustomerInfoLabel.Name = "CustomerInfoLabel"
         Me.CustomerInfoLabel.Size = New System.Drawing.Size(106, 13)
         Me.CustomerInfoLabel.TabIndex = 116
@@ -471,7 +473,7 @@ Partial Class EPEForm1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(407, 528)
+        Me.Label4.Location = New System.Drawing.Point(409, 517)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 13)
         Me.Label4.TabIndex = 132
@@ -480,7 +482,7 @@ Partial Class EPEForm1
         'EmailSentCounterLabel
         '
         Me.EmailSentCounterLabel.AutoSize = True
-        Me.EmailSentCounterLabel.Location = New System.Drawing.Point(467, 528)
+        Me.EmailSentCounterLabel.Location = New System.Drawing.Point(469, 517)
         Me.EmailSentCounterLabel.Name = "EmailSentCounterLabel"
         Me.EmailSentCounterLabel.Size = New System.Drawing.Size(13, 13)
         Me.EmailSentCounterLabel.TabIndex = 133
@@ -490,7 +492,7 @@ Partial Class EPEForm1
         '
         Me.EmailNotSentLabel.AutoSize = True
         Me.EmailNotSentLabel.ForeColor = System.Drawing.Color.Black
-        Me.EmailNotSentLabel.Location = New System.Drawing.Point(656, 528)
+        Me.EmailNotSentLabel.Location = New System.Drawing.Point(658, 517)
         Me.EmailNotSentLabel.Name = "EmailNotSentLabel"
         Me.EmailNotSentLabel.Size = New System.Drawing.Size(13, 13)
         Me.EmailNotSentLabel.TabIndex = 135
@@ -499,7 +501,7 @@ Partial Class EPEForm1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(567, 528)
+        Me.Label6.Location = New System.Drawing.Point(569, 517)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 13)
         Me.Label6.TabIndex = 134
@@ -508,7 +510,7 @@ Partial Class EPEForm1
         'Facebooksentlabel
         '
         Me.Facebooksentlabel.AutoSize = True
-        Me.Facebooksentlabel.Location = New System.Drawing.Point(557, 528)
+        Me.Facebooksentlabel.Location = New System.Drawing.Point(559, 517)
         Me.Facebooksentlabel.Name = "Facebooksentlabel"
         Me.Facebooksentlabel.Size = New System.Drawing.Size(13, 13)
         Me.Facebooksentlabel.TabIndex = 137
@@ -518,7 +520,7 @@ Partial Class EPEForm1
         'FBSentLabel
         '
         Me.FBSentLabel.AutoSize = True
-        Me.FBSentLabel.Location = New System.Drawing.Point(478, 528)
+        Me.FBSentLabel.Location = New System.Drawing.Point(480, 517)
         Me.FBSentLabel.Name = "FBSentLabel"
         Me.FBSentLabel.Size = New System.Drawing.Size(83, 13)
         Me.FBSentLabel.TabIndex = 136
@@ -528,7 +530,7 @@ Partial Class EPEForm1
         'fbNotSentLabel
         '
         Me.fbNotSentLabel.AutoSize = True
-        Me.fbNotSentLabel.Location = New System.Drawing.Point(767, 528)
+        Me.fbNotSentLabel.Location = New System.Drawing.Point(769, 517)
         Me.fbNotSentLabel.Name = "fbNotSentLabel"
         Me.fbNotSentLabel.Size = New System.Drawing.Size(13, 13)
         Me.fbNotSentLabel.TabIndex = 139
@@ -538,7 +540,7 @@ Partial Class EPEForm1
         'FBNotSentLBL
         '
         Me.FBNotSentLBL.AutoSize = True
-        Me.FBNotSentLBL.Location = New System.Drawing.Point(667, 528)
+        Me.FBNotSentLBL.Location = New System.Drawing.Point(669, 517)
         Me.FBNotSentLBL.Name = "FBNotSentLBL"
         Me.FBNotSentLBL.Size = New System.Drawing.Size(103, 13)
         Me.FBNotSentLBL.TabIndex = 138
@@ -547,7 +549,7 @@ Partial Class EPEForm1
         '
         'ChkConnectionButton
         '
-        Me.ChkConnectionButton.Location = New System.Drawing.Point(410, 135)
+        Me.ChkConnectionButton.Location = New System.Drawing.Point(412, 124)
         Me.ChkConnectionButton.Name = "ChkConnectionButton"
         Me.ChkConnectionButton.Size = New System.Drawing.Size(112, 23)
         Me.ChkConnectionButton.TabIndex = 140
@@ -575,12 +577,21 @@ Partial Class EPEForm1
         Me.GroupBox2.Controls.Add(Me.UseEmailDirectory_Checkbox)
         Me.GroupBox2.Controls.Add(Me.Button3_browse_email_filename)
         Me.GroupBox2.Controls.Add(Me.EmailFilenameList)
-        Me.GroupBox2.Location = New System.Drawing.Point(11, 441)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 430)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(385, 207)
         Me.GroupBox2.TabIndex = 146
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Email from a directory file"
+        '
+        'RichTextBox_EmailListDescription
+        '
+        Me.RichTextBox_EmailListDescription.Enabled = False
+        Me.RichTextBox_EmailListDescription.Location = New System.Drawing.Point(8, 42)
+        Me.RichTextBox_EmailListDescription.Name = "RichTextBox_EmailListDescription"
+        Me.RichTextBox_EmailListDescription.Size = New System.Drawing.Size(369, 125)
+        Me.RichTextBox_EmailListDescription.TabIndex = 115
+        Me.RichTextBox_EmailListDescription.Text = resources.GetString("RichTextBox_EmailListDescription.Text")
         '
         'MainGroupBox
         '
@@ -599,7 +610,7 @@ Partial Class EPEForm1
         Me.MainGroupBox.Controls.Add(Me.label1_FileLocation)
         Me.MainGroupBox.Controls.Add(Me.Textbox_imagefolder)
         Me.MainGroupBox.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MainGroupBox.Location = New System.Drawing.Point(7, 57)
+        Me.MainGroupBox.Location = New System.Drawing.Point(9, 46)
         Me.MainGroupBox.Name = "MainGroupBox"
         Me.MainGroupBox.Size = New System.Drawing.Size(384, 259)
         Me.MainGroupBox.TabIndex = 147
@@ -639,7 +650,7 @@ Partial Class EPEForm1
         Me.AutomodeGroupBox.Controls.Add(Me.AutoSendRadio)
         Me.AutomodeGroupBox.Controls.Add(Me.TimeIntervalTextBox)
         Me.AutomodeGroupBox.Controls.Add(Me.TimeIntervalLabel)
-        Me.AutomodeGroupBox.Location = New System.Drawing.Point(3, 322)
+        Me.AutomodeGroupBox.Location = New System.Drawing.Point(5, 311)
         Me.AutomodeGroupBox.Name = "AutomodeGroupBox"
         Me.AutomodeGroupBox.Size = New System.Drawing.Size(385, 51)
         Me.AutomodeGroupBox.TabIndex = 148
@@ -678,7 +689,7 @@ Partial Class EPEForm1
         '
         'ClearWindowButton
         '
-        Me.ClearWindowButton.Location = New System.Drawing.Point(557, 588)
+        Me.ClearWindowButton.Location = New System.Drawing.Point(559, 577)
         Me.ClearWindowButton.Name = "ClearWindowButton"
         Me.ClearWindowButton.Size = New System.Drawing.Size(92, 25)
         Me.ClearWindowButton.TabIndex = 62
@@ -697,7 +708,7 @@ Partial Class EPEForm1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.MakeThinButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(7, 393)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 382)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(384, 39)
         Me.GroupBox1.TabIndex = 149
@@ -711,7 +722,7 @@ Partial Class EPEForm1
         Me.SendSavedEmailButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.SendSavedEmailButton.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SendSavedEmailButton.ForeColor = System.Drawing.Color.Black
-        Me.SendSavedEmailButton.Location = New System.Drawing.Point(410, 619)
+        Me.SendSavedEmailButton.Location = New System.Drawing.Point(412, 608)
         Me.SendSavedEmailButton.Name = "SendSavedEmailButton"
         Me.SendSavedEmailButton.Size = New System.Drawing.Size(379, 29)
         Me.SendSavedEmailButton.TabIndex = 150
@@ -722,7 +733,7 @@ Partial Class EPEForm1
         'StoppedButton
         '
         Me.StoppedButton.BackColor = System.Drawing.Color.Red
-        Me.StoppedButton.Location = New System.Drawing.Point(626, 26)
+        Me.StoppedButton.Location = New System.Drawing.Point(628, 15)
         Me.StoppedButton.Name = "StoppedButton"
         Me.StoppedButton.Size = New System.Drawing.Size(95, 23)
         Me.StoppedButton.TabIndex = 80
@@ -733,7 +744,7 @@ Partial Class EPEForm1
         'SENDINGBUTTON
         '
         Me.SENDINGBUTTON.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SENDINGBUTTON.Location = New System.Drawing.Point(528, 27)
+        Me.SENDINGBUTTON.Location = New System.Drawing.Point(530, 16)
         Me.SENDINGBUTTON.Name = "SENDINGBUTTON"
         Me.SENDINGBUTTON.Size = New System.Drawing.Size(92, 23)
         Me.SENDINGBUTTON.TabIndex = 79
@@ -744,7 +755,7 @@ Partial Class EPEForm1
         'WiFiSigProgressLabel
         '
         Me.WiFiSigProgressLabel.AutoSize = True
-        Me.WiFiSigProgressLabel.Location = New System.Drawing.Point(490, 31)
+        Me.WiFiSigProgressLabel.Location = New System.Drawing.Point(492, 20)
         Me.WiFiSigProgressLabel.Name = "WiFiSigProgressLabel"
         Me.WiFiSigProgressLabel.Size = New System.Drawing.Size(71, 13)
         Me.WiFiSigProgressLabel.TabIndex = 131
@@ -752,14 +763,14 @@ Partial Class EPEForm1
         '
         'WiFiProgressBar_SignalStrength
         '
-        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(689, 140)
+        Me.WiFiProgressBar_SignalStrength.Location = New System.Drawing.Point(691, 129)
         Me.WiFiProgressBar_SignalStrength.Name = "WiFiProgressBar_SignalStrength"
         Me.WiFiProgressBar_SignalStrength.Size = New System.Drawing.Size(100, 13)
         Me.WiFiProgressBar_SignalStrength.TabIndex = 130
         '
         'Testbutton
         '
-        Me.Testbutton.Location = New System.Drawing.Point(366, 29)
+        Me.Testbutton.Location = New System.Drawing.Point(368, 18)
         Me.Testbutton.Name = "Testbutton"
         Me.Testbutton.Size = New System.Drawing.Size(156, 23)
         Me.Testbutton.TabIndex = 151
@@ -769,7 +780,7 @@ Partial Class EPEForm1
         '
         'Config1ButtonFrontPage
         '
-        Me.Config1ButtonFrontPage.Location = New System.Drawing.Point(410, 106)
+        Me.Config1ButtonFrontPage.Location = New System.Drawing.Point(412, 95)
         Me.Config1ButtonFrontPage.Name = "Config1ButtonFrontPage"
         Me.Config1ButtonFrontPage.Size = New System.Drawing.Size(90, 23)
         Me.Config1ButtonFrontPage.TabIndex = 152
@@ -778,7 +789,7 @@ Partial Class EPEForm1
         '
         'Config2ButtonFrontPage
         '
-        Me.Config2ButtonFrontPage.Location = New System.Drawing.Point(506, 106)
+        Me.Config2ButtonFrontPage.Location = New System.Drawing.Point(508, 95)
         Me.Config2ButtonFrontPage.Name = "Config2ButtonFrontPage"
         Me.Config2ButtonFrontPage.Size = New System.Drawing.Size(87, 23)
         Me.Config2ButtonFrontPage.TabIndex = 153
@@ -787,7 +798,7 @@ Partial Class EPEForm1
         '
         'Config4ButtonFrontPage
         '
-        Me.Config4ButtonFrontPage.Location = New System.Drawing.Point(694, 106)
+        Me.Config4ButtonFrontPage.Location = New System.Drawing.Point(696, 95)
         Me.Config4ButtonFrontPage.Name = "Config4ButtonFrontPage"
         Me.Config4ButtonFrontPage.Size = New System.Drawing.Size(95, 23)
         Me.Config4ButtonFrontPage.TabIndex = 155
@@ -796,7 +807,7 @@ Partial Class EPEForm1
         '
         'Config3ButtonFrontPage
         '
-        Me.Config3ButtonFrontPage.Location = New System.Drawing.Point(599, 106)
+        Me.Config3ButtonFrontPage.Location = New System.Drawing.Point(601, 95)
         Me.Config3ButtonFrontPage.Name = "Config3ButtonFrontPage"
         Me.Config3ButtonFrontPage.Size = New System.Drawing.Size(89, 23)
         Me.Config3ButtonFrontPage.TabIndex = 154
@@ -805,20 +816,55 @@ Partial Class EPEForm1
         '
         'Config0ButtonFrontPage
         '
-        Me.Config0ButtonFrontPage.Location = New System.Drawing.Point(506, 68)
+        Me.Config0ButtonFrontPage.Location = New System.Drawing.Point(508, 57)
         Me.Config0ButtonFrontPage.Name = "Config0ButtonFrontPage"
         Me.Config0ButtonFrontPage.Size = New System.Drawing.Size(182, 23)
         Me.Config0ButtonFrontPage.TabIndex = 156
         Me.Config0ButtonFrontPage.Text = "Default Configuration"
         Me.Config0ButtonFrontPage.UseVisualStyleBackColor = True
         '
-        'RichTextBox_EmailListDescription
+        'GroupBox3
         '
-        Me.RichTextBox_EmailListDescription.Location = New System.Drawing.Point(8, 42)
-        Me.RichTextBox_EmailListDescription.Name = "RichTextBox_EmailListDescription"
-        Me.RichTextBox_EmailListDescription.Size = New System.Drawing.Size(369, 125)
-        Me.RichTextBox_EmailListDescription.TabIndex = 115
-        Me.RichTextBox_EmailListDescription.Text = resources.GetString("RichTextBox_EmailListDescription.Text")
+        Me.GroupBox3.Controls.Add(Me.Title)
+        Me.GroupBox3.Controls.Add(Me.GoButton)
+        Me.GroupBox3.Controls.Add(Me.Config0ButtonFrontPage)
+        Me.GroupBox3.Controls.Add(Me.StatusLabel)
+        Me.GroupBox3.Controls.Add(Me.Config4ButtonFrontPage)
+        Me.GroupBox3.Controls.Add(Me.CancelButton1)
+        Me.GroupBox3.Controls.Add(Me.Config3ButtonFrontPage)
+        Me.GroupBox3.Controls.Add(Me.ClearWindowButton)
+        Me.GroupBox3.Controls.Add(Me.Config2ButtonFrontPage)
+        Me.GroupBox3.Controls.Add(Me.Button_SaveAsDefault)
+        Me.GroupBox3.Controls.Add(Me.Config1ButtonFrontPage)
+        Me.GroupBox3.Controls.Add(Me.MainStatusBox)
+        Me.GroupBox3.Controls.Add(Me.Testbutton)
+        Me.GroupBox3.Controls.Add(Me.ProgressBar1)
+        Me.GroupBox3.Controls.Add(Me.SendSavedEmailButton)
+        Me.GroupBox3.Controls.Add(Me.StoppedButton)
+        Me.GroupBox3.Controls.Add(Me.GroupBox1)
+        Me.GroupBox3.Controls.Add(Me.SENDINGBUTTON)
+        Me.GroupBox3.Controls.Add(Me.MainGroupBox)
+        Me.GroupBox3.Controls.Add(Me.ConnectionStatusResultLabel)
+        Me.GroupBox3.Controls.Add(Me.AutomodeGroupBox)
+        Me.GroupBox3.Controls.Add(Me.CustomerInfoLabel)
+        Me.GroupBox3.Controls.Add(Me.ChkConnectionButton)
+        Me.GroupBox3.Controls.Add(Me.WiFiProgressBar_SignalStrength)
+        Me.GroupBox3.Controls.Add(Me.fbNotSentLabel)
+        Me.GroupBox3.Controls.Add(Me.WiFiSigProgressLabel)
+        Me.GroupBox3.Controls.Add(Me.FBNotSentLBL)
+        Me.GroupBox3.Controls.Add(Me.Label4)
+        Me.GroupBox3.Controls.Add(Me.Facebooksentlabel)
+        Me.GroupBox3.Controls.Add(Me.EmailSentCounterLabel)
+        Me.GroupBox3.Controls.Add(Me.FBSentLabel)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.EmailNotSentLabel)
+        Me.GroupBox3.Controls.Add(Me.GroupBox2)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(812, 656)
+        Me.GroupBox3.TabIndex = 157
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Main Window"
         '
         'EPEForm1
         '
@@ -826,44 +872,11 @@ Partial Class EPEForm1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(809, 659)
-        Me.Controls.Add(Me.Config0ButtonFrontPage)
-        Me.Controls.Add(Me.Config4ButtonFrontPage)
-        Me.Controls.Add(Me.Config3ButtonFrontPage)
-        Me.Controls.Add(Me.Config2ButtonFrontPage)
-        Me.Controls.Add(Me.Config1ButtonFrontPage)
-        Me.Controls.Add(Me.Testbutton)
-        Me.Controls.Add(Me.SendSavedEmailButton)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.MainGroupBox)
-        Me.Controls.Add(Me.AutomodeGroupBox)
-        Me.Controls.Add(Me.ChkConnectionButton)
-        Me.Controls.Add(Me.fbNotSentLabel)
-        Me.Controls.Add(Me.FBNotSentLBL)
-        Me.Controls.Add(Me.Facebooksentlabel)
-        Me.Controls.Add(Me.FBSentLabel)
-        Me.Controls.Add(Me.EmailNotSentLabel)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.EmailSentCounterLabel)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.WiFiSigProgressLabel)
-        Me.Controls.Add(Me.WiFiProgressBar_SignalStrength)
-        Me.Controls.Add(Me.CustomerInfoLabel)
+        Me.ClientSize = New System.Drawing.Size(837, 696)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Controls.Add(Me.ConnectionStatusResultLabel)
-        Me.Controls.Add(Me.SENDINGBUTTON)
-        Me.Controls.Add(Me.StoppedButton)
-        Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.MainStatusBox)
-        Me.Controls.Add(Me.Button_SaveAsDefault)
         Me.Controls.Add(Me.CustomerInfo)
-        Me.Controls.Add(Me.ClearWindowButton)
-        Me.Controls.Add(Me.CancelButton1)
-        Me.Controls.Add(Me.StatusLabel)
-        Me.Controls.Add(Me.GoButton)
         Me.Controls.Add(Me.Credit)
-        Me.Controls.Add(Me.Title)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "EPEForm1"
@@ -880,6 +893,8 @@ Partial Class EPEForm1
         Me.AutomodeGroupBox.ResumeLayout(False)
         Me.AutomodeGroupBox.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -966,5 +981,6 @@ Partial Class EPEForm1
     Private WithEvents Label1 As System.Windows.Forms.Label
     Private WithEvents Textbox_TextMessageFile As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox_EmailListDescription As System.Windows.Forms.RichTextBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
 
 End Class

@@ -489,14 +489,14 @@
   <data name="RichTextBox_EmailListDescription.Text" xml:space="preserve">
     <value>The file list must have two columns with no header. The columns should be separated by a comma.
 
-The 1st column contains the Filename. It is assumed that all files are located in the "Image Files Folder" specified above.
+The 1st column contains the Filename. It is assumed that all files are located in the "Image Files Folder" specified above. Separate multiple files using a semi-colon.
 
 The 2nd Column contains Email Address(es). If there are multiple email addresses, they need to be separted using '!' with no spaced between them.
 
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>95</value>
+    <value>47</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

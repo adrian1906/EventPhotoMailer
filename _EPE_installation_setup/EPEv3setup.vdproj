@@ -142,13 +142,13 @@
         "Entry"
         {
         "MsmKey" = "8:_70EAAC1DE2DAED4EA3C7B39BD53E8251"
-        "OwnerKey" = "8:_565352028CEF423DBCBD15A79750F53A"
+        "OwnerKey" = "8:_383BF4CE47DB4C03A3E048EB96A28EF2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_70EAAC1DE2DAED4EA3C7B39BD53E8251"
-        "OwnerKey" = "8:_383BF4CE47DB4C03A3E048EB96A28EF2"
+        "OwnerKey" = "8:_565352028CEF423DBCBD15A79750F53A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -292,43 +292,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7313B5E99F90431492888F8302767E34"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E8A3589F1E9545398E9FE247E7F865AC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9E8D985AB50141219EB88CC4BB35B9B3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_79F678BD21B14511B4062058675226C5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_383BF4CE47DB4C03A3E048EB96A28EF2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_69F7C2DBA000418BB7BCD01A19502E90"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5230C64B258BE2624FB2D431A499724F"
+        "OwnerKey" = "8:_03D906A604D141EE87D4EE12466C38BB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -340,7 +304,43 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_03D906A604D141EE87D4EE12466C38BB"
+        "OwnerKey" = "8:_5230C64B258BE2624FB2D431A499724F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_69F7C2DBA000418BB7BCD01A19502E90"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_383BF4CE47DB4C03A3E048EB96A28EF2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_79F678BD21B14511B4062058675226C5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9E8D985AB50141219EB88CC4BB35B9B3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E8A3589F1E9545398E9FE247E7F865AC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7313B5E99F90431492888F8302767E34"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -751,11 +751,6 @@
             "AssemblyAsmDisplayName" = "8:MakeThin, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_69F7C2DBA000418BB7BCD01A19502E90"
-                    {
-                    "Name" = "8:MakeThin.exe"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MakeThin.exe"
             "TargetName" = "8:"
@@ -771,7 +766,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -1552,20 +1547,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BF5FA511930941C79A91AFA74D620B53"
-            {
-            "Name" = "8:Shortcut to Primary output from EPEv9 (Active)"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_565352028CEF423DBCBD15A79750F53A"
-            "Folder" = "8:_8819339C16D446AE92358E6FC0098A2D"
-            "WorkingFolder" = "8:_641FA9EA62CD42509F37BD9DB1A8B818"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {

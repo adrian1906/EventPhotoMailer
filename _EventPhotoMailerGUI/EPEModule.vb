@@ -802,5 +802,10 @@ exit_function:
         Return dt
     End Function
 
+    Public Sub ReadFromTextFileAndWriteToRTB(MyFilename As String, MyControl As RichTextBox)
+        MyControl.Text = IO.File.ReadAllText(MyFilename)
+    End Sub
+
+
 
 End Module

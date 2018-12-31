@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Resources\EPEicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EventPhotoEmailer" version="11.0.0.38263" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="EventPhotoEmailer" version="11.0.0.38161" language="neutral" processorArchitecture="x86" />
     <commandLine file="EventPhotoEmailer.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -57,26 +57,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="340480">
-      <assemblyIdentity name="EventPhotoEmailer" version="11.0.0.38263" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EventPhotoEmailer.exe" size="339456">
+      <assemblyIdentity name="EventPhotoEmailer" version="11.0.0.38161" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XdyIoXMn/eytgX37YOK1Phs4h08=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FACEBOOK GRAPH TOOLKIT_3.5.dll" size="60416">
-      <assemblyIdentity name="Facebook Graph Toolkit_3.5" version="2.6.56.252" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>K7ITkhJUtnaFN/bQA4ZAdBIdgTQ=</dsig:DigestValue>
+        <dsig:DigestValue>u8XMQk6NjWHrj1m3/URYQ9CaE/E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -100,7 +88,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RRz63hAFf4/fzmpR5get982I3qg=</dsig:DigestValue>
+        <dsig:DigestValue>L9Q/6GGrra5gChXeC+/2JGeCZUc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -10,3 +10,7 @@ K:\GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.dll
 K:\GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.pdb
 K:\GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.dll
 K:\GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.pdb
+I:\@@GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.dll
+I:\@@GitHubHood\EventPhotoMailer\_ManagedWifi\bin\Debug\ManagedWifi.pdb
+I:\@@GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.dll
+I:\@@GitHubHood\EventPhotoMailer\_ManagedWifi\obj\Debug\ManagedWifi.pdb
